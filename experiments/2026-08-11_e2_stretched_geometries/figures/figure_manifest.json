@@ -1,0 +1,84 @@
+{
+  "filter_cost_vs_stretch": {
+    "panels": [
+      "upper (no letter drawn): cost of each symmetry filter relative to unfiltered UCCSD, against N-H distance",
+      "lower (no letter drawn): the two energy scales that define the regime, shared x axis"
+    ],
+    "elements": [
+      {
+        "artist": "line with circles",
+        "encodes": "absolute energy difference between the Abelian Cs filter (75 parameters) and unfiltered UCCSD; values below 1e-11 mHa are drawn at 1e-11",
+        "visual": "blue #0072B2, 1.0 pt, circles 3 pt",
+        "panel": "(a)"
+      },
+      {
+        "artist": "line with squares",
+        "encodes": "same difference for the full C3v filter (30 parameters) with exact exponentials of the invariant operators",
+        "visual": "bluish green #009E73, squares 3 pt",
+        "panel": "(a)"
+      },
+      {
+        "artist": "line with triangles",
+        "encodes": "same difference for the full C3v filter in tied Trotter product form",
+        "visual": "vermillion #D55E00, DASH-DOTTED line, triangles 3.2 pt",
+        "panel": "(a)"
+      },
+      {
+        "artist": "horizontal dashed line",
+        "encodes": "chemical accuracy, 1.6 mHa",
+        "visual": "black dashed, 0.9 pt, labelled",
+        "panel": "(a)"
+      },
+      {
+        "artist": "line with diamonds",
+        "encodes": "S0-S1 gap of the exact ground state, in mHa",
+        "visual": "black #000000, diamonds 3 pt",
+        "panel": "(b)"
+      },
+      {
+        "artist": "line with inverted triangles",
+        "encodes": "absolute correlation energy, in mHa",
+        "visual": "orange #E69F00, DASHED line, inverted triangles 3.2 pt",
+        "panel": "(b)"
+      },
+      {
+        "artist": "vertical dotted rule at 2.2 A",
+        "encodes": "the distance at which RHF stops converging, so the invariant closed-shell reference the theorems assume ceases to exist",
+        "visual": "grey dotted, 0.8 pt in both panels, labelled 'RHF fails' in (b)",
+        "panel": "all"
+      },
+      {
+        "artist": "legend of (a)",
+        "encodes": "the three filters",
+        "visual": "centre left, no frame, 7 pt",
+        "panel": "(a)"
+      },
+      {
+        "artist": "legend of (b)",
+        "encodes": "the two energy scales",
+        "visual": "lower left, no frame, 7 pt",
+        "panel": "(b)"
+      }
+    ],
+    "axes": {
+      "x": "N-H distance in angstrom (shared)",
+      "y": "(a) absolute energy difference from unfiltered UCCSD in mHa; (b) energy in mHa",
+      "xscale": "linear",
+      "yscale": "log in both panels"
+    },
+    "params": {
+      "basis_set": "STO-3G",
+      "hnh_angle_deg": "106.7 (fixed)",
+      "n_determinants": "3136",
+      "uccsd_parameters": "135",
+      "abelian_parameters": "75",
+      "full_c3v_parameters": "30",
+      "optimiser": "L-BFGS-B, ftol 1e-16, gtol 1e-11"
+    },
+    "reference_lines": [
+      "chemical accuracy 1.6 mHa in (a) (dashed)",
+      "RHF convergence boundary at 2.2 A (dotted, both panels)"
+    ],
+    "normalization": "none; absolute mHa. Panel (a) floors values below 1e-11 mHa at 1e-11 so the Abelian series stays visible on the log axis."
+  }
+}

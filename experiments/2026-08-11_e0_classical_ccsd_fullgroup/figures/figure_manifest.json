@@ -1,0 +1,75 @@
+{
+  "amplitude_classes": {
+    "panels": [
+      "upper (no letter drawn): surviving CCSD amplitude classes per molecule under three filters",
+      "lower (no letter drawn): absolute change in CCSD correlation energy caused by each filter, shared x axis with (a)"
+    ],
+    "elements": [
+      {
+        "artist": "bar group 1 (left of each tick)",
+        "encodes": "amplitude classes with no symmetry filter",
+        "visual": "black #000000 bars, 0.4 pt black edge",
+        "panel": "all"
+      },
+      {
+        "artist": "bar group 2 (centre)",
+        "encodes": "amplitude classes surviving the Abelian subgroup PySCF actually works in (Cs for NH3, D2 for CH4, C2v for H2O)",
+        "visual": "sky blue #56B4E9 bars",
+        "panel": "all"
+      },
+      {
+        "artist": "bar group 3 (right)",
+        "encodes": "amplitude classes surviving the full point group",
+        "visual": "bluish green #009E73 bars",
+        "panel": "all"
+      },
+      {
+        "artist": "numeric label above every bar",
+        "encodes": "the exact class count",
+        "visual": "black text, 7 pt",
+        "panel": "(a)"
+      },
+      {
+        "artist": "scatter, Abelian",
+        "encodes": "absolute correlation-energy change caused by the Abelian filter, in mHa; values below 1e-13 are drawn at 1e-13",
+        "visual": "sky blue #56B4E9 squares, black edge 0.3 pt",
+        "panel": "(b)"
+      },
+      {
+        "artist": "scatter, full group",
+        "encodes": "absolute correlation-energy change caused by the full-group filter, in mHa",
+        "visual": "bluish green #009E73 triangles, black edge 0.3 pt",
+        "panel": "(b)"
+      },
+      {
+        "artist": "horizontal dashed line",
+        "encodes": "chemical accuracy, 1.6 mHa",
+        "visual": "black dashed, 0.9 pt, labelled at left",
+        "panel": "(b)"
+      },
+      {
+        "artist": "legend",
+        "encodes": "the three filters",
+        "visual": "upper left of (a), three columns, no frame, 7 pt",
+        "panel": "(a)"
+      }
+    ],
+    "axes": {
+      "x": "molecule and its full point group, none (shared)",
+      "y": "(a) number of surviving CCSD amplitude classes (singles plus doubles); (b) absolute correlation-energy change in mHa",
+      "xscale": "linear",
+      "yscale": "log in both panels"
+    },
+    "params": {
+      "basis_set": "STO-3G",
+      "reference": "RHF in the adapted basis",
+      "cc_conv_tol": "1e-10",
+      "cc_conv_tol_normt": "1e-8",
+      "h2o_role": "Abelian control: its full group is already Abelian, so the second and third bars must be equal"
+    },
+    "reference_lines": [
+      "chemical accuracy 1.6 mHa in panel (b) (dashed)"
+    ],
+    "normalization": "none; absolute counts and absolute mHa. Panel (b) floors values below 1e-13 mHa at 1e-13 so they remain visible on the log axis."
+  }
+}

@@ -1,0 +1,8 @@
+7482f456d4cf8e8ed2986215d1240026180f24d6
+
+# --- anotacao pos-hoc, 2026-08-11 ---
+# O hash acima e o estado do repositorio NO MOMENTO DA EXECUCAO, quando
+# experiments/ ainda estava untracked (ver git_status.txt). Preservado como
+# registro fiel. O codigo que produziu estes resultados foi commitado depois,
+# em 649d5d79, e e esse o valor em experiment_log.json:code_commit.
+# Remediacao do criterio RP2 do acceptance_report.md.

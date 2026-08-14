@@ -1,0 +1,1217 @@
+{
+  "experiment_id": "2026-08-12_e0b_basis_dependence",
+  "paper_project": "2026-08_point-group-vqe-free",
+  "opportunity_reference": "opportunities.md #1 and #2",
+  "mode": "numerical+symbolic",
+  "subareas_active": [
+    "numerical",
+    "symbolic"
+  ],
+  "target_venue": "Quantum (componente do artigo principal); Comment no JCTC como item separado e posterior.",
+  "created_at": "2026-08-12T12:11:16+00:00",
+  "plan_md_hash": "sha256:ce5b96b70e54ebef3a9c92f0601581edb10925be31f25494cc94fd629195e01a",
+  "code_commit": "git:d82df9c5",
+  "system_info_hash": "sha256:01791729b0758533cd0283c4091aab12f3836d8349aa166fbda306efe507a97b",
+  "runs": [
+    {
+      "run_id": 1,
+      "timestamp_start": "2026-08-12T12:11:16+00:00",
+      "timestamp_end": "2026-08-12T12:11:17+00:00",
+      "wallclock_seconds": 0.131,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "H2O",
+        "filter": "none",
+        "group": "C2v",
+        "n_amplitudes": 65,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 218.8,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_hf": -74.96274643998883,
+          "e_corr": -0.057903425686439296,
+          "resid_t1": 7.325188993696115e-16,
+          "resid_t2": 4.234736583338692e-17
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unconstrained CCSD; residual measures Cársky's vanishing rule directly"
+    },
+    {
+      "run_id": 2,
+      "timestamp_start": "2026-08-12T12:11:17+00:00",
+      "timestamp_end": "2026-08-12T12:11:17+00:00",
+      "wallclock_seconds": 0.138,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "H2O",
+        "filter": "abelian",
+        "group": "C2v",
+        "n_amplitudes": 26,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 218.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.05790342568643616,
+          "delta_e_corr_ha": 3.1363800445660672e-15
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the abelian group at every iteration"
+    },
+    {
+      "run_id": 3,
+      "timestamp_start": "2026-08-12T12:11:17+00:00",
+      "timestamp_end": "2026-08-12T12:11:17+00:00",
+      "wallclock_seconds": 0.136,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "H2O",
+        "filter": "full",
+        "group": "C2v",
+        "n_amplitudes": 26,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 218.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.05790342568643616,
+          "delta_e_corr_ha": 3.1363800445660672e-15
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the full group at every iteration"
+    },
+    {
+      "run_id": 4,
+      "timestamp_start": "2026-08-12T12:11:17+00:00",
+      "timestamp_end": "2026-08-12T12:11:17+00:00",
+      "wallclock_seconds": 0.237,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3",
+        "filter": "none",
+        "group": "C3v",
+        "n_amplitudes": 135,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 218.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_hf": -55.42953466924645,
+          "e_corr": -0.08632062824607653,
+          "resid_t1": 1.070406514439304e-12,
+          "resid_t2": 7.712223397765526e-14
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unconstrained CCSD; residual measures Cársky's vanishing rule directly"
+    },
+    {
+      "run_id": 5,
+      "timestamp_start": "2026-08-12T12:11:17+00:00",
+      "timestamp_end": "2026-08-12T12:11:17+00:00",
+      "wallclock_seconds": 0.169,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3",
+        "filter": "abelian",
+        "group": "C3v",
+        "n_amplitudes": 75,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 218.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.08632062824607394,
+          "delta_e_corr_ha": 2.5951463200613034e-15
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the abelian group at every iteration"
+    },
+    {
+      "run_id": 6,
+      "timestamp_start": "2026-08-12T12:11:17+00:00",
+      "timestamp_end": "2026-08-12T12:11:17+00:00",
+      "wallclock_seconds": 0.202,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3",
+        "filter": "full",
+        "group": "C3v",
+        "n_amplitudes": 30,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 218.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.08632062824358269,
+          "delta_e_corr_ha": 2.493838469064258e-12
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the full group at every iteration"
+    },
+    {
+      "run_id": 7,
+      "timestamp_start": "2026-08-12T12:11:18+00:00",
+      "timestamp_end": "2026-08-12T12:11:18+00:00",
+      "wallclock_seconds": 0.108,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4",
+        "filter": "none",
+        "group": "Td",
+        "n_amplitudes": 230,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_hf": -39.72670005205521,
+          "e_corr": -0.07910091824510879,
+          "resid_t1": 9.68306705332959e-16,
+          "resid_t2": 1.0755285551056204e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unconstrained CCSD; residual measures Cársky's vanishing rule directly"
+    },
+    {
+      "run_id": 8,
+      "timestamp_start": "2026-08-12T12:11:18+00:00",
+      "timestamp_end": "2026-08-12T12:11:18+00:00",
+      "wallclock_seconds": 0.114,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4",
+        "filter": "abelian",
+        "group": "Td",
+        "n_amplitudes": 65,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.07910091824510865,
+          "delta_e_corr_ha": 1.3877787807814457e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the abelian group at every iteration"
+    },
+    {
+      "run_id": 9,
+      "timestamp_start": "2026-08-12T12:11:18+00:00",
+      "timestamp_end": "2026-08-12T12:11:18+00:00",
+      "wallclock_seconds": 0.156,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4",
+        "filter": "full",
+        "group": "Td",
+        "n_amplitudes": 21,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.07910091824510863,
+          "delta_e_corr_ha": 1.5265566588595902e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the full group at every iteration"
+    },
+    {
+      "run_id": 10,
+      "timestamp_start": "2026-08-12T12:11:18+00:00",
+      "timestamp_end": "2026-08-12T12:11:18+00:00",
+      "wallclock_seconds": 0.081,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "HF",
+        "filter": "none",
+        "group": "C2v",
+        "n_amplitudes": 20,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_hf": -98.57077998601426,
+          "e_corr": -0.02584419464745006,
+          "resid_t1": 1.0408340855860843e-17,
+          "resid_t2": 1.942890293094024e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unconstrained CCSD; residual measures Cársky's vanishing rule directly"
+    },
+    {
+      "run_id": 11,
+      "timestamp_start": "2026-08-12T12:11:18+00:00",
+      "timestamp_end": "2026-08-12T12:11:18+00:00",
+      "wallclock_seconds": 0.086,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "HF",
+        "filter": "abelian",
+        "group": "C2v",
+        "n_amplitudes": 11,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.025844194647472334,
+          "delta_e_corr_ha": -2.2273849431542203e-14
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the abelian group at every iteration"
+    },
+    {
+      "run_id": 12,
+      "timestamp_start": "2026-08-12T12:11:18+00:00",
+      "timestamp_end": "2026-08-12T12:11:18+00:00",
+      "wallclock_seconds": 0.089,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "HF",
+        "filter": "full",
+        "group": "C2v",
+        "n_amplitudes": 11,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.025844194647472334,
+          "delta_e_corr_ha": -2.2273849431542203e-14
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the full group at every iteration"
+    },
+    {
+      "run_id": 13,
+      "timestamp_start": "2026-08-12T12:11:18+00:00",
+      "timestamp_end": "2026-08-12T12:11:18+00:00",
+      "wallclock_seconds": 0.079,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "LiH",
+        "filter": "none",
+        "group": "C2v",
+        "n_amplitudes": 44,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_hf": -7.8620238601271195,
+          "e_corr": -0.020367576170062813,
+          "resid_t1": 6.245004513516506e-17,
+          "resid_t2": 2.498001805406602e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unconstrained CCSD; residual measures Cársky's vanishing rule directly"
+    },
+    {
+      "run_id": 14,
+      "timestamp_start": "2026-08-12T12:11:18+00:00",
+      "timestamp_end": "2026-08-12T12:11:18+00:00",
+      "wallclock_seconds": 0.099,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "LiH",
+        "filter": "abelian",
+        "group": "C2v",
+        "n_amplitudes": 20,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.0203675761700629,
+          "delta_e_corr_ha": -8.673617379884035e-17
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the abelian group at every iteration"
+    },
+    {
+      "run_id": 15,
+      "timestamp_start": "2026-08-12T12:11:18+00:00",
+      "timestamp_end": "2026-08-12T12:11:19+00:00",
+      "wallclock_seconds": 0.107,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "LiH",
+        "filter": "full",
+        "group": "C2v",
+        "n_amplitudes": 20,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.0203675761700629,
+          "delta_e_corr_ha": -8.673617379884035e-17
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the full group at every iteration"
+    },
+    {
+      "run_id": 16,
+      "timestamp_start": "2026-08-12T12:11:19+00:00",
+      "timestamp_end": "2026-08-12T12:11:19+00:00",
+      "wallclock_seconds": 0.161,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "BeH2",
+        "filter": "none",
+        "group": "D2h",
+        "n_amplitudes": 90,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_hf": -15.56033493598719,
+          "e_corr": -0.03445406888861377,
+          "resid_t1": 6.2901419198309e-16,
+          "resid_t2": 5.551115123125783e-17
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unconstrained CCSD; residual measures Cársky's vanishing rule directly"
+    },
+    {
+      "run_id": 17,
+      "timestamp_start": "2026-08-12T12:11:19+00:00",
+      "timestamp_end": "2026-08-12T12:11:19+00:00",
+      "wallclock_seconds": 0.198,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "BeH2",
+        "filter": "abelian",
+        "group": "D2h",
+        "n_amplitudes": 23,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.03445406888861423,
+          "delta_e_corr_ha": -4.579669976578771e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the abelian group at every iteration"
+    },
+    {
+      "run_id": 18,
+      "timestamp_start": "2026-08-12T12:11:19+00:00",
+      "timestamp_end": "2026-08-12T12:11:19+00:00",
+      "wallclock_seconds": 0.205,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "BeH2",
+        "filter": "full",
+        "group": "D2h",
+        "n_amplitudes": 23,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.03445406888861423,
+          "delta_e_corr_ha": -4.579669976578771e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the full group at every iteration"
+    },
+    {
+      "run_id": 19,
+      "timestamp_start": "2026-08-12T12:11:19+00:00",
+      "timestamp_end": "2026-08-12T12:11:19+00:00",
+      "wallclock_seconds": 0.137,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "H2O",
+        "filter": "none",
+        "group": "C2v",
+        "n_amplitudes": 860,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_hf": -75.97640820306287,
+          "e_corr": -0.1413447506135524,
+          "resid_t1": 2.4996547957668456e-15,
+          "resid_t2": 3.788993489701722e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unconstrained CCSD; residual measures Cársky's vanishing rule directly"
+    },
+    {
+      "run_id": 20,
+      "timestamp_start": "2026-08-12T12:11:19+00:00",
+      "timestamp_end": "2026-08-12T12:11:20+00:00",
+      "wallclock_seconds": 0.151,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "H2O",
+        "filter": "abelian",
+        "group": "C2v",
+        "n_amplitudes": 281,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.14134475061355584,
+          "delta_e_corr_ha": -3.4416913763379853e-15
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the abelian group at every iteration"
+    },
+    {
+      "run_id": 21,
+      "timestamp_start": "2026-08-12T12:11:20+00:00",
+      "timestamp_end": "2026-08-12T12:11:20+00:00",
+      "wallclock_seconds": 0.146,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "H2O",
+        "filter": "full",
+        "group": "C2v",
+        "n_amplitudes": 281,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.14134475061355584,
+          "delta_e_corr_ha": -3.4416913763379853e-15
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the full group at every iteration"
+    },
+    {
+      "run_id": 22,
+      "timestamp_start": "2026-08-12T12:11:20+00:00",
+      "timestamp_end": "2026-08-12T12:11:20+00:00",
+      "wallclock_seconds": 0.151,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3",
+        "filter": "none",
+        "group": "C3v",
+        "n_amplitudes": 1325,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_hf": -56.11562795929537,
+          "e_corr": -0.14253193916218954,
+          "resid_t1": 1.7486376924383167e-12,
+          "resid_t2": 8.316641780541185e-14
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unconstrained CCSD; residual measures Cársky's vanishing rule directly"
+    },
+    {
+      "run_id": 23,
+      "timestamp_start": "2026-08-12T12:11:20+00:00",
+      "timestamp_end": "2026-08-12T12:11:20+00:00",
+      "wallclock_seconds": 0.174,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3",
+        "filter": "abelian",
+        "group": "C3v",
+        "n_amplitudes": 717,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.14253193916217985,
+          "delta_e_corr_ha": 9.686695889854491e-15
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the abelian group at every iteration"
+    },
+    {
+      "run_id": 24,
+      "timestamp_start": "2026-08-12T12:11:20+00:00",
+      "timestamp_end": "2026-08-12T12:11:20+00:00",
+      "wallclock_seconds": 0.176,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3",
+        "filter": "full",
+        "group": "C3v",
+        "n_amplitudes": 277,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.14253193916218648,
+          "delta_e_corr_ha": 3.0531133177191805e-15
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the full group at every iteration"
+    },
+    {
+      "run_id": 25,
+      "timestamp_start": "2026-08-12T12:11:20+00:00",
+      "timestamp_end": "2026-08-12T12:11:20+00:00",
+      "wallclock_seconds": 0.134,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4",
+        "filter": "none",
+        "group": "Td",
+        "n_amplitudes": 1890,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_hf": -40.18038475214855,
+          "e_corr": -0.11898500746584798,
+          "resid_t1": 5.041756942492093e-15,
+          "resid_t2": 4.753142324176451e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unconstrained CCSD; residual measures Cársky's vanishing rule directly"
+    },
+    {
+      "run_id": 26,
+      "timestamp_start": "2026-08-12T12:11:20+00:00",
+      "timestamp_end": "2026-08-12T12:11:21+00:00",
+      "wallclock_seconds": 0.145,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4",
+        "filter": "abelian",
+        "group": "Td",
+        "n_amplitudes": 495,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.11898500746584792,
+          "delta_e_corr_ha": 5.551115123125783e-17
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the abelian group at every iteration"
+    },
+    {
+      "run_id": 27,
+      "timestamp_start": "2026-08-12T12:11:21+00:00",
+      "timestamp_end": "2026-08-12T12:11:21+00:00",
+      "wallclock_seconds": 0.217,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4",
+        "filter": "full",
+        "group": "Td",
+        "n_amplitudes": 144,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.11898500746584816,
+          "delta_e_corr_ha": -1.8041124150158794e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the full group at every iteration"
+    },
+    {
+      "run_id": 28,
+      "timestamp_start": "2026-08-12T12:11:21+00:00",
+      "timestamp_end": "2026-08-12T12:11:21+00:00",
+      "wallclock_seconds": 0.154,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "HF",
+        "filter": "none",
+        "group": "C2v",
+        "n_amplitudes": 495,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_hf": -99.98340893328222,
+          "e_corr": -0.13124774661389743,
+          "resid_t1": 1.474514954580286e-17,
+          "resid_t2": 9.71445146547012e-17
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unconstrained CCSD; residual measures Cársky's vanishing rule directly"
+    },
+    {
+      "run_id": 29,
+      "timestamp_start": "2026-08-12T12:11:21+00:00",
+      "timestamp_end": "2026-08-12T12:11:21+00:00",
+      "wallclock_seconds": 0.148,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "HF",
+        "filter": "abelian",
+        "group": "C2v",
+        "n_amplitudes": 178,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.13124774661389788,
+          "delta_e_corr_ha": -4.440892098500626e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the abelian group at every iteration"
+    },
+    {
+      "run_id": 30,
+      "timestamp_start": "2026-08-12T12:11:21+00:00",
+      "timestamp_end": "2026-08-12T12:11:21+00:00",
+      "wallclock_seconds": 0.143,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "HF",
+        "filter": "full",
+        "group": "C2v",
+        "n_amplitudes": 178,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.13124774661389788,
+          "delta_e_corr_ha": -4.440892098500626e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the full group at every iteration"
+    },
+    {
+      "run_id": 31,
+      "timestamp_start": "2026-08-12T12:11:21+00:00",
+      "timestamp_end": "2026-08-12T12:11:22+00:00",
+      "wallclock_seconds": 0.121,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "LiH",
+        "filter": "none",
+        "group": "C2v",
+        "n_amplitudes": 189,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_hf": -7.979268948423173,
+          "e_corr": -0.018995785297481662,
+          "resid_t1": 2.42861286636753e-17,
+          "resid_t2": 2.220446049250313e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unconstrained CCSD; residual measures Cársky's vanishing rule directly"
+    },
+    {
+      "run_id": 32,
+      "timestamp_start": "2026-08-12T12:11:22+00:00",
+      "timestamp_end": "2026-08-12T12:11:22+00:00",
+      "wallclock_seconds": 0.146,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "LiH",
+        "filter": "abelian",
+        "group": "C2v",
+        "n_amplitudes": 85,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.018995785297336594,
+          "delta_e_corr_ha": 1.4506798540203647e-13
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the abelian group at every iteration"
+    },
+    {
+      "run_id": 33,
+      "timestamp_start": "2026-08-12T12:11:22+00:00",
+      "timestamp_end": "2026-08-12T12:11:22+00:00",
+      "wallclock_seconds": 0.132,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "LiH",
+        "filter": "full",
+        "group": "C2v",
+        "n_amplitudes": 85,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.018995785297336594,
+          "delta_e_corr_ha": 1.4506798540203647e-13
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the full group at every iteration"
+    },
+    {
+      "run_id": 34,
+      "timestamp_start": "2026-08-12T12:11:22+00:00",
+      "timestamp_end": "2026-08-12T12:11:22+00:00",
+      "wallclock_seconds": 0.135,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "BeH2",
+        "filter": "none",
+        "group": "D2h",
+        "n_amplitudes": 495,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_hf": -15.759328877923501,
+          "e_corr": -0.0404265106296854,
+          "resid_t1": 9.592176389785283e-16,
+          "resid_t2": 1.0755285551056204e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unconstrained CCSD; residual measures Cársky's vanishing rule directly"
+    },
+    {
+      "run_id": 35,
+      "timestamp_start": "2026-08-12T12:11:22+00:00",
+      "timestamp_end": "2026-08-12T12:11:22+00:00",
+      "wallclock_seconds": 0.148,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "BeH2",
+        "filter": "abelian",
+        "group": "D2h",
+        "n_amplitudes": 125,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.04042651062948891,
+          "delta_e_corr_ha": 1.9648865867694099e-13
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the abelian group at every iteration"
+    },
+    {
+      "run_id": 36,
+      "timestamp_start": "2026-08-12T12:11:22+00:00",
+      "timestamp_end": "2026-08-12T12:11:22+00:00",
+      "wallclock_seconds": 0.155,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "BeH2",
+        "filter": "full",
+        "group": "D2h",
+        "n_amplitudes": 125,
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_corr": -0.04042651062948891,
+          "delta_e_corr_ha": 1.9648865867694099e-13
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "amplitudes projected onto the totally symmetric subspace of the full group at every iteration"
+    }
+  ],
+  "summary": {
+    "n_runs_total": 36,
+    "n_runs_success": 36,
+    "n_runs_failure": 0,
+    "n_runs_aborted": 0,
+    "aggregate_metrics": {
+      "by_basis": {
+        "6-31g": {
+          "max_abs_delta_e_corr_mha": 1.9648865867694099e-10,
+          "max_invariance_residual_t2": 8.316641780541185e-14,
+          "compression_full": [
+            "H2O: 860->281",
+            "NH3: 1325->277",
+            "CH4: 1890->144",
+            "HF: 495->178",
+            "LiH: 189->85",
+            "BeH2: 495->125"
+          ]
+        },
+        "sto-3g": {
+          "max_abs_delta_e_corr_mha": 2.493838469064258e-09,
+          "max_invariance_residual_t2": 7.712223397765526e-14,
+          "compression_full": [
+            "H2O: 65->26",
+            "NH3: 135->30",
+            "CH4: 230->21",
+            "HF: 20->11",
+            "LiH: 44->20",
+            "BeH2: 90->23"
+          ]
+        }
+      },
+      "max_abs_delta_e_corr_mha": 2.493838469064258e-09,
+      "max_invariance_residual_t1": 1.7486376924383167e-12,
+      "max_invariance_residual_t2": 8.316641780541185e-14,
+      "compression_full": [
+        "H2O: 65->26",
+        "NH3: 135->30",
+        "CH4: 230->21",
+        "HF: 20->11",
+        "LiH: 44->20",
+        "BeH2: 90->23",
+        "H2O: 860->281",
+        "NH3: 1325->277",
+        "CH4: 1890->144",
+        "HF: 495->178",
+        "LiH: 189->85",
+        "BeH2: 495->125"
+      ],
+      "oracle_agreement": true
+    },
+    "key_findings": [
+      "constraining the CCSD amplitudes to the totally symmetric subspace of the full point group moves the correlation energy by at most 2.49e-09 mHa",
+      "the converged unconstrained amplitudes already satisfy the full-group invariance to 8.32e-14",
+      "amplitude-class counts: H2O: 65->26; NH3: 135->30; CH4: 230->21; HF: 20->11; LiH: 44->20; BeH2: 90->23; H2O: 860->281; NH3: 1325->277; CH4: 1890->144; HF: 495->178; LiH: 189->85; BeH2: 495->125",
+      "the character count and the independent combinatorial count agree for every Abelian subgroup tested"
+    ],
+    "matches_hypothesis": "supported",
+    "interpretation": "In classical coupled cluster the non-Abelian point-group filter removes amplitude classes without moving the energy, which is what Cársky et al. proved in 1987 and what a claim of non-Abelian failure would have to contradict."
+  }
+}

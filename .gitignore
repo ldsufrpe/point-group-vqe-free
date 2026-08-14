@@ -1,0 +1,26 @@
+# Environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# System cruft
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+
+# Never version pipeline/agent traces
+.sciflow/
+.claude/
+CLAUDE.md
+
+# NOTE. The usual public template also ignores `env/` and `*.log`. Both rules are
+# deliberately absent here. `experiments/<id>/env/` holds the environment
+# snapshots (requirements.txt, system_info.json) that make a run reproducible,
+# and `results/*.log` is recorded run output, not build noise. Ignoring either
+# would silently drop evidence.

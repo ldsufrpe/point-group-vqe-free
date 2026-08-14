@@ -1,0 +1,22 @@
+# Project Python dependencies — pinned 2026-08-11 from the interpreter that
+# produced every piece of evidence in this project:
+#   /home/leon-denis/PycharmProjects/Experimentos/venv_modal/bin/python
+#
+# Python 3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0] on Linux x86_64.
+# The .venv is gitignored; this file is what rebuilds the environment elsewhere.
+#
+# Per-experiment snapshots live at experiments/<id>/env/requirements.txt and are
+# authoritative for reproducing a specific experiment.
+
+# --- electronic structure / quantum chemistry ---
+pyscf==2.12.1
+openfermion==1.7.1
+openfermionpyscf==0.5
+
+# --- numerics ---
+numpy==2.4.3
+scipy==1.17.1
+
+# --- figures (manuscript-bound; see experiment-runner references/figures_style.md) ---
+matplotlib==3.10.8
+SciencePlots==2.2.2

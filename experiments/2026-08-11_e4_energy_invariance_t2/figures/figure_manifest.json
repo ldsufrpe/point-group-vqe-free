@@ -1,0 +1,75 @@
+{
+  "invariance_violation": {
+    "panels": [
+      "single panel: measured violation of the energy-invariance identity, one point per sampled parameter vector and group element"
+    ],
+    "elements": [
+      {
+        "artist": "scatter, NH3 adapted basis",
+        "encodes": "|E(theta) - E(sigma_n theta)| for 20 parameter vectors, 1 nontrivial Cs element",
+        "visual": "blue #0072B2 circles, alpha 0.65, size 4.5",
+        "panel": "all"
+      },
+      {
+        "artist": "scatter, CH4 adapted basis",
+        "encodes": "same quantity for 20 parameter vectors, 3 nontrivial D2 elements",
+        "visual": "sky blue #56B4E9 squares, alpha 0.65, size 4.5",
+        "panel": "all"
+      },
+      {
+        "artist": "scatter, NH3 rotated basis",
+        "encodes": "same quantity with a degenerate pair rotated by 30 degrees and the irrep labels left stale",
+        "visual": "vermillion #D55E00 triangles",
+        "panel": "all"
+      },
+      {
+        "artist": "scatter, CH4 rotated basis",
+        "encodes": "same quantity, rotated-label control",
+        "visual": "orange #E69F00 diamonds",
+        "panel": "all"
+      },
+      {
+        "artist": "horizontal dashed line",
+        "encodes": "chemical accuracy, 1.6 mHa",
+        "visual": "black dashed, 0.9 pt, labelled",
+        "panel": "all"
+      },
+      {
+        "artist": "vertical rule between category 2 and 3",
+        "encodes": "separates the adapted-basis categories from the rotated-label controls",
+        "visual": "grey solid, 0.7 pt",
+        "panel": "all"
+      },
+      {
+        "artist": "x tick labels",
+        "encodes": "molecule and basis of each category",
+        "visual": "two-line text",
+        "panel": "all"
+      },
+      {
+        "artist": "annotation 'machine precision'",
+        "encodes": "the band the adapted-basis points occupy",
+        "visual": "grey text, 7 pt, no leader",
+        "panel": "all"
+      }
+    ],
+    "axes": {
+      "x": "category (molecule and orbital basis), none",
+      "y": "absolute energy difference (Ha)",
+      "xscale": "linear",
+      "yscale": "log"
+    },
+    "params": {
+      "n_theta_per_molecule": "20",
+      "theta_distribution": "uniform on [-0.5, 0.5]",
+      "control_rotation_deg": "30",
+      "basis_set": "STO-3G",
+      "horizontal_jitter": "uniform +-0.26, seed 7, cosmetic only",
+      "zero_differences_dropped": "the y axis is logarithmic, so only strictly positive differences can be drawn. Of the CH4 adapted series 54 of 60 differences are EXACTLY zero and are not plotted, leaving 6 markers; NH3 adapted draws all 20. In the controls, CH4 draws 10 of 15 and NH3 all 5. The absences mean the identity held to the last bit, which is a stronger statement than the plotted points make"
+    },
+    "reference_lines": [
+      "chemical accuracy 1.6 mHa (black dashed, labelled at left)"
+    ],
+    "normalization": "none; absolute Hartree"
+  }
+}

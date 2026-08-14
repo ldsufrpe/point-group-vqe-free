@@ -1,0 +1,22 @@
+shared setup: dets=3136 P=135 gate entries=375 distinct elementary=315 |G|=6
+r=0.9000  Ecorr=   50.7  gap=  628.1  uccsd=  0.0992  abelian d=-1.78e-10  full_trotter d=+5.09e-06  full_exact d=-4.03e-05  [44s]
+r=1.0124  Ecorr=   65.1  gap=  480.4  uccsd=  0.1757  abelian d=-1.49e-10  full_trotter d=+2.07e-03  full_exact d=-5.92e-05  [45s]
+r=1.1000  Ecorr=   79.1  gap=  385.9  uccsd=  0.2831  abelian d=-1.42e-11  full_trotter d=-1.97e-05  full_exact d=-2.94e-04  [50s]
+r=1.2500  Ecorr=  110.4  gap=  260.4  uccsd=  0.6033  abelian d=+7.11e-12  full_trotter d=+8.80e-03  full_exact d=-3.60e-03  [56s]
+r=1.4000  Ecorr=  153.2  gap=  171.8  uccsd=  1.1049  abelian d=-7.11e-10  full_trotter d=+8.59e-02  full_exact d=+9.27e-03  [77s]
+r=1.6000  Ecorr=  230.5  gap=   94.0  uccsd=  2.0740  abelian d=+9.95e-11  full_trotter d=+7.34e-01  full_exact d=+1.23e-01  [70s]
+r=1.8000  Ecorr=  328.6  gap=   46.4  uccsd=  4.1418  abelian d=+0.00e+00  full_trotter d=+6.15e+00  full_exact d=+3.85e+00  [84s]
+r=2.0000  Ecorr=  439.5  gap=   20.3  uccsd=  9.5875  abelian d=+4.33e-10  full_trotter d=+1.26e+01  full_exact d=+6.94e+00  [97s]
+r=2.2000  RHF did NOT converge -- point discarded
+
+=== E2 summary ===
+  max_abs_delta_abelian_mha        7.105427357601002e-10
+  max_abs_delta_full_c3v_trotter_mha 12.593933238058241
+  max_abs_delta_full_c3v_exact_mha 6.936234464681945
+  max_abs_delta_full_c3v_exact_near_eq_mha 0.00029431298997906197
+  full_c3v_exact_by_r              {0.9: -4e-05, 1.0124: -5.9e-05, 1.1: -0.000294, 1.25: -0.003599, 1.4: 0.009273, 1.6: 0.122776, 1.8: 3.847253, 2.0: 6.936234}
+  corr_energy_growth               50.7 to 439.5 mHa
+  gap_collapse                     628.1 to 20.3 mHa
+  rhf_boundary_angstrom            2.2
+  n_geometries                     8
+  cost_attribution                 The exact-exponential form carries most of that cost, so it belongs to the 30-dimensional invariant subspace and not to Trotterisation.

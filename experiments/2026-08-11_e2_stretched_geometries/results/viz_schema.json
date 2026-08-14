@@ -1,0 +1,45 @@
+{
+  "figures": [
+    {
+      "title": "Filter cost against N-H distance",
+      "plot_type": "line",
+      "x_axis": "r_nh_angstrom",
+      "y_axis": "delta_vs_uccsd_mha",
+      "z_axis": null,
+      "series": "ansatz",
+      "filters": {
+        "ansatz": [
+          "abelian",
+          "full_c3v",
+          "full_c3v_exact"
+        ]
+      },
+      "log_scale_x": false,
+      "log_scale_y": false
+    },
+    {
+      "title": "Error against FCI for every ansatz",
+      "plot_type": "line",
+      "x_axis": "r_nh_angstrom",
+      "y_axis": "err_vs_fci_mha",
+      "z_axis": null,
+      "series": "ansatz",
+      "filters": {},
+      "log_scale_x": false,
+      "log_scale_y": true
+    },
+    {
+      "title": "Onset of static correlation along the scan",
+      "plot_type": "line",
+      "x_axis": "r_nh_angstrom",
+      "y_axis": "gap_s0_s1_mha",
+      "z_axis": null,
+      "series": null,
+      "filters": {
+        "ansatz": "uccsd"
+      },
+      "log_scale_x": false,
+      "log_scale_y": true
+    }
+  ]
+}

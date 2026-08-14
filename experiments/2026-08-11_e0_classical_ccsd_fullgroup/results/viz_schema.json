@@ -1,0 +1,31 @@
+{
+  "figures": [
+    {
+      "title": "Surviving CCSD amplitude classes by filter",
+      "plot_type": "bar",
+      "x_axis": "molecule",
+      "y_axis": "n_amplitudes",
+      "z_axis": null,
+      "series": "filter",
+      "filters": {},
+      "log_scale_x": false,
+      "log_scale_y": true
+    },
+    {
+      "title": "Correlation-energy change caused by the filter",
+      "plot_type": "bar",
+      "x_axis": "molecule",
+      "y_axis": "delta_e_corr_mha",
+      "z_axis": null,
+      "series": "filter",
+      "filters": {
+        "filter": [
+          "abelian",
+          "full"
+        ]
+      },
+      "log_scale_x": false,
+      "log_scale_y": false
+    }
+  ]
+}

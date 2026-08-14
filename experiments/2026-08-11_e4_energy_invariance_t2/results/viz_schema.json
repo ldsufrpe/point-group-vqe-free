@@ -1,0 +1,43 @@
+{
+  "figures": [
+    {
+      "title": "Energy-invariance violation by molecule and basis",
+      "plot_type": "scatter",
+      "x_axis": "seed",
+      "y_axis": "delta_energy_ha",
+      "z_axis": null,
+      "series": "molecule",
+      "filters": {
+        "test": "T2_energy_invariance"
+      },
+      "log_scale_x": false,
+      "log_scale_y": true
+    },
+    {
+      "title": "Negative control: same quantity with stale labels",
+      "plot_type": "scatter",
+      "x_axis": "seed",
+      "y_axis": "delta_energy_ha",
+      "z_axis": null,
+      "series": "molecule",
+      "filters": {
+        "test": "T2_negative_control"
+      },
+      "log_scale_x": false,
+      "log_scale_y": true
+    },
+    {
+      "title": "Gradient in the removed directions on the symmetric submanifold",
+      "plot_type": "scatter",
+      "x_axis": "seed",
+      "y_axis": "grad_max_removed",
+      "z_axis": null,
+      "series": "molecule",
+      "filters": {
+        "test": "T3_removed_gradient"
+      },
+      "log_scale_x": false,
+      "log_scale_y": true
+    }
+  ]
+}

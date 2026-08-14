@@ -1,0 +1,78 @@
+{
+  "artifact_predictor_and_spread": {
+    "panels": [
+      "(a) top: number of degenerate orbital shells for the ten benchmark molecules in STO-3G, against the outcome reported in the literature",
+      "(b) bottom: filtered error measured in independent processes, one point per replicate, grouped by the BLAS thread count of the process"
+    ],
+    "elements": [
+      {
+        "artist": "filled circles",
+        "encodes": "molecules the audited work reports as failing",
+        "visual": "vermillion #D55E00 circles, 42 pt, black edge",
+        "panel": "(a)"
+      },
+      {
+        "artist": "filled squares",
+        "encodes": "molecules reported as working",
+        "visual": "blue #0072B2 squares, 42 pt, black edge",
+        "panel": "(a)"
+      },
+      {
+        "artist": "horizontal dashed line at 1.5",
+        "encodes": "the predictor threshold: two or more degenerate shells predicts failure",
+        "visual": "black dashed, 0.9 pt, labelled",
+        "panel": "(a)"
+      },
+      {
+        "artist": "panel title",
+        "encodes": "how many of the scored molecules the predictor gets right",
+        "visual": "left-aligned 7 pt text above the axes",
+        "panel": "(a)"
+      },
+      {
+        "artist": "scatter, CH4 replicates",
+        "encodes": "filtered error of one independent process; horizontal jitter is cosmetic",
+        "visual": "bluish green #009E73 circles, alpha 0.75, size 30. Panel (b) deliberately uses colours panel (a) does not, so no colour reading carries between panels",
+        "panel": "(b)"
+      },
+      {
+        "artist": "scatter, NH3 replicates",
+        "encodes": "same, for ammonia",
+        "visual": "orange #E69F00 squares, alpha 0.75, size 30",
+        "panel": "(b)"
+      },
+      {
+        "artist": "dotted horizontal line per molecule",
+        "encodes": "two coinciding quantities: the cost of the same filter when the irrep labels come from the calculation that defines the Hamiltonian, measured in the companion experiment E1, and the mean unfiltered UCCSD error over these replicates, which is the rotation-invariant control. They agree to three decimals because the filter is free when the labels are correct, so one line carries both and its label prints both numbers",
+        "visual": "dotted in the molecule's panel-(b) colour, 1.1 pt, labelled at left in 7 pt; the CH4 label sits above its line and the NH3 label below, because at 7 pt the two lines are one line of text apart",
+        "panel": "(b)"
+      },
+      {
+        "artist": "legend of (b)",
+        "encodes": "the two molecules",
+        "visual": "centre left, no frame, 7 pt",
+        "panel": "(b)"
+      }
+    ],
+    "axes": {
+      "x": "(a) molecule, none; (b) BLAS thread count of the replicate process",
+      "y": "(a) count of degenerate orbital shells; (b) filtered error in mHa",
+      "xscale": "linear",
+      "yscale": "(a) linear; (b) log"
+    },
+    "params": {
+      "basis_set": "STO-3G",
+      "geometries": "those of the audited work",
+      "replicates_per_thread_count": "10, except NH3 at one thread which has 20",
+      "degeneracy_tolerance_ha": "1e-6",
+      "reference_values_source": "experiments/2026-08-11_e1_invariant_trotter_ansatz",
+      "horizontal_jitter": "uniform +-0.05, seed 11, cosmetic only"
+    },
+    "reference_lines": [
+      "predictor threshold at 1.5 shells in (a) (dashed)",
+      "filter cost with correct labels per molecule in (b) (dotted)",
+      "unfiltered UCCSD error per molecule, coinciding with the line above"
+    ],
+    "normalization": "none; absolute counts and absolute mHa"
+  }
+}

@@ -1,0 +1,1198 @@
+{
+  "experiment_id": "2026-08-11_e2_stretched_geometries",
+  "paper_project": "2026-08_point-group-vqe-free",
+  "opportunity_reference": "opportunities.md #3",
+  "mode": "numerical+symbolic",
+  "subareas_active": [
+    "numerical",
+    "symbolic"
+  ],
+  "target_venue": "Quantum (componente do artigo principal); Comment no JCTC como item separado e posterior.",
+  "created_at": "2026-08-11T21:45:08+00:00",
+  "plan_md_hash": "sha256:03b0e5481606ce02d464246e38fb12c32231429f23208a68ed77f0f4f540202b",
+  "code_commit": "git:649d5d79",
+  "system_info_hash": "sha256:5a82b4136849e364822561e9678f90cf1d506d5ba063fa5213cccf626d377d60",
+  "runs": [
+    {
+      "run_id": 1,
+      "timestamp_start": "2026-08-11T21:45:19+00:00",
+      "timestamp_end": "2026-08-11T21:45:24+00:00",
+      "wallclock_seconds": 5.09,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 0.9,
+        "angle": 106.7,
+        "ansatz": "uccsd",
+        "n_params": 135,
+        "n_gates": 375,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 238.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.44269445436044,
+          "err_vs_fci_mha": 0.0992094735394744,
+          "delta_vs_uccsd_mha": 0.0,
+          "corr_energy_mha": -50.680099360867814,
+          "gap_s0_s1_mha": 628.120798586707
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 2,
+      "timestamp_start": "2026-08-11T21:45:24+00:00",
+      "timestamp_end": "2026-08-11T21:45:31+00:00",
+      "wallclock_seconds": 7.688,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 0.9,
+        "angle": 106.7,
+        "ansatz": "abelian",
+        "n_params": 75,
+        "n_gates": 191,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 238.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.44269445436062,
+          "err_vs_fci_mha": 0.09920947336183872,
+          "delta_vs_uccsd_mha": -1.7763568394002505e-10,
+          "corr_energy_mha": -50.680099360867814,
+          "gap_s0_s1_mha": 628.120798586707
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 3,
+      "timestamp_start": "2026-08-11T21:45:31+00:00",
+      "timestamp_end": "2026-08-11T21:45:35+00:00",
+      "wallclock_seconds": 3.685,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 0.9,
+        "angle": 106.7,
+        "ansatz": "full_c3v",
+        "n_params": 30,
+        "n_gates": 147,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 238.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.44269444926559,
+          "err_vs_fci_mha": 0.09921456839379061,
+          "delta_vs_uccsd_mha": 5.0948543162121496e-06,
+          "corr_energy_mha": -50.680099360867814,
+          "gap_s0_s1_mha": 628.120798586707
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "decomposition residual of the invariant operators 4.4e-16"
+    },
+    {
+      "run_id": 4,
+      "timestamp_start": "2026-08-11T21:45:35+00:00",
+      "timestamp_end": "2026-08-11T21:45:57+00:00",
+      "wallclock_seconds": 21.336,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 0.9,
+        "angle": 106.7,
+        "ansatz": "full_c3v_exact",
+        "n_params": 30,
+        "n_gates": "",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 238.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.442694494641046,
+          "err_vs_fci_mha": 0.09916919293573301,
+          "delta_vs_uccsd_mha": -4.028060374139386e-05,
+          "corr_energy_mha": -50.680099360867814,
+          "gap_s0_s1_mha": 628.120798586707
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 5,
+      "timestamp_start": "2026-08-11T21:46:02+00:00",
+      "timestamp_end": "2026-08-11T21:46:08+00:00",
+      "wallclock_seconds": 5.901,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.0124,
+        "angle": 106.7,
+        "ansatz": "uccsd",
+        "n_params": 135,
+        "n_gates": 375,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 241.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.51902447815214,
+          "err_vs_fci_mha": 0.17565224885629505,
+          "delta_vs_uccsd_mha": 0.0,
+          "corr_energy_mha": -65.12062208280156,
+          "gap_s0_s1_mha": 480.3864490244152
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 6,
+      "timestamp_start": "2026-08-11T21:46:08+00:00",
+      "timestamp_end": "2026-08-11T21:46:17+00:00",
+      "wallclock_seconds": 9.635,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.0124,
+        "angle": 106.7,
+        "ansatz": "abelian",
+        "n_params": 75,
+        "n_gates": 191,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 241.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.51902447815229,
+          "err_vs_fci_mha": 0.17565224870708107,
+          "delta_vs_uccsd_mha": -1.4921397450962104e-10,
+          "corr_energy_mha": -65.12062208280156,
+          "gap_s0_s1_mha": 480.3864490244152
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 7,
+      "timestamp_start": "2026-08-11T21:46:17+00:00",
+      "timestamp_end": "2026-08-11T21:46:20+00:00",
+      "wallclock_seconds": 2.963,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.0124,
+        "angle": 106.7,
+        "ansatz": "full_c3v",
+        "n_params": 30,
+        "n_gates": 165,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 241.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.519022410155316,
+          "err_vs_fci_mha": 0.17772024568074585,
+          "delta_vs_uccsd_mha": 0.002067996824450802,
+          "corr_energy_mha": -65.12062208280156,
+          "gap_s0_s1_mha": 480.3864490244152
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "decomposition residual of the invariant operators 8.9e-16"
+    },
+    {
+      "run_id": 8,
+      "timestamp_start": "2026-08-11T21:46:20+00:00",
+      "timestamp_end": "2026-08-11T21:46:42+00:00",
+      "wallclock_seconds": 21.284,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.0124,
+        "angle": 106.7,
+        "ansatz": "full_c3v_exact",
+        "n_params": 30,
+        "n_gates": "",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 241.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.51902453740035,
+          "err_vs_fci_mha": 0.17559300064817762,
+          "delta_vs_uccsd_mha": -5.924820811742393e-05,
+          "corr_energy_mha": -65.12062208280156,
+          "gap_s0_s1_mha": 480.3864490244152
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 9,
+      "timestamp_start": "2026-08-11T21:46:47+00:00",
+      "timestamp_end": "2026-08-11T21:46:57+00:00",
+      "wallclock_seconds": 9.715,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.1,
+        "angle": 106.7,
+        "ansatz": "uccsd",
+        "n_params": 135,
+        "n_gates": 375,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.52053851674119,
+          "err_vs_fci_mha": 0.2831485230743169,
+          "delta_vs_uccsd_mha": 0.0,
+          "corr_energy_mha": -79.10616277377613,
+          "gap_s0_s1_mha": 385.8787115764528
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 10,
+      "timestamp_start": "2026-08-11T21:46:57+00:00",
+      "timestamp_end": "2026-08-11T21:47:06+00:00",
+      "wallclock_seconds": 9.593,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.1,
+        "angle": 106.7,
+        "ansatz": "abelian",
+        "n_params": 75,
+        "n_gates": 191,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.520538516741205,
+          "err_vs_fci_mha": 0.28314852306010607,
+          "delta_vs_uccsd_mha": -1.4210854715202004e-11,
+          "corr_energy_mha": -79.10616277377613,
+          "gap_s0_s1_mha": 385.8787115764528
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 11,
+      "timestamp_start": "2026-08-11T21:47:06+00:00",
+      "timestamp_end": "2026-08-11T21:47:10+00:00",
+      "wallclock_seconds": 3.791,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.1,
+        "angle": 106.7,
+        "ansatz": "full_c3v",
+        "n_params": 30,
+        "n_gates": 147,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.52053853639459,
+          "err_vs_fci_mha": 0.2831288696754086,
+          "delta_vs_uccsd_mha": -1.9653398908303643e-05,
+          "corr_energy_mha": -79.10616277377613,
+          "gap_s0_s1_mha": 385.8787115764528
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "decomposition residual of the invariant operators 8.9e-16"
+    },
+    {
+      "run_id": 12,
+      "timestamp_start": "2026-08-11T21:47:10+00:00",
+      "timestamp_end": "2026-08-11T21:47:32+00:00",
+      "wallclock_seconds": 21.408,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.1,
+        "angle": 106.7,
+        "ansatz": "full_c3v_exact",
+        "n_params": 30,
+        "n_gates": "",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.52053881105418,
+          "err_vs_fci_mha": 0.28285421008433786,
+          "delta_vs_uccsd_mha": -0.00029431298997906197,
+          "corr_energy_mha": -79.10616277377613,
+          "gap_s0_s1_mha": 385.8787115764528
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 13,
+      "timestamp_start": "2026-08-11T21:47:37+00:00",
+      "timestamp_end": "2026-08-11T21:47:47+00:00",
+      "wallclock_seconds": 9.577,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.25,
+        "angle": 106.7,
+        "ansatz": "uccsd",
+        "n_params": 135,
+        "n_gates": 375,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.465204462426136,
+          "err_vs_fci_mha": 0.6032863700085045,
+          "delta_vs_uccsd_mha": 0.0,
+          "corr_energy_mha": -110.3523370901982,
+          "gap_s0_s1_mha": 260.44625458809634
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 14,
+      "timestamp_start": "2026-08-11T21:47:47+00:00",
+      "timestamp_end": "2026-08-11T21:47:58+00:00",
+      "wallclock_seconds": 11.687,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.25,
+        "angle": 106.7,
+        "ansatz": "abelian",
+        "n_params": 75,
+        "n_gates": 191,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.46520446242613,
+          "err_vs_fci_mha": 0.6032863700156099,
+          "delta_vs_uccsd_mha": 7.105427357601002e-12,
+          "corr_energy_mha": -110.3523370901982,
+          "gap_s0_s1_mha": 260.44625458809634
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 15,
+      "timestamp_start": "2026-08-11T21:47:58+00:00",
+      "timestamp_end": "2026-08-11T21:48:05+00:00",
+      "wallclock_seconds": 6.35,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.25,
+        "angle": 106.7,
+        "ansatz": "full_c3v",
+        "n_params": 30,
+        "n_gates": 147,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.46519566157157,
+          "err_vs_fci_mha": 0.612087224574509,
+          "delta_vs_uccsd_mha": 0.008800854566004546,
+          "corr_energy_mha": -110.3523370901982,
+          "gap_s0_s1_mha": 260.44625458809634
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "decomposition residual of the invariant operators 4.4e-16"
+    },
+    {
+      "run_id": 16,
+      "timestamp_start": "2026-08-11T21:48:05+00:00",
+      "timestamp_end": "2026-08-11T21:48:27+00:00",
+      "wallclock_seconds": 22.728,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.25,
+        "angle": 106.7,
+        "ansatz": "full_c3v_exact",
+        "n_params": 30,
+        "n_gates": "",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.46520806111998,
+          "err_vs_fci_mha": 0.5996876761642511,
+          "delta_vs_uccsd_mha": -0.0035986938442533756,
+          "corr_energy_mha": -110.3523370901982,
+          "gap_s0_s1_mha": 260.44625458809634
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 17,
+      "timestamp_start": "2026-08-11T21:48:33+00:00",
+      "timestamp_end": "2026-08-11T21:48:50+00:00",
+      "wallclock_seconds": 17.06,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.4,
+        "angle": 106.7,
+        "ansatz": "uccsd",
+        "n_params": 135,
+        "n_gates": 375,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.38328613492672,
+          "err_vs_fci_mha": 1.104858177825463,
+          "delta_vs_uccsd_mha": 0.0,
+          "corr_energy_mha": -153.18079553530595,
+          "gap_s0_s1_mha": 171.8172473098889
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 18,
+      "timestamp_start": "2026-08-11T21:48:50+00:00",
+      "timestamp_end": "2026-08-11T21:49:00+00:00",
+      "wallclock_seconds": 10.206,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.4,
+        "angle": 106.7,
+        "ansatz": "abelian",
+        "n_params": 75,
+        "n_gates": 191,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.38328613492743,
+          "err_vs_fci_mha": 1.1048581771149202,
+          "delta_vs_uccsd_mha": -7.105427357601002e-10,
+          "corr_energy_mha": -153.18079553530595,
+          "gap_s0_s1_mha": 171.8172473098889
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 19,
+      "timestamp_start": "2026-08-11T21:49:00+00:00",
+      "timestamp_end": "2026-08-11T21:49:07+00:00",
+      "wallclock_seconds": 7.022,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.4,
+        "angle": 106.7,
+        "ansatz": "full_c3v",
+        "n_params": 30,
+        "n_gates": 147,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.38320022683216,
+          "err_vs_fci_mha": 1.1907662723871226,
+          "delta_vs_uccsd_mha": 0.08590809456165971,
+          "corr_energy_mha": -153.18079553530595,
+          "gap_s0_s1_mha": 171.8172473098889
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "decomposition residual of the invariant operators 8.9e-16"
+    },
+    {
+      "run_id": 20,
+      "timestamp_start": "2026-08-11T21:49:07+00:00",
+      "timestamp_end": "2026-08-11T21:49:45+00:00",
+      "wallclock_seconds": 37.431,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.4,
+        "angle": 106.7,
+        "ansatz": "full_c3v_exact",
+        "n_params": 30,
+        "n_gates": "",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.38327686144088,
+          "err_vs_fci_mha": 1.1141316636624765,
+          "delta_vs_uccsd_mha": 0.009273485837013595,
+          "corr_energy_mha": -153.18079553530595,
+          "gap_s0_s1_mha": 171.8172473098889
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 21,
+      "timestamp_start": "2026-08-11T21:49:50+00:00",
+      "timestamp_end": "2026-08-11T21:50:04+00:00",
+      "wallclock_seconds": 13.529,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.6,
+        "angle": 106.7,
+        "ansatz": "uccsd",
+        "n_params": 135,
+        "n_gates": 375,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.27898801811732,
+          "err_vs_fci_mha": 2.0740421460700986,
+          "delta_vs_uccsd_mha": 0.0,
+          "corr_energy_mha": -230.53093542498004,
+          "gap_s0_s1_mha": 93.98717516388189
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 22,
+      "timestamp_start": "2026-08-11T21:50:04+00:00",
+      "timestamp_end": "2026-08-11T21:50:18+00:00",
+      "wallclock_seconds": 14.341,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.6,
+        "angle": 106.7,
+        "ansatz": "abelian",
+        "n_params": 75,
+        "n_gates": 191,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.27898801811722,
+          "err_vs_fci_mha": 2.0740421461695746,
+          "delta_vs_uccsd_mha": 9.947598300641403e-11,
+          "corr_energy_mha": -230.53093542498004,
+          "gap_s0_s1_mha": 93.98717516388189
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 23,
+      "timestamp_start": "2026-08-11T21:50:18+00:00",
+      "timestamp_end": "2026-08-11T21:50:23+00:00",
+      "wallclock_seconds": 4.994,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.6,
+        "angle": 106.7,
+        "ansatz": "full_c3v",
+        "n_params": 30,
+        "n_gates": 147,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.2782538646032,
+          "err_vs_fci_mha": 2.808195660186641,
+          "delta_vs_uccsd_mha": 0.7341535141165423,
+          "corr_energy_mha": -230.53093542498004,
+          "gap_s0_s1_mha": 93.98717516388189
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "decomposition residual of the invariant operators 8.9e-16"
+    },
+    {
+      "run_id": 24,
+      "timestamp_start": "2026-08-11T21:50:23+00:00",
+      "timestamp_end": "2026-08-11T21:50:55+00:00",
+      "wallclock_seconds": 31.777,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.6,
+        "angle": 106.7,
+        "ansatz": "full_c3v_exact",
+        "n_params": 30,
+        "n_gates": "",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.2788652425442,
+          "err_vs_fci_mha": 2.1968177191880045,
+          "delta_vs_uccsd_mha": 0.12277557311790588,
+          "corr_energy_mha": -230.53093542498004,
+          "gap_s0_s1_mha": 93.98717516388189
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 25,
+      "timestamp_start": "2026-08-11T21:51:00+00:00",
+      "timestamp_end": "2026-08-11T21:51:16+00:00",
+      "wallclock_seconds": 16.226,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.8,
+        "angle": 106.7,
+        "ansatz": "uccsd",
+        "n_params": 135,
+        "n_gates": 375,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.20032917808548,
+          "err_vs_fci_mha": 4.141769109914151,
+          "delta_vs_uccsd_mha": 0.0,
+          "corr_energy_mha": -328.557586006859,
+          "gap_s0_s1_mha": 46.446167303685115
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 26,
+      "timestamp_start": "2026-08-11T21:51:16+00:00",
+      "timestamp_end": "2026-08-11T21:51:34+00:00",
+      "wallclock_seconds": 17.137,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.8,
+        "angle": 106.7,
+        "ansatz": "abelian",
+        "n_params": 75,
+        "n_gates": 191,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.20032917808548,
+          "err_vs_fci_mha": 4.141769109914151,
+          "delta_vs_uccsd_mha": 0.0,
+          "corr_energy_mha": -328.557586006859,
+          "gap_s0_s1_mha": 46.446167303685115
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 27,
+      "timestamp_start": "2026-08-11T21:51:34+00:00",
+      "timestamp_end": "2026-08-11T21:51:42+00:00",
+      "wallclock_seconds": 8.043,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.8,
+        "angle": 106.7,
+        "ansatz": "full_c3v",
+        "n_params": 30,
+        "n_gates": 147,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.19417853344668,
+          "err_vs_fci_mha": 10.292413748715035,
+          "delta_vs_uccsd_mha": 6.150644638800884,
+          "corr_energy_mha": -328.557586006859,
+          "gap_s0_s1_mha": 46.446167303685115
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "decomposition residual of the invariant operators 4.4e-16"
+    },
+    {
+      "run_id": 28,
+      "timestamp_start": "2026-08-11T21:51:42+00:00",
+      "timestamp_end": "2026-08-11T21:52:19+00:00",
+      "wallclock_seconds": 37.119,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 1.8,
+        "angle": 106.7,
+        "ansatz": "full_c3v_exact",
+        "n_params": 30,
+        "n_gates": "",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.19648192478488,
+          "err_vs_fci_mha": 7.989022410519908,
+          "delta_vs_uccsd_mha": 3.8472533006057574,
+          "corr_energy_mha": -328.557586006859,
+          "gap_s0_s1_mha": 46.446167303685115
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 29,
+      "timestamp_start": "2026-08-11T21:52:29+00:00",
+      "timestamp_end": "2026-08-11T21:52:47+00:00",
+      "wallclock_seconds": 17.296,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 2.0,
+        "angle": 106.7,
+        "ansatz": "uccsd",
+        "n_params": 135,
+        "n_gates": 375,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.14919073033757,
+          "err_vs_fci_mha": 9.587525203045288,
+          "delta_vs_uccsd_mha": 0.0,
+          "corr_energy_mha": -439.501442877571,
+          "gap_s0_s1_mha": 20.251440765036932
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 30,
+      "timestamp_start": "2026-08-11T21:52:47+00:00",
+      "timestamp_end": "2026-08-11T21:53:00+00:00",
+      "wallclock_seconds": 13.759,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 2.0,
+        "angle": 106.7,
+        "ansatz": "abelian",
+        "n_params": 75,
+        "n_gates": 191,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.14919073033714,
+          "err_vs_fci_mha": 9.58752520347872,
+          "delta_vs_uccsd_mha": 4.334310688136611e-10,
+          "corr_energy_mha": -439.501442877571,
+          "gap_s0_s1_mha": 20.251440765036932
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 31,
+      "timestamp_start": "2026-08-11T21:53:00+00:00",
+      "timestamp_end": "2026-08-11T21:53:11+00:00",
+      "wallclock_seconds": 10.472,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 2.0,
+        "angle": 106.7,
+        "ansatz": "full_c3v",
+        "n_params": 30,
+        "n_gates": 172,
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.136596797099514,
+          "err_vs_fci_mha": 22.18145844110353,
+          "delta_vs_uccsd_mha": 12.593933238058241,
+          "corr_energy_mha": -439.501442877571,
+          "gap_s0_s1_mha": 20.251440765036932
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "decomposition residual of the invariant operators 6.7e-16"
+    },
+    {
+      "run_id": 32,
+      "timestamp_start": "2026-08-11T21:53:11+00:00",
+      "timestamp_end": "2026-08-11T21:53:56+00:00",
+      "wallclock_seconds": 44.948,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "r_nh": 2.0,
+        "angle": 106.7,
+        "ansatz": "full_c3v_exact",
+        "n_params": 30,
+        "n_gates": "",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.14225449587289,
+          "err_vs_fci_mha": 16.523759667727234,
+          "delta_vs_uccsd_mha": 6.936234464681945,
+          "corr_energy_mha": -439.501442877571,
+          "gap_s0_s1_mha": 20.251440765036932
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": ""
+    },
+    {
+      "run_id": 33,
+      "timestamp_start": "2026-08-11T21:53:56+00:00",
+      "timestamp_end": "2026-08-11T21:53:56+00:00",
+      "wallclock_seconds": 0.476,
+      "status": "failure",
+      "seed": null,
+      "parameters": {
+        "r_nh": 2.2,
+        "angle": 106.7,
+        "ansatz": "none"
+      },
+      "exit_code": 1,
+      "peak_memory_mb": 242.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {}
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "RHF did not converge; the closed-shell invariant reference the theorems require does not exist here, so the point is reported and not worked around"
+    }
+  ],
+  "summary": {
+    "n_runs_total": 33,
+    "n_runs_success": 32,
+    "n_runs_failure": 1,
+    "n_runs_aborted": 0,
+    "aggregate_metrics": {
+      "max_abs_delta_abelian_mha": 7.105427357601002e-10,
+      "max_abs_delta_full_c3v_trotter_mha": 12.593933238058241,
+      "max_abs_delta_full_c3v_exact_mha": 6.936234464681945,
+      "max_abs_delta_full_c3v_exact_near_eq_mha": 0.00029431298997906197,
+      "full_c3v_exact_by_r": {
+        "0.9": -4e-05,
+        "1.0124": -5.9e-05,
+        "1.1": -0.000294,
+        "1.25": -0.003599,
+        "1.4": 0.009273,
+        "1.6": 0.122776,
+        "1.8": 3.847253,
+        "2.0": 6.936234
+      },
+      "corr_energy_growth": "50.7 to 439.5 mHa",
+      "gap_collapse": "628.1 to 20.3 mHa",
+      "rhf_boundary_angstrom": 2.2,
+      "n_geometries": 8,
+      "cost_attribution": "The exact-exponential form carries most of that cost, so it belongs to the 30-dimensional invariant subspace and not to Trotterisation."
+    },
+    "key_findings": [
+      "across 8 geometries the Abelian filter changes the energy by at most 7.11e-10 mHa, so the claim that its deficit grows when the molecule is pulled apart does not survive",
+      "correlation energy grows over the scan (50.7 to 439.5 mHa) while the S0-S1 gap collapses (628.1 to 20.3 mHa), so the scan does reach the static-correlation regime it was meant to probe",
+      "the full C3v filter at 30 parameters departs from unfiltered UCCSD by at most 2.94e-04 mHa near equilibrium but by 6.94 mHa with exact exponentials and 12.59 mHa in tied Trotter form at the far end of the scan",
+      "RHF stops converging at 2.2 A, which is where the invariant closed-shell reference the theorems assume ceases to exist"
+    ],
+    "matches_hypothesis": "ambiguous",
+    "interpretation": "Two different statements come apart along this scan. The Abelian filter is free everywhere the reference exists, which refutes the claim it was tested against. The full non-Abelian compression is free only near equilibrium: as the gap collapses its cost grows. The exact-exponential form carries most of that cost, so it belongs to the 30-dimensional invariant subspace and not to Trotterisation. The compression claim therefore has a domain, and this scan measures where it ends."
+  }
+}

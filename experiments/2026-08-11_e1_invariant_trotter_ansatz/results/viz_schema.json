@@ -1,0 +1,42 @@
+{
+  "figures": [
+    {
+      "title": "Variational parameters by ansatz",
+      "plot_type": "bar",
+      "x_axis": "molecule",
+      "y_axis": "n_params",
+      "z_axis": null,
+      "series": "basis",
+      "filters": {},
+      "log_scale_x": false,
+      "log_scale_y": true
+    },
+    {
+      "title": "Distinct elementary gates by ansatz",
+      "plot_type": "bar",
+      "x_axis": "molecule",
+      "y_axis": "n_gates",
+      "z_axis": null,
+      "series": "basis",
+      "filters": {},
+      "log_scale_x": false,
+      "log_scale_y": true
+    },
+    {
+      "title": "Energy error under exact exponentials and under Trotter",
+      "plot_type": "bar",
+      "x_axis": "molecule",
+      "y_axis": "err_trotter_natural_mha",
+      "z_axis": null,
+      "series": "basis",
+      "filters": {
+        "basis": [
+          "abelian",
+          "full"
+        ]
+      },
+      "log_scale_x": false,
+      "log_scale_y": false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Byte fidelity is the point of this repository. The aggregate.csv files carry
+# CRLF line endings from the run environment, and their md5 sums are quoted in
+# reproduction_report.md as evidence that the published artifacts are the
+# originals. Git's default text normalisation would rewrite them on checkout and
+# silently invalidate that check, so normalisation is disabled repository-wide.
+* -text

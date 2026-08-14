@@ -1,0 +1,456 @@
+{
+  "experiment_id": "2026-08-11_e1_invariant_trotter_ansatz",
+  "paper_project": "2026-08_point-group-vqe-free",
+  "opportunity_reference": "opportunities.md #2",
+  "mode": "numerical+symbolic",
+  "subareas_active": [
+    "numerical",
+    "symbolic"
+  ],
+  "target_venue": "Quantum (componente do artigo principal); Comment no JCTC como item separado e posterior.",
+  "created_at": "2026-08-11T21:46:48+00:00",
+  "plan_md_hash": "sha256:4f56b563511466cf3a44136e2da555a10ace96c65c3fddecc265c2fb5e54ffee",
+  "code_commit": "git:649d5d79",
+  "system_info_hash": "sha256:4722fc7d033d26d74a75ffb6165caddd373fbac7ef1edff07a0c10233f16b301",
+  "runs": [
+    {
+      "run_id": 1,
+      "timestamp_start": "2026-08-11T21:46:51+00:00",
+      "timestamp_end": "2026-08-11T21:46:51+00:00",
+      "wallclock_seconds": 3.04,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "H2O / STO-3G",
+        "group": "C2v",
+        "basis": "uccsd",
+        "n_params": 65
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_fci": -75.02080247643588,
+          "err_mha": 0.12032555166285874,
+          "n_gates": 140
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unfiltered UCCSD baseline, Trotterised, spin-complemented tying"
+    },
+    {
+      "run_id": 2,
+      "timestamp_start": "2026-08-11T21:46:51+00:00",
+      "timestamp_end": "2026-08-11T21:46:51+00:00",
+      "wallclock_seconds": 3.042,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "H2O / STO-3G",
+        "group": "C2v",
+        "basis": "abelian_subset",
+        "n_params": 26,
+        "n_gates": 48
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "err_mha": 0.12032555103758114,
+          "n_gates": 48
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "the Abelian filter as the literature implements it: a subset of the UCCSD pool selected by irrep label, which is the fair circuit-size comparison for the full-group invariant ansatz"
+    },
+    {
+      "run_id": 3,
+      "timestamp_start": "2026-08-11T21:47:17+00:00",
+      "timestamp_end": "2026-08-11T21:47:17+00:00",
+      "wallclock_seconds": 26.308,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "H2O / STO-3G",
+        "group": "C2v",
+        "basis": "abelian",
+        "n_params": 26,
+        "n_gates": 54
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.6,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "err_exact_mha": 0.1198612482653516,
+          "err_trotter_natural_mha": 0.11985482714749196,
+          "err_trotter_reversed_mha": 0.11438902339477863,
+          "decomp_residual": 3.3306690738754696e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "invariant operators expressed in the pivoted {P e_j} basis; tied Trotter circuit in two gate orders"
+    },
+    {
+      "run_id": 4,
+      "timestamp_start": "2026-08-11T21:47:17+00:00",
+      "timestamp_end": "2026-08-11T21:47:17+00:00",
+      "wallclock_seconds": 26.308,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "H2O / STO-3G",
+        "group": "C2v",
+        "basis": "full",
+        "n_params": 26,
+        "n_gates": 54
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.6,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "err_exact_mha": 0.1198612482653516,
+          "err_trotter_natural_mha": 0.11985482714749196,
+          "err_trotter_reversed_mha": 0.11438902339477863,
+          "decomp_residual": 3.3306690738754696e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "invariant operators expressed in the pivoted {P e_j} basis; tied Trotter circuit in two gate orders"
+    },
+    {
+      "run_id": 5,
+      "timestamp_start": "2026-08-11T21:47:29+00:00",
+      "timestamp_end": "2026-08-11T21:47:29+00:00",
+      "wallclock_seconds": 12.54,
+      "status": "partial",
+      "seed": null,
+      "parameters": {
+        "molecule": "C2H4 / STO-3G",
+        "group": "D2h",
+        "measurement": "counts_only",
+        "reason": "determinant space about 9e6, energy infeasible"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 516.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "nparam_uccsd": 1224,
+          "nparam_abelian": 231,
+          "nparam_full": 231
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "Abelian control: full group equals the Abelian subgroup, so the additional compression must be exactly zero"
+    },
+    {
+      "run_id": 6,
+      "timestamp_start": "2026-08-11T21:47:46+00:00",
+      "timestamp_end": "2026-08-11T21:47:46+00:00",
+      "wallclock_seconds": 16.22,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "group": "C3v",
+        "basis": "uccsd",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 516.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_fci": -55.51613432931389,
+          "err_mha": 0.139207327364943,
+          "n_gates": 315
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unfiltered UCCSD baseline, Trotterised, spin-complemented tying"
+    },
+    {
+      "run_id": 7,
+      "timestamp_start": "2026-08-11T21:47:46+00:00",
+      "timestamp_end": "2026-08-11T21:47:46+00:00",
+      "wallclock_seconds": 16.221,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "group": "C3v",
+        "basis": "abelian_subset",
+        "n_params": 75,
+        "n_gates": 163
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 516.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "err_mha": 0.13920732740757558,
+          "n_gates": 163
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "the Abelian filter as the literature implements it: a subset of the UCCSD pool selected by irrep label, which is the fair circuit-size comparison for the full-group invariant ansatz"
+    },
+    {
+      "run_id": 8,
+      "timestamp_start": "2026-08-11T21:51:13+00:00",
+      "timestamp_end": "2026-08-11T21:51:13+00:00",
+      "wallclock_seconds": 206.985,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "group": "C3v",
+        "basis": "abelian",
+        "n_params": 75,
+        "n_gates": 779
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 516.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "err_exact_mha": 0.13879415687512164,
+          "err_trotter_natural_mha": 0.1462920408172863,
+          "err_trotter_reversed_mha": 0.14336220814925582,
+          "decomp_residual": 6.661338147750939e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "invariant operators expressed in the pivoted {P e_j} basis; tied Trotter circuit in two gate orders"
+    },
+    {
+      "run_id": 9,
+      "timestamp_start": "2026-08-11T21:51:13+00:00",
+      "timestamp_end": "2026-08-11T21:51:13+00:00",
+      "wallclock_seconds": 206.985,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "group": "C3v",
+        "basis": "full",
+        "n_params": 30,
+        "n_gates": 147
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 516.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "err_exact_mha": 0.14061721357450097,
+          "err_trotter_natural_mha": 0.14759001339825772,
+          "err_trotter_reversed_mha": 0.14145717037195027,
+          "decomp_residual": 4.440892098500626e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "invariant operators expressed in the pivoted {P e_j} basis; tied Trotter circuit in two gate orders"
+    },
+    {
+      "run_id": 10,
+      "timestamp_start": "2026-08-11T21:52:42+00:00",
+      "timestamp_end": "2026-08-11T21:52:42+00:00",
+      "wallclock_seconds": 89.189,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "group": "Td",
+        "basis": "uccsd",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 516.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "e_fci": -39.80603517670357,
+          "err_mha": 0.19417471538929476,
+          "n_gates": 560
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unfiltered UCCSD baseline, Trotterised, spin-complemented tying"
+    },
+    {
+      "run_id": 11,
+      "timestamp_start": "2026-08-11T21:52:42+00:00",
+      "timestamp_end": "2026-08-11T21:52:42+00:00",
+      "wallclock_seconds": 89.19,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "group": "Td",
+        "basis": "abelian_subset",
+        "n_params": 65,
+        "n_gates": 146
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 516.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "err_mha": 0.1941747154745599,
+          "n_gates": 146
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "the Abelian filter as the literature implements it: a subset of the UCCSD pool selected by irrep label, which is the fair circuit-size comparison for the full-group invariant ansatz"
+    },
+    {
+      "run_id": 12,
+      "timestamp_start": "2026-08-11T21:56:22+00:00",
+      "timestamp_end": "2026-08-11T21:56:22+00:00",
+      "wallclock_seconds": 220.08,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "group": "Td",
+        "basis": "abelian",
+        "n_params": 65,
+        "n_gates": 182
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 516.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "err_exact_mha": 0.19385769788016205,
+          "err_trotter_natural_mha": 0.19407440775154328,
+          "err_trotter_reversed_mha": 0.19368721004298095,
+          "decomp_residual": 8.881784197001252e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "invariant operators expressed in the pivoted {P e_j} basis; tied Trotter circuit in two gate orders"
+    },
+    {
+      "run_id": 13,
+      "timestamp_start": "2026-08-11T21:56:22+00:00",
+      "timestamp_end": "2026-08-11T21:56:22+00:00",
+      "wallclock_seconds": 220.08,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "group": "Td",
+        "basis": "full",
+        "n_params": 21,
+        "n_gates": 146
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 516.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "err_exact_mha": 0.19402204193852413,
+          "err_trotter_natural_mha": 0.19517103471144992,
+          "err_trotter_reversed_mha": 0.19443668578844608,
+          "decomp_residual": 4.440892098500626e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "invariant operators expressed in the pivoted {P e_j} basis; tied Trotter circuit in two gate orders"
+    }
+  ],
+  "summary": {
+    "n_runs_total": 13,
+    "n_runs_success": 12,
+    "n_runs_failure": 0,
+    "n_runs_aborted": 0,
+    "aggregate_metrics": {
+      "max_trotter_cost_mha": 0.007497883942164663,
+      "max_decomposition_residual": 8.881784197001252e-16,
+      "compression": [
+        "H2O / STO-3G: params x0.400, gates x0.386",
+        "C2H4 / STO-3G: params x0.189",
+        "NH3 / STO-3G: params x0.222, gates x0.467",
+        "CH4 / STO-3G: params x0.091, gates x0.261"
+      ]
+    },
+    "key_findings": [
+      "tying the parameters and Trotterising the invariant operators changes the energy error by at most 0.0075 mHa, two orders below chemical accuracy",
+      "each invariant operator decomposes on the elementary excitation basis with residual at most 8.9e-16, so the circuit is an exact rewriting and not an approximation",
+      "compression relative to unfiltered UCCSD: H2O / STO-3G: params x0.400, gates x0.386; C2H4 / STO-3G: params x0.189; NH3 / STO-3G: params x0.222, gates x0.467; CH4 / STO-3G: params x0.091, gates x0.261",
+      "the two Abelian controls give exactly zero additional compression"
+    ],
+    "matches_hypothesis": "supported",
+    "interpretation": "The compression is a statement about a circuit, not only about a parameter count: both the parameter count and the elementary gate count fall, and Trotterisation costs far less than the gap to FCI."
+  }
+}

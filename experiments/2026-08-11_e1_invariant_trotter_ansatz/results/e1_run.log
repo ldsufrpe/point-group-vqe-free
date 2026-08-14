@@ -1,0 +1,62 @@
+
+==============================================================================
+H2O / STO-3G  full group C2v
+  UCCSD reference: P=65 gates=140 err=0.1203 mHa  dets=441
+  SymUCCSD as a pool subset: P=26 gates=48 err=0.1203 mHa
+
+====================================================================================
+H2O / STO-3G  grupo=C2v   determinantes=441   E_FCI=-75.0208024764
+  excitações elementares distintas: 140   [1s]
+  subgrupo Abeliano   : 26 parâmetros, 54 portas elementares, resíduo máx da decomposição = 3.33e-16
+    exponenciais exatas              P=  26  err=  0.1199 mHa
+    Trotter amarrado, ordem natural  P=  26  err=  0.1199 mHa
+    Trotter amarrado, ordem invertida P=  26  err=  0.1144 mHa
+  grupo pleno         : 26 parâmetros, 54 portas elementares, resíduo máx da decomposição = 3.33e-16
+    exponenciais exatas              P=  26  err=  0.1199 mHa
+    Trotter amarrado, ordem natural  P=  26  err=  0.1199 mHa
+    Trotter amarrado, ordem invertida P=  26  err=  0.1144 mHa
+  [26s]
+
+==============================================================================
+C2H4 / STO-3G  full group D2h
+
+==============================================================================
+NH3 / STO-3G  full group C3v
+  UCCSD reference: P=135 gates=315 err=0.1392 mHa  dets=3136
+  SymUCCSD as a pool subset: P=75 gates=163 err=0.1392 mHa
+
+====================================================================================
+NH3 / STO-3G  grupo=C3v   determinantes=3136   E_FCI=-55.5161343293
+  excitações elementares distintas: 315   [4s]
+  subgrupo Abeliano   : 75 parâmetros, 779 portas elementares, resíduo máx da decomposição = 6.66e-16
+    exponenciais exatas              P=  75  err=  0.1388 mHa
+    Trotter amarrado, ordem natural  P=  75  err=  0.1463 mHa
+    Trotter amarrado, ordem invertida P=  75  err=  0.1434 mHa
+  grupo pleno         : 30 parâmetros, 147 portas elementares, resíduo máx da decomposição = 4.44e-16
+    exponenciais exatas              P=  30  err=  0.1406 mHa
+    Trotter amarrado, ordem natural  P=  30  err=  0.1476 mHa
+    Trotter amarrado, ordem invertida P=  30  err=  0.1415 mHa
+  [207s]
+
+==============================================================================
+CH4 / STO-3G  full group Td
+  UCCSD reference: P=230 gates=560 err=0.1942 mHa  dets=15876
+  SymUCCSD as a pool subset: P=65 gates=146 err=0.1942 mHa
+
+====================================================================================
+CH4 / STO-3G  grupo=Td   determinantes=15876   E_FCI=-39.8060351767
+  excitações elementares distintas: 560   [37s]
+  subgrupo Abeliano   : 65 parâmetros, 182 portas elementares, resíduo máx da decomposição = 8.88e-16
+    exponenciais exatas              P=  65  err=  0.1939 mHa
+    Trotter amarrado, ordem natural  P=  65  err=  0.1941 mHa
+    Trotter amarrado, ordem invertida P=  65  err=  0.1937 mHa
+  grupo pleno         : 21 parâmetros, 146 portas elementares, resíduo máx da decomposição = 4.44e-16
+    exponenciais exatas              P=  21  err=  0.1940 mHa
+    Trotter amarrado, ordem natural  P=  21  err=  0.1952 mHa
+    Trotter amarrado, ordem invertida P=  21  err=  0.1944 mHa
+  [220s]
+
+=== E1 summary ===
+  max_trotter_cost_mha             0.007497883942164663
+  max_decomposition_residual       8.881784197001252e-16
+  compression                      ['H2O / STO-3G: params x0.400, gates x0.386', 'C2H4 / STO-3G: params x0.189', 'NH3 / STO-3G: params x0.222, gates x0.467', 'CH4 / STO-3G: params x0.091, gates x0.261']

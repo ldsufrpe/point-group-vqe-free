@@ -1,0 +1,25 @@
+
+structural predictor: 10 of 10 scored comparisons (STO-3G only; the 6-31G rows carry no published per-molecule outcome to score against and are reported as predictions)
+
+  NOTE — undersampled arms: CH4 at 8 BLAS threads: 6 of 10 requested
+
+=== E7 summary ===
+  predictor_hits                   10
+  predictor_scored                 10
+  CH4_n_replicates                 36
+  CH4_err_sym_mha_min              15.921550178752852
+  CH4_err_sym_mha_max              49.721568533421134
+  CH4_err_sym_mha_mean             39.869913427436494
+  CH4_err_sym_mha_std              9.612091571846582
+  CH4_n_distinct_values            27
+  CH4_err_uccsd_mha_spread         0.0001673562266546469
+  CH4_by_blas_threads              {1: {'n': 10, 'n_distinct': 1, 'min': 49.7216, 'max': 49.7216}, 2: {'n': 10, 'n_distinct': 10, 'min': 15.9216, 'max': 46.637}, 4: {'n': 10, 'n_distinct': 10, 'min': 18.0014, 'max': 44.8292}, 8: {'n': 6, 'n_distinct': 6, 'min': 31.8412, 'max': 46.6143}}
+  NH3_n_replicates                 50
+  NH3_err_sym_mha_min              29.256819149722446
+  NH3_err_sym_mha_max              29.25681923068879
+  NH3_err_sym_mha_mean             29.256819158629956
+  NH3_err_sym_mha_std              1.550609334086949e-08
+  NH3_n_distinct_values            1
+  NH3_err_uccsd_mha_spread         2.0179413695586845e-09
+  NH3_by_blas_threads              {1: {'n': 20, 'n_distinct': 1, 'min': 29.2568, 'max': 29.2568}, 2: {'n': 10, 'n_distinct': 1, 'min': 29.2568, 'max': 29.2568}, 4: {'n': 10, 'n_distinct': 1, 'min': 29.2568, 'max': 29.2568}, 8: {'n': 10, 'n_distinct': 1, 'min': 29.2568, 'max': 29.2568}}
+  undersampled_arms                ['CH4 at 8 BLAS threads: 6 of 10 requested']

@@ -1,0 +1,9 @@
+[nh3] group=Cs (topgroup C3v) dets=3136 P=135 |S|=75 |A|=60 elems=[1] setup=2.6s
+[ch4] group=D2 (topgroup Td) dets=15876 P=230 |S|=65 |A|=165 elems=[1, 2, 3] setup=15.9s
+
+=== E4 summary ===
+  max_delta_energy_ha              5.286437954055145e-12
+  max_state_residual               0.0
+  max_grad_removed                 2.1504810831731472e-10
+  control_max_delta_energy_ha      0.008105092251668111
+  n_theta_samples                  80

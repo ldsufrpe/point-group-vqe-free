@@ -1,0 +1,77 @@
+{
+  "compression_params_gates": {
+    "panels": [
+      "upper (no letter drawn): number of variational parameters of each ansatz",
+      "lower (no letter drawn): number of distinct elementary excitation operators of the same ansaetze; shared x axis with (a). NOT a two-qubit gate count: Tab:unitary disclaims that reading explicitly"
+    ],
+    "elements": [
+      {
+        "artist": "bar group 1 (leftmost of each tick)",
+        "encodes": "unfiltered singlet UCCSD",
+        "visual": "black #000000 bars, 0.4 pt black edge",
+        "panel": "all"
+      },
+      {
+        "artist": "bar group 2",
+        "encodes": "the Abelian filter built as a subset of the UCCSD pool selected by irrep label, which is how the literature implements SymUCCSD",
+        "visual": "blue #0072B2 bars",
+        "panel": "all"
+      },
+      {
+        "artist": "bar group 3",
+        "encodes": "the Abelian filter built instead from projector-derived invariant operators",
+        "visual": "sky blue #56B4E9 bars",
+        "panel": "all"
+      },
+      {
+        "artist": "bar group 4 (rightmost)",
+        "encodes": "the full point group, built from projector-derived invariant operators in the pivoted {P e_j} basis",
+        "visual": "bluish green #009E73 bars with a /// hatch, which separates them from the pool-subset blue in grayscale",
+        "panel": "all"
+      },
+      {
+        "artist": "numeric label above every bar",
+        "encodes": "the exact count",
+        "visual": "black text, 7 pt, rotated 90 degrees",
+        "panel": "all"
+      },
+      {
+        "artist": "missing pool-subset bar at the C2H4 tick, upper panel",
+        "encodes": "the pool-subset count was not computed for C2H4, which was measured by character counting only",
+        "visual": "an empty slot carrying a grey 'n/a' label, 7 pt, rotated 90 degrees. The label is required because the log axis is floored at 10^0, where an absent bar is otherwise pixel-identical to a bar of value 1",
+        "panel": "upper"
+      },
+      {
+        "artist": "missing bars at the C2H4 tick in (b)",
+        "encodes": "gate counts and energies were not computed for C2H4",
+        "visual": "absence, explained by the grey note below",
+        "panel": "(b)"
+      },
+      {
+        "artist": "grey note under the C2H4 tick",
+        "encodes": "why C2H4 carries counts only",
+        "visual": "grey text, 7 pt",
+        "panel": "(b)"
+      },
+      {
+        "artist": "legend",
+        "encodes": "the four ansaetze",
+        "visual": "above the (a) axes, two columns, no frame, 7 pt",
+        "panel": "(a)"
+      }
+    ],
+    "axes": {
+      "x": "molecule and its full point group, none (shared)",
+      "y": "(a) count of variational parameters; (b) count of distinct elementary excitation operators",
+      "xscale": "linear",
+      "yscale": "log in both panels"
+    },
+    "params": {
+      "basis_set": "STO-3G",
+      "optimiser": "L-BFGS-B, ftol 1e-16, gtol 1e-11",
+      "h2o_and_c2h4_role": "Abelian controls: their full group is already Abelian, so groups 3 and 4 must be equal",
+      "gate_definition": "distinct elementary excitation operators, not two-qubit gates; no device decomposition was done"
+    },
+    "normalization": "none; absolute counts"
+  }
+}

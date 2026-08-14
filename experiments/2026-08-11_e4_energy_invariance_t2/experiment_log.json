@@ -1,0 +1,3058 @@
+{
+  "experiment_id": "2026-08-11_e4_energy_invariance_t2",
+  "paper_project": "2026-08_point-group-vqe-free",
+  "opportunity_reference": "opportunities.md #3",
+  "mode": "numerical+symbolic",
+  "subareas_active": [
+    "numerical",
+    "symbolic"
+  ],
+  "target_venue": "Quantum (componente do artigo principal); Comment no JCTC como item separado e posterior.",
+  "created_at": "2026-08-11T21:30:47+00:00",
+  "plan_md_hash": "sha256:9abde5fc4766bea2d0475ddaefee2cea2e142f5bb9ec0b435f8fc0d9406cc466",
+  "code_commit": "git:649d5d79",
+  "system_info_hash": "sha256:f177077e356fee495e9c74a35fc125113cbd0e6fecc2a3fc75a783272f075bfb",
+  "runs": [
+    {
+      "run_id": 1,
+      "timestamp_start": "2026-08-11T21:30:50+00:00",
+      "timestamp_end": "2026-08-11T21:30:50+00:00",
+      "wallclock_seconds": 0.054,
+      "status": "success",
+      "seed": 1000,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.40992571052039,
+          "max_delta_energy_ha": 2.6716406864579767e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 2,
+      "timestamp_start": "2026-08-11T21:30:50+00:00",
+      "timestamp_end": "2026-08-11T21:30:50+00:00",
+      "wallclock_seconds": 0.054,
+      "status": "success",
+      "seed": 1001,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.93106450315765,
+          "max_delta_energy_ha": 4.874323167314287e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 3,
+      "timestamp_start": "2026-08-11T21:30:50+00:00",
+      "timestamp_end": "2026-08-11T21:30:50+00:00",
+      "wallclock_seconds": 0.053,
+      "status": "success",
+      "seed": 1002,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -41.29884668363414,
+          "max_delta_energy_ha": 2.7071678232459817e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 4,
+      "timestamp_start": "2026-08-11T21:30:50+00:00",
+      "timestamp_end": "2026-08-11T21:30:50+00:00",
+      "wallclock_seconds": 0.055,
+      "status": "success",
+      "seed": 1003,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -41.07159445986713,
+          "max_delta_energy_ha": 1.6129320101754274e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 5,
+      "timestamp_start": "2026-08-11T21:30:50+00:00",
+      "timestamp_end": "2026-08-11T21:30:50+00:00",
+      "wallclock_seconds": 0.052,
+      "status": "success",
+      "seed": 1004,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.92971408837336,
+          "max_delta_energy_ha": 7.247535904753022e-13,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 6,
+      "timestamp_start": "2026-08-11T21:30:50+00:00",
+      "timestamp_end": "2026-08-11T21:30:50+00:00",
+      "wallclock_seconds": 0.057,
+      "status": "success",
+      "seed": 1005,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -41.819686428464856,
+          "max_delta_energy_ha": 2.0108359422010835e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 7,
+      "timestamp_start": "2026-08-11T21:30:50+00:00",
+      "timestamp_end": "2026-08-11T21:30:50+00:00",
+      "wallclock_seconds": 0.053,
+      "status": "success",
+      "seed": 1006,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -41.0774218796146,
+          "max_delta_energy_ha": 1.6271428648906294e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 8,
+      "timestamp_start": "2026-08-11T21:30:50+00:00",
+      "timestamp_end": "2026-08-11T21:30:50+00:00",
+      "wallclock_seconds": 0.076,
+      "status": "success",
+      "seed": 1007,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.267724570481704,
+          "max_delta_energy_ha": 8.526512829121202e-14,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 9,
+      "timestamp_start": "2026-08-11T21:30:50+00:00",
+      "timestamp_end": "2026-08-11T21:30:50+00:00",
+      "wallclock_seconds": 0.056,
+      "status": "success",
+      "seed": 1008,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -38.97873939157306,
+          "max_delta_energy_ha": 1.4210854715202004e-14,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 10,
+      "timestamp_start": "2026-08-11T21:30:50+00:00",
+      "timestamp_end": "2026-08-11T21:30:50+00:00",
+      "wallclock_seconds": 0.058,
+      "status": "success",
+      "seed": 1009,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.25639562407885,
+          "max_delta_energy_ha": 1.4281908988778014e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 11,
+      "timestamp_start": "2026-08-11T21:30:50+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.053,
+      "status": "success",
+      "seed": 1010,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.43147401446664,
+          "max_delta_energy_ha": 2.6645352591003757e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 12,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.058,
+      "status": "success",
+      "seed": 1011,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.41715755160524,
+          "max_delta_energy_ha": 4.526157226791838e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 13,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.052,
+      "status": "success",
+      "seed": 1012,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.876083399640166,
+          "max_delta_energy_ha": 1.0516032489249483e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 14,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.052,
+      "status": "success",
+      "seed": 1013,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -41.008538372147925,
+          "max_delta_energy_ha": 3.623767952376511e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 15,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.052,
+      "status": "success",
+      "seed": 1014,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -41.87990806761714,
+          "max_delta_energy_ha": 2.1742607714259066e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 16,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.059,
+      "status": "success",
+      "seed": 1015,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -39.28521381564368,
+          "max_delta_energy_ha": 3.765876499528531e-13,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 17,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.052,
+      "status": "success",
+      "seed": 1016,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -41.32883131305131,
+          "max_delta_energy_ha": 1.2789769243681803e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 18,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.054,
+      "status": "success",
+      "seed": 1017,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.39147024453323,
+          "max_delta_energy_ha": 2.2737367544323206e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 19,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.056,
+      "status": "success",
+      "seed": 1018,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.91824969543099,
+          "max_delta_energy_ha": 5.286437954055145e-12,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 20,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.054,
+      "status": "success",
+      "seed": 1019,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 135,
+        "elements": [
+          1
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.5,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.74274728067017,
+          "max_delta_energy_ha": 7.744915819785092e-13,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 21,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.042,
+      "status": "success",
+      "seed": 1500,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "theta=0",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -55.45407950831821,
+          "grad_max_removed": 2.1504810831731472e-10,
+          "grad_max_kept": 1.0727071330520923
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 22,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.042,
+      "status": "success",
+      "seed": 1501,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -43.827039653599925,
+          "grad_max_removed": 1.494567735404033e-11,
+          "grad_max_kept": 10.33306981129922
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 23,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.042,
+      "status": "success",
+      "seed": 1502,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.64477783003409,
+          "grad_max_removed": 1.2653315937688731e-11,
+          "grad_max_kept": 6.9751928478598275
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 24,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.041,
+      "status": "success",
+      "seed": 1503,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -42.37038625487,
+          "grad_max_removed": 1.0255275334351418e-11,
+          "grad_max_kept": 8.045027875364855
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 25,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.046,
+      "status": "success",
+      "seed": 1504,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.682157395921664,
+          "grad_max_removed": 1.6996999530392308e-11,
+          "grad_max_kept": 5.136645220104477
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 26,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.042,
+      "status": "success",
+      "seed": 1505,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.329577498778434,
+          "grad_max_removed": 1.6742924313829106e-11,
+          "grad_max_kept": 6.888324182601121
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 27,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.042,
+      "status": "success",
+      "seed": 1506,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.938880659444315,
+          "grad_max_removed": 1.2383726879364619e-11,
+          "grad_max_kept": 7.307112151433712
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 28,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.045,
+      "status": "success",
+      "seed": 1507,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -39.02570111050761,
+          "grad_max_removed": 1.8931083245984758e-11,
+          "grad_max_kept": 12.426929849717771
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 29,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.041,
+      "status": "success",
+      "seed": 1508,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.07871788274519,
+          "grad_max_removed": 1.1205925306679148e-11,
+          "grad_max_kept": 10.857693671219065
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 30,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:51+00:00",
+      "wallclock_seconds": 0.046,
+      "status": "success",
+      "seed": 1509,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -42.51545720588088,
+          "grad_max_removed": 1.467302188435532e-11,
+          "grad_max_kept": 9.736281205803074
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 31,
+      "timestamp_start": "2026-08-11T21:30:51+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.041,
+      "status": "success",
+      "seed": 1510,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.24543575386185,
+          "grad_max_removed": 1.3551204806812944e-11,
+          "grad_max_kept": 15.287140479390711
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 32,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.045,
+      "status": "success",
+      "seed": 1511,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -42.081282738343106,
+          "grad_max_removed": 8.545374026913336e-12,
+          "grad_max_kept": 6.411246179149563
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 33,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.042,
+      "status": "success",
+      "seed": 1512,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.89863702137761,
+          "grad_max_removed": 9.298635026503673e-12,
+          "grad_max_kept": 7.81553897300234
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 34,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.041,
+      "status": "success",
+      "seed": 1513,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -43.084371210696915,
+          "grad_max_removed": 1.0365092370463794e-11,
+          "grad_max_kept": 6.678711588932059
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 35,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.045,
+      "status": "success",
+      "seed": 1514,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -43.808617785849975,
+          "grad_max_removed": 1.682949305858722e-11,
+          "grad_max_kept": 16.139959960911586
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 36,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.042,
+      "status": "success",
+      "seed": 1515,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -42.921961069162776,
+          "grad_max_removed": 1.4470346559006001e-11,
+          "grad_max_kept": 8.895662739106637
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 37,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.041,
+      "status": "success",
+      "seed": 1516,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -41.95171959961673,
+          "grad_max_removed": 1.0003148627445174e-11,
+          "grad_max_kept": 10.889514832274369
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 38,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.042,
+      "status": "success",
+      "seed": 1517,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -41.68441084103863,
+          "grad_max_removed": 1.417087401336596e-11,
+          "grad_max_kept": 5.3737571172403795
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 39,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.041,
+      "status": "success",
+      "seed": 1518,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -39.145251442668254,
+          "grad_max_removed": 1.153907071631817e-11,
+          "grad_max_kept": 3.7427912046787357
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 40,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.043,
+      "status": "success",
+      "seed": 1519,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 242.7,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.13636993796056,
+          "grad_max_removed": 1.3041666714894809e-11,
+          "grad_max_kept": 14.56676995707047
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 41,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.032,
+      "status": "success",
+      "seed": 1900,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_negative_control",
+        "basis": "rotated_30deg",
+        "rotated_pair": [
+          2,
+          3
+        ],
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 245.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.68283728854867,
+          "max_delta_energy_ha": 0.005026193745514718
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "labels deliberately stale after rotating a degenerate pair; the hypothesis of T2 does not hold here"
+    },
+    {
+      "run_id": 42,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.032,
+      "status": "success",
+      "seed": 1901,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_negative_control",
+        "basis": "rotated_30deg",
+        "rotated_pair": [
+          2,
+          3
+        ],
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 245.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.09762493977414,
+          "max_delta_energy_ha": 0.00048496649117169
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "labels deliberately stale after rotating a degenerate pair; the hypothesis of T2 does not hold here"
+    },
+    {
+      "run_id": 43,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:52+00:00",
+      "wallclock_seconds": 0.035,
+      "status": "success",
+      "seed": 1902,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_negative_control",
+        "basis": "rotated_30deg",
+        "rotated_pair": [
+          2,
+          3
+        ],
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 245.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -41.29396394580989,
+          "max_delta_energy_ha": 0.005425640779662899
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "labels deliberately stale after rotating a degenerate pair; the hypothesis of T2 does not hold here"
+    },
+    {
+      "run_id": 44,
+      "timestamp_start": "2026-08-11T21:30:52+00:00",
+      "timestamp_end": "2026-08-11T21:30:53+00:00",
+      "wallclock_seconds": 0.034,
+      "status": "success",
+      "seed": 1903,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_negative_control",
+        "basis": "rotated_30deg",
+        "rotated_pair": [
+          2,
+          3
+        ],
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 245.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.68085203262666,
+          "max_delta_energy_ha": 5.570355512674041e-05
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "labels deliberately stale after rotating a degenerate pair; the hypothesis of T2 does not hold here"
+    },
+    {
+      "run_id": 45,
+      "timestamp_start": "2026-08-11T21:30:53+00:00",
+      "timestamp_end": "2026-08-11T21:30:53+00:00",
+      "wallclock_seconds": 0.031,
+      "status": "success",
+      "seed": 1904,
+      "parameters": {
+        "molecule": "NH3",
+        "test": "T2_negative_control",
+        "basis": "rotated_30deg",
+        "rotated_pair": [
+          2,
+          3
+        ],
+        "n_params": 135
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 245.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -40.71830537993721,
+          "max_delta_energy_ha": 0.003732654096374688
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "labels deliberately stale after rotating a degenerate pair; the hypothesis of T2 does not hold here"
+    },
+    {
+      "run_id": 46,
+      "timestamp_start": "2026-08-11T21:31:09+00:00",
+      "timestamp_end": "2026-08-11T21:31:09+00:00",
+      "wallclock_seconds": 0.607,
+      "status": "success",
+      "seed": 1000,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 331.9,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.582515189549387,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 47,
+      "timestamp_start": "2026-08-11T21:31:09+00:00",
+      "timestamp_end": "2026-08-11T21:31:10+00:00",
+      "wallclock_seconds": 0.653,
+      "status": "success",
+      "seed": 1001,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -25.490202836022956,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 48,
+      "timestamp_start": "2026-08-11T21:31:10+00:00",
+      "timestamp_end": "2026-08-11T21:31:10+00:00",
+      "wallclock_seconds": 0.658,
+      "status": "success",
+      "seed": 1002,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.314729974762674,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 49,
+      "timestamp_start": "2026-08-11T21:31:10+00:00",
+      "timestamp_end": "2026-08-11T21:31:11+00:00",
+      "wallclock_seconds": 0.646,
+      "status": "success",
+      "seed": 1003,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.6468669451433,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 50,
+      "timestamp_start": "2026-08-11T21:31:11+00:00",
+      "timestamp_end": "2026-08-11T21:31:12+00:00",
+      "wallclock_seconds": 0.662,
+      "status": "success",
+      "seed": 1004,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -25.770073140025577,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 51,
+      "timestamp_start": "2026-08-11T21:31:12+00:00",
+      "timestamp_end": "2026-08-11T21:31:12+00:00",
+      "wallclock_seconds": 0.638,
+      "status": "success",
+      "seed": 1005,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -25.944362300168716,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 52,
+      "timestamp_start": "2026-08-11T21:31:12+00:00",
+      "timestamp_end": "2026-08-11T21:31:13+00:00",
+      "wallclock_seconds": 0.602,
+      "status": "success",
+      "seed": 1006,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -25.751299355870113,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 53,
+      "timestamp_start": "2026-08-11T21:31:13+00:00",
+      "timestamp_end": "2026-08-11T21:31:14+00:00",
+      "wallclock_seconds": 0.605,
+      "status": "success",
+      "seed": 1007,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.437523449610524,
+          "max_delta_energy_ha": 3.552713678800501e-15,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 54,
+      "timestamp_start": "2026-08-11T21:31:14+00:00",
+      "timestamp_end": "2026-08-11T21:31:14+00:00",
+      "wallclock_seconds": 0.607,
+      "status": "success",
+      "seed": 1008,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.26308155489041,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 55,
+      "timestamp_start": "2026-08-11T21:31:14+00:00",
+      "timestamp_end": "2026-08-11T21:31:15+00:00",
+      "wallclock_seconds": 0.6,
+      "status": "success",
+      "seed": 1009,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.825206590758846,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 56,
+      "timestamp_start": "2026-08-11T21:31:15+00:00",
+      "timestamp_end": "2026-08-11T21:31:15+00:00",
+      "wallclock_seconds": 0.615,
+      "status": "success",
+      "seed": 1010,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.23002114528173,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 57,
+      "timestamp_start": "2026-08-11T21:31:15+00:00",
+      "timestamp_end": "2026-08-11T21:31:16+00:00",
+      "wallclock_seconds": 0.644,
+      "status": "success",
+      "seed": 1011,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.394403947703708,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 58,
+      "timestamp_start": "2026-08-11T21:31:16+00:00",
+      "timestamp_end": "2026-08-11T21:31:17+00:00",
+      "wallclock_seconds": 0.704,
+      "status": "success",
+      "seed": 1012,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.453758609623847,
+          "max_delta_energy_ha": 3.552713678800501e-15,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 59,
+      "timestamp_start": "2026-08-11T21:31:17+00:00",
+      "timestamp_end": "2026-08-11T21:31:18+00:00",
+      "wallclock_seconds": 0.693,
+      "status": "success",
+      "seed": 1013,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -25.9080932193575,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 60,
+      "timestamp_start": "2026-08-11T21:31:18+00:00",
+      "timestamp_end": "2026-08-11T21:31:18+00:00",
+      "wallclock_seconds": 0.68,
+      "status": "success",
+      "seed": 1014,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.913934052408294,
+          "max_delta_energy_ha": 3.552713678800501e-15,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 61,
+      "timestamp_start": "2026-08-11T21:31:18+00:00",
+      "timestamp_end": "2026-08-11T21:31:19+00:00",
+      "wallclock_seconds": 0.714,
+      "status": "success",
+      "seed": 1015,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -25.95770507695911,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 62,
+      "timestamp_start": "2026-08-11T21:31:19+00:00",
+      "timestamp_end": "2026-08-11T21:31:20+00:00",
+      "wallclock_seconds": 0.692,
+      "status": "success",
+      "seed": 1016,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -25.967000196884314,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 63,
+      "timestamp_start": "2026-08-11T21:31:20+00:00",
+      "timestamp_end": "2026-08-11T21:31:20+00:00",
+      "wallclock_seconds": 0.652,
+      "status": "success",
+      "seed": 1017,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.069698594754808,
+          "max_delta_energy_ha": 3.552713678800501e-15,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 64,
+      "timestamp_start": "2026-08-11T21:31:20+00:00",
+      "timestamp_end": "2026-08-11T21:31:21+00:00",
+      "wallclock_seconds": 0.646,
+      "status": "success",
+      "seed": 1018,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.966638434541924,
+          "max_delta_energy_ha": 0.0,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 65,
+      "timestamp_start": "2026-08-11T21:31:21+00:00",
+      "timestamp_end": "2026-08-11T21:31:22+00:00",
+      "wallclock_seconds": 0.67,
+      "status": "success",
+      "seed": 1019,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_T1",
+        "basis": "adapted",
+        "theta_scale": 0.5,
+        "n_params": 230,
+        "elements": [
+          1,
+          2,
+          3
+        ]
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.151608667465954,
+          "max_delta_energy_ha": 3.552713678800501e-15,
+          "max_state_residual": 0.0
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "theta drawn off the symmetric submanifold; both T2 and T1 measured"
+    },
+    {
+      "run_id": 66,
+      "timestamp_start": "2026-08-11T21:31:22+00:00",
+      "timestamp_end": "2026-08-11T21:31:22+00:00",
+      "wallclock_seconds": 0.255,
+      "status": "success",
+      "seed": 1500,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "theta=0",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -39.72681011479772,
+          "grad_max_removed": 2.321466883643639e-15,
+          "grad_max_kept": 0.8139589291814261
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 67,
+      "timestamp_start": "2026-08-11T21:31:22+00:00",
+      "timestamp_end": "2026-08-11T21:31:22+00:00",
+      "wallclock_seconds": 0.238,
+      "status": "success",
+      "seed": 1501,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.26634136239824,
+          "grad_max_removed": 3.716921438813558e-16,
+          "grad_max_kept": 3.587432261348415
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 68,
+      "timestamp_start": "2026-08-11T21:31:22+00:00",
+      "timestamp_end": "2026-08-11T21:31:22+00:00",
+      "wallclock_seconds": 0.246,
+      "status": "success",
+      "seed": 1502,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.024555713548843,
+          "grad_max_removed": 5.523113755151243e-16,
+          "grad_max_kept": 4.792654822507693
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 69,
+      "timestamp_start": "2026-08-11T21:31:22+00:00",
+      "timestamp_end": "2026-08-11T21:31:23+00:00",
+      "wallclock_seconds": 0.271,
+      "status": "success",
+      "seed": 1503,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.583313724761698,
+          "grad_max_removed": 3.637196364808088e-16,
+          "grad_max_kept": 6.631200690878842
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 70,
+      "timestamp_start": "2026-08-11T21:31:23+00:00",
+      "timestamp_end": "2026-08-11T21:31:23+00:00",
+      "wallclock_seconds": 0.25,
+      "status": "success",
+      "seed": 1504,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -28.973427153935955,
+          "grad_max_removed": 4.3269459433671914e-16,
+          "grad_max_kept": 11.361893376841172
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 71,
+      "timestamp_start": "2026-08-11T21:31:23+00:00",
+      "timestamp_end": "2026-08-11T21:31:23+00:00",
+      "wallclock_seconds": 0.238,
+      "status": "success",
+      "seed": 1505,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -24.276991993306087,
+          "grad_max_removed": 2.766259859040319e-16,
+          "grad_max_kept": 5.028312629408277
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 72,
+      "timestamp_start": "2026-08-11T21:31:23+00:00",
+      "timestamp_end": "2026-08-11T21:31:23+00:00",
+      "wallclock_seconds": 0.255,
+      "status": "success",
+      "seed": 1506,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.3,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.14804523659144,
+          "grad_max_removed": 2.1473781523003168e-16,
+          "grad_max_kept": 4.640338827081789
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 73,
+      "timestamp_start": "2026-08-11T21:31:23+00:00",
+      "timestamp_end": "2026-08-11T21:31:24+00:00",
+      "wallclock_seconds": 0.254,
+      "status": "success",
+      "seed": 1507,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -29.30175052461048,
+          "grad_max_removed": 4.3722659739236513e-16,
+          "grad_max_kept": 5.1598320495647005
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 74,
+      "timestamp_start": "2026-08-11T21:31:24+00:00",
+      "timestamp_end": "2026-08-11T21:31:24+00:00",
+      "wallclock_seconds": 0.264,
+      "status": "success",
+      "seed": 1508,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.44087352912738,
+          "grad_max_removed": 3.743242155048932e-16,
+          "grad_max_kept": 5.078045946811045
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 75,
+      "timestamp_start": "2026-08-11T21:31:24+00:00",
+      "timestamp_end": "2026-08-11T21:31:24+00:00",
+      "wallclock_seconds": 0.261,
+      "status": "success",
+      "seed": 1509,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -27.968892420016196,
+          "grad_max_removed": 3.7195323107940515e-16,
+          "grad_max_kept": 6.038221402141948
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 76,
+      "timestamp_start": "2026-08-11T21:31:24+00:00",
+      "timestamp_end": "2026-08-11T21:31:24+00:00",
+      "wallclock_seconds": 0.309,
+      "status": "success",
+      "seed": 1510,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -25.847196274428338,
+          "grad_max_removed": 2.5416269134790294e-16,
+          "grad_max_kept": 4.670411857235312
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 77,
+      "timestamp_start": "2026-08-11T21:31:24+00:00",
+      "timestamp_end": "2026-08-11T21:31:25+00:00",
+      "wallclock_seconds": 0.241,
+      "status": "success",
+      "seed": 1511,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -25.468027977717938,
+          "grad_max_removed": 5.458579424513451e-16,
+          "grad_max_kept": 5.410418738178574
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 78,
+      "timestamp_start": "2026-08-11T21:31:25+00:00",
+      "timestamp_end": "2026-08-11T21:31:25+00:00",
+      "wallclock_seconds": 0.225,
+      "status": "success",
+      "seed": 1512,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -27.068008946052633,
+          "grad_max_removed": 5.667547064405187e-16,
+          "grad_max_kept": 3.152700938626266
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 79,
+      "timestamp_start": "2026-08-11T21:31:25+00:00",
+      "timestamp_end": "2026-08-11T21:31:25+00:00",
+      "wallclock_seconds": 0.25,
+      "status": "success",
+      "seed": 1513,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -25.986124368587298,
+          "grad_max_removed": 2.699045923619585e-16,
+          "grad_max_kept": 2.867059371894375
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 80,
+      "timestamp_start": "2026-08-11T21:31:25+00:00",
+      "timestamp_end": "2026-08-11T21:31:25+00:00",
+      "wallclock_seconds": 0.233,
+      "status": "success",
+      "seed": 1514,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.839062092711554,
+          "grad_max_removed": 3.461069592948789e-16,
+          "grad_max_kept": 3.4813498080297656
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 81,
+      "timestamp_start": "2026-08-11T21:31:25+00:00",
+      "timestamp_end": "2026-08-11T21:31:26+00:00",
+      "wallclock_seconds": 0.254,
+      "status": "success",
+      "seed": 1515,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -25.854585111337816,
+          "grad_max_removed": 3.985812276331916e-16,
+          "grad_max_kept": 6.169776336133211
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 82,
+      "timestamp_start": "2026-08-11T21:31:26+00:00",
+      "timestamp_end": "2026-08-11T21:31:26+00:00",
+      "wallclock_seconds": 0.25,
+      "status": "success",
+      "seed": 1516,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -25.89272933040091,
+          "grad_max_removed": 3.0158651660573946e-16,
+          "grad_max_kept": 4.071394811263791
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 83,
+      "timestamp_start": "2026-08-11T21:31:26+00:00",
+      "timestamp_end": "2026-08-11T21:31:26+00:00",
+      "wallclock_seconds": 0.24,
+      "status": "success",
+      "seed": 1517,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.167716276810662,
+          "grad_max_removed": 2.469488139969544e-16,
+          "grad_max_kept": 4.724523375326803
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 84,
+      "timestamp_start": "2026-08-11T21:31:26+00:00",
+      "timestamp_end": "2026-08-11T21:31:26+00:00",
+      "wallclock_seconds": 0.248,
+      "status": "success",
+      "seed": 1518,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -28.462735537414282,
+          "grad_max_removed": 4.976259092324406e-16,
+          "grad_max_kept": 4.735265147174794
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 85,
+      "timestamp_start": "2026-08-11T21:31:26+00:00",
+      "timestamp_end": "2026-08-11T21:31:27+00:00",
+      "wallclock_seconds": 0.255,
+      "status": "success",
+      "seed": 1519,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T3_gradient",
+        "point": "random theta_S",
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 332.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.090051936484198,
+          "grad_max_removed": 2.7325622431769435e-16,
+          "grad_max_kept": 3.537262389178453
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "gradient evaluated on the symmetric submanifold"
+    },
+    {
+      "run_id": 86,
+      "timestamp_start": "2026-08-11T21:31:30+00:00",
+      "timestamp_end": "2026-08-11T21:31:30+00:00",
+      "wallclock_seconds": 0.387,
+      "status": "success",
+      "seed": 1900,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_negative_control",
+        "basis": "rotated_30deg",
+        "rotated_pair": [
+          2,
+          3
+        ],
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 347.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.65457962891057,
+          "max_delta_energy_ha": 0.003520489522447434
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "labels deliberately stale after rotating a degenerate pair; the hypothesis of T2 does not hold here"
+    },
+    {
+      "run_id": 87,
+      "timestamp_start": "2026-08-11T21:31:30+00:00",
+      "timestamp_end": "2026-08-11T21:31:30+00:00",
+      "wallclock_seconds": 0.358,
+      "status": "success",
+      "seed": 1901,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_negative_control",
+        "basis": "rotated_30deg",
+        "rotated_pair": [
+          2,
+          3
+        ],
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 347.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.58139684596149,
+          "max_delta_energy_ha": 0.008105092251668111
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "labels deliberately stale after rotating a degenerate pair; the hypothesis of T2 does not hold here"
+    },
+    {
+      "run_id": 88,
+      "timestamp_start": "2026-08-11T21:31:30+00:00",
+      "timestamp_end": "2026-08-11T21:31:31+00:00",
+      "wallclock_seconds": 0.361,
+      "status": "success",
+      "seed": 1902,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_negative_control",
+        "basis": "rotated_30deg",
+        "rotated_pair": [
+          2,
+          3
+        ],
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 347.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.78430104909341,
+          "max_delta_energy_ha": 0.00567916404806823
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "labels deliberately stale after rotating a degenerate pair; the hypothesis of T2 does not hold here"
+    },
+    {
+      "run_id": 89,
+      "timestamp_start": "2026-08-11T21:31:31+00:00",
+      "timestamp_end": "2026-08-11T21:31:31+00:00",
+      "wallclock_seconds": 0.371,
+      "status": "success",
+      "seed": 1903,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_negative_control",
+        "basis": "rotated_30deg",
+        "rotated_pair": [
+          2,
+          3
+        ],
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 347.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.5284246974525,
+          "max_delta_energy_ha": 0.006739286800090838
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "labels deliberately stale after rotating a degenerate pair; the hypothesis of T2 does not hold here"
+    },
+    {
+      "run_id": 90,
+      "timestamp_start": "2026-08-11T21:31:31+00:00",
+      "timestamp_end": "2026-08-11T21:31:31+00:00",
+      "wallclock_seconds": 0.367,
+      "status": "success",
+      "seed": 1904,
+      "parameters": {
+        "molecule": "CH4",
+        "test": "T2_negative_control",
+        "basis": "rotated_30deg",
+        "rotated_pair": [
+          2,
+          3
+        ],
+        "n_params": 230
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 347.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "energy_ha": -26.224666415393422,
+          "max_delta_energy_ha": 0.004336769521334105
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "labels deliberately stale after rotating a degenerate pair; the hypothesis of T2 does not hold here"
+    }
+  ],
+  "summary": {
+    "n_runs_total": 90,
+    "n_runs_success": 90,
+    "n_runs_failure": 0,
+    "n_runs_aborted": 0,
+    "aggregate_metrics": {
+      "max_delta_energy_ha": 5.286437954055145e-12,
+      "max_state_residual": 0.0,
+      "max_grad_removed": 2.1504810831731472e-10,
+      "control_max_delta_energy_ha": 0.008105092251668111,
+      "n_theta_samples": 80
+    },
+    "key_findings": [
+      "T2 holds to 5.29e-12 Ha over 80 random parameter vectors drawn off the symmetric submanifold",
+      "the state-level identity of T1 holds to 0.00e+00",
+      "the gradient in the removed directions is below 2.15e-10 Ha on the submanifold",
+      "in the rotated basis with stale labels the same quantity reaches 8.11e-03 Ha"
+    ],
+    "matches_hypothesis": "supported",
+    "interpretation": "The energy is invariant under the character sign flip to machine precision, and fails by many orders of magnitude once the labels no longer describe the orbitals."
+  }
+}

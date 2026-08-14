@@ -1,0 +1,4038 @@
+{
+  "experiment_id": "2026-08-11_e7_degenerate_shell_artifact",
+  "paper_project": "2026-08_point-group-vqe-free",
+  "opportunity_reference": "opportunities.md #1",
+  "mode": "numerical+symbolic",
+  "subareas_active": [
+    "numerical",
+    "symbolic"
+  ],
+  "target_venue": "Quantum (componente do artigo principal); Comment no JCTC como item separado e posterior.",
+  "created_at": "2026-08-12T00:00:09+00:00",
+  "plan_md_hash": "sha256:c7ce5338e4f52a57d4a4111d8fd9acd44e6613a88a2b8e8f8fa5e9757b178047",
+  "code_commit": "git:649d5d79",
+  "system_info_hash": "sha256:15c5621e71c8a52c6ba7b54f054524d4ad149e2e22a9b32e00fd6c1127e2d63e",
+  "runs": [
+    {
+      "run_id": 1,
+      "timestamp_start": "2026-08-12T00:00:09+00:00",
+      "timestamp_end": "2026-08-12T00:00:09+00:00",
+      "wallclock_seconds": 0.081,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "HF",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 217.6,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 1,
+          "predicted_failure": false
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 2,
+      "timestamp_start": "2026-08-12T00:00:09+00:00",
+      "timestamp_end": "2026-08-12T00:00:09+00:00",
+      "wallclock_seconds": 0.057,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "LiH",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 1,
+          "predicted_failure": false
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 3,
+      "timestamp_start": "2026-08-12T00:00:09+00:00",
+      "timestamp_end": "2026-08-12T00:00:09+00:00",
+      "wallclock_seconds": 0.051,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "H2O",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 0,
+          "predicted_failure": false
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 4,
+      "timestamp_start": "2026-08-12T00:00:09+00:00",
+      "timestamp_end": "2026-08-12T00:00:09+00:00",
+      "wallclock_seconds": 0.043,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "BeH2",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 1,
+          "predicted_failure": false
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 5,
+      "timestamp_start": "2026-08-12T00:00:09+00:00",
+      "timestamp_end": "2026-08-12T00:00:09+00:00",
+      "wallclock_seconds": 0.055,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "NH3",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.1,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 2,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 6,
+      "timestamp_start": "2026-08-12T00:00:09+00:00",
+      "timestamp_end": "2026-08-12T00:00:09+00:00",
+      "wallclock_seconds": 0.052,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "CH4",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.2,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 2,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 7,
+      "timestamp_start": "2026-08-12T00:00:09+00:00",
+      "timestamp_end": "2026-08-12T00:00:09+00:00",
+      "wallclock_seconds": 0.038,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "N2",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 2,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 8,
+      "timestamp_start": "2026-08-12T00:00:09+00:00",
+      "timestamp_end": "2026-08-12T00:00:09+00:00",
+      "wallclock_seconds": 0.049,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "CO",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 2,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 9,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 0.058,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "NaH",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 2,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 10,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 0.062,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "C2H4",
+        "basis": "sto-3g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 0,
+          "predicted_failure": false
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 11,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 0.047,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "HF",
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 2,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 12,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 0.049,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "LiH",
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 2,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 13,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 0.057,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "H2O",
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.6,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 0,
+          "predicted_failure": false
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 14,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 0.054,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "BeH2",
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.6,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 2,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 15,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 0.06,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "NH3",
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.6,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 4,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 16,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 0.06,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "CH4",
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.6,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 4,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 17,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 0.118,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "N2",
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.6,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 4,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 18,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 0.065,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "CO",
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.6,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 4,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 19,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 0.059,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "NaH",
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.6,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 3,
+          "predicted_failure": true
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 20,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 0.09,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "predictor",
+        "molecule": "C2H4",
+        "basis": "6-31g"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.6,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {}
+      },
+      "outputs": {
+        "result_files": [],
+        "scalar_results": {
+          "n_degenerate_shells": 0,
+          "predicted_failure": false
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "degenerate-shell count at RHF"
+    },
+    {
+      "run_id": 21,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 29.899,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 0,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.7,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_000.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_000.json": "0ff56d815caaf90ef77111d0fec90253a31f4c099e26fdb64b40f1daad8ea935"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_000.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153673064,
+          "err_uccsd_mha": 0.13908902187154126,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 22,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 49.823,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 1,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.7,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_001.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_001.json": "0a8ee9000259c1b5641ff599aaee04b6dd0fd579f01d2eb43746b822cf2e7218"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_001.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681915366596,
+          "err_uccsd_mha": 0.13908902186443584,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 23,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 49.772,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 2,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.7,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_002.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_002.json": "102e54cdc6c7f970ab5989207750f40c9035e47088095e6b1cfd2479999bfdc1"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_002.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153651747,
+          "err_uccsd_mha": 0.13908902185022498,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 24,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 29.371,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 3,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.7,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_003.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_003.json": "e6a5354a5e16d79aa5c9c44855c555af0fe8e833fa74466476c33b50750d0e37"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_003.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153644642,
+          "err_uccsd_mha": 0.13908902184311955,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 25,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 30.009,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 4,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.7,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_004.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_004.json": "0121fc9f435427dba3d2fdc111cebcfdbd2fcbbeeed431154eaee29ff737bbc7"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_004.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681915386491,
+          "err_uccsd_mha": 0.1390890220633878,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 26,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 26.242,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 5,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.7,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_005.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_005.json": "a6ac7a54dca38e01fc163812ca0d2a53df13bdab337f283e5d5527f276254fa2"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_005.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153793856,
+          "err_uccsd_mha": 0.13908902199233353,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 27,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 25.659,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 6,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.7,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_006.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_006.json": "d429eb4f3480b4badab7a263cb8337d10466d70cb1ff63e0a11530695271fba4"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_006.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153737013,
+          "err_uccsd_mha": 0.1390890219354901,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 28,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 26.3,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 7,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.7,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_007.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_007.json": "fcae6c2f3f276cfc4b7e825d1b63834f229eb78283c415302e8d3afaa46b22c6"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_007.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153793856,
+          "err_uccsd_mha": 0.13908902199233353,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 29,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 26.885,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 8,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.7,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_008.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_008.json": "e0bfbd7b50b3788945985df2ac34105cedda0a9162d0c5984229817071a25713"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_008.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153701485,
+          "err_uccsd_mha": 0.13908902189996297,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 30,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 25.046,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 9,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_009.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_009.json": "3847e4032c783e974add97994305e3b8512077b18e270c4e1c610bfad451b8c2"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_009.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.2568191537228,
+          "err_uccsd_mha": 0.13908902192127925,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 31,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 25.599,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 10,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_010.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_010.json": "4f296dd83ab4ca419a2e19ccd17f5c6fe931e23419b72a23332d363f002db742"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_010.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.2568191537228,
+          "err_uccsd_mha": 0.13908902192127925,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 32,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 28.726,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 11,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_011.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_011.json": "f0c3e8c321c15ad220f2389d26a7e38f5eb0e32155edb13b926e88f1591ac43d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_011.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681915370859,
+          "err_uccsd_mha": 0.1390890219070684,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 33,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 28.009,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 12,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_012.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_012.json": "2f0de63db14ee865eb89702efa93413f3830c0430305d46e5cffd44a860ae53a"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_012.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153687275,
+          "err_uccsd_mha": 0.13908902188575212,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 34,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 25.628,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 13,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_013.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_013.json": "f2ee58409aad9c7f12c2d40a8ef70d477c8a086e09eb71e8f08d25d0e6c61090"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_013.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153644642,
+          "err_uccsd_mha": 0.13908902184311955,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 35,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 25.707,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 14,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_014.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_014.json": "2c6560510899cc3329f4bec9be02155a3a1479204d8579ebb8a889b97d27d15a"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_014.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153737013,
+          "err_uccsd_mha": 0.1390890219354901,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 36,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 25.511,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 15,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_015.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_015.json": "01dd9be58426a95d007c6e0b560a0ec57c3050c28e5c98e478035979dcf003da"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_015.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153658853,
+          "err_uccsd_mha": 0.1390890218573304,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 37,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 26.26,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 16,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_016.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_016.json": "d6f2471e7da6aa8e39c7aeff761044101a497d00aca66e24d4085244ffa49ddd"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_016.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153751223,
+          "err_uccsd_mha": 0.13908902194970096,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 38,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 27.136,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 17,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_017.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_017.json": "fa5488a3f6c8da44e1cbaaef9c44dd05586e73da1ff80892eb70612b2873c833"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_017.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153715696,
+          "err_uccsd_mha": 0.13908902191417383,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 39,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 27.622,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 18,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_018.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_018.json": "70345b2400a5275861217986202403038310c82b087acdedb0e49da9ef33590c"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_018.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681915368017,
+          "err_uccsd_mha": 0.1390890218786467,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 40,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 27.031,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 19,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t1_019.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t1_019.json": "3b87b0b6acd7351123278cf2ec081d14083b6f78d0b0ec6fe44d870afa0a89a9"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t1_019.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681915380096,
+          "err_uccsd_mha": 0.13908902199943896,
+          "phi_eff_deg": 59.999517493265756
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 41,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 41.012,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 0,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t2_000.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t2_000.json": "70082c07c49d3144d743abc681408490450658b85e519ec4aa49629f1afba7cd"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t2_000.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819150454305,
+          "err_uccsd_mha": 0.13908902188575212,
+          "phi_eff_deg": 60.000852735514634
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 42,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 43.075,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 1,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t2_001.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t2_001.json": "5a86e5f922ee892bb464f61ef74d38301b93da64ad733c38e090df4285adc3b8"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t2_001.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681915039746,
+          "err_uccsd_mha": 0.1390890218289087,
+          "phi_eff_deg": 60.00085273551463
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 43,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 49.641,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 2,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t2_002.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t2_002.json": "2601c0e75330e96ea2fecdcd1dda44f21ac5f72ece8e38c98e581ba8e31b40c0"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t2_002.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681917420775,
+          "err_uccsd_mha": 0.13908902199943896,
+          "phi_eff_deg": 59.99955068155768
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 44,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 44.056,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 3,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t2_003.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t2_003.json": "f8d7e2e76876741fd6d463c802cf3da6b0dae511a3cf4c48c0577f5a0e2fe63c"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t2_003.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819152720936,
+          "err_uccsd_mha": 0.1390890236763198,
+          "phi_eff_deg": 60.00022234660753
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 45,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 34.884,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 4,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t2_004.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t2_004.json": "d543de04df13c7138b10d0a7bc5eda8bc51229a44e0e0b96c6219d20c9546afb"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t2_004.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681916070033,
+          "err_uccsd_mha": 0.13908902192127925,
+          "phi_eff_deg": 60.000107401605646
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 46,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 44.834,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 5,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t2_005.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t2_005.json": "9dbaffa8429fe267173c9d178f4d92a1430df12bd713e23f945bdec08251ee33"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t2_005.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819152820412,
+          "err_uccsd_mha": 0.1390890237757958,
+          "phi_eff_deg": 60.00022234660752
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 47,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 37.65,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 6,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t2_006.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t2_006.json": "72c272f7ee33ee8403d519c2cba9c1e1b4d3b1fc39d89104f140257b131d7de8"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t2_006.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681915760947,
+          "err_uccsd_mha": 0.13908902273129797,
+          "phi_eff_deg": 60.000430713189814
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 48,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 40.067,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 7,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t2_007.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t2_007.json": "6bf6ce8365d3dfbcae312ba48886446effb5bb5afd4a9b2400f5068806bd47fa"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t2_007.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681915728262,
+          "err_uccsd_mha": 0.13908902240444831,
+          "phi_eff_deg": 60.000430713189814
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 49,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 37.797,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 8,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t2_008.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t2_008.json": "387e53ba0cf71811dc75d085b6712336165c3655ab90ab36768cc6c5281331f4"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t2_008.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819156636027,
+          "err_uccsd_mha": 0.13908902327841588,
+          "phi_eff_deg": 59.999513620076264
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 50,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 35.913,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 9,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.8,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t2_009.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t2_009.json": "d23e5fd69a341a8aff4ef45589948873321b2857d9ce126fd23f30d7bd37f659"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t2_009.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819152742253,
+          "err_uccsd_mha": 0.1390890236976361,
+          "phi_eff_deg": 60.00022234660752
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 51,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 48.884,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 0,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t4_000.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t4_000.json": "4d7c0e13ff89df2045e7b8d07e74c52c35030fc0880efb6b244b8c6444f15e38"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t4_000.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819152720936,
+          "err_uccsd_mha": 0.13908902209891494,
+          "phi_eff_deg": 59.99961717599109
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 52,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 41.906,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 1,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t4_001.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t4_001.json": "f684dc1f90064f95ed409d34b2be973098866451b8a586e8c71a79d4dda3f444"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t4_001.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819227903463,
+          "err_uccsd_mha": 0.1390890221131258,
+          "phi_eff_deg": 60.000160152206796
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 53,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 47.229,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 2,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t4_002.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t4_002.json": "229859d83cd0053602aea40f09f2002da751a074934ddfb9df7bf24309c10783"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t4_002.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819149722446,
+          "err_uccsd_mha": 0.1390890221699692,
+          "phi_eff_deg": 59.999131826878205
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 54,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 43.272,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 3,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t4_003.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t4_003.json": "295ee11698efb1ce430560331f62498f64dde75e84533ea9a92a94fe0cdbf5e6"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t4_003.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681915635181,
+          "err_uccsd_mha": 0.13908902200654438,
+          "phi_eff_deg": 60.000609547113584
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 55,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 32.403,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 4,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t4_004.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t4_004.json": "6f1a007c89da6e19543cc5a159a64ce7de0a372c975af0354b373e79e0800ca9"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t4_004.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819168466563,
+          "err_uccsd_mha": 0.13908902295156622,
+          "phi_eff_deg": 59.99972876653323
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 56,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 35.665,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 5,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t4_005.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t4_005.json": "f87e19f3b7f0393571768f77209aa7ccb86fce4d45970d733e0bb0e446861797"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t4_005.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819152692515,
+          "err_uccsd_mha": 0.13908902246129173,
+          "phi_eff_deg": 59.9996572560531
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 57,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 41.73,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 6,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t4_006.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t4_006.json": "39eafd8c8aa41678c29c42365b375def191a61b87e1c7a732996a58613f1caf5"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t4_006.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681915380096,
+          "err_uccsd_mha": 0.13908902209891494,
+          "phi_eff_deg": 59.999162620531656
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 58,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 33.426,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 7,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t4_007.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t4_007.json": "975a44dbb24fd42d8f5d282c7907cf555713d27689b274ea386d4c54359079d2"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t4_007.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819152813307,
+          "err_uccsd_mha": 0.1390890221912855,
+          "phi_eff_deg": 59.999922724464895
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 59,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 39.209,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 8,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t4_008.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t4_008.json": "c5d50da565e28004e0421cdf9d7d082b9c8fb82f2b205cd6911fd22eea9efeb5"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t4_008.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819157168934,
+          "err_uccsd_mha": 0.1390890224541863,
+          "phi_eff_deg": 59.99966151346962
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 60,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 40.284,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 9,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t4_009.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t4_009.json": "a33dc020b3c48fae67569564ff3da3a26cec8cd3c3b28bbd6e3af6f2e31ba599"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t4_009.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819152941205,
+          "err_uccsd_mha": 0.13908902246129173,
+          "phi_eff_deg": 60.00008010929081
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 61,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 57.756,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 0,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t8_000.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t8_000.json": "db03193918596e95f586b6814d75c3006525a59ad80fce07e9c4780e0aa00d65"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t8_000.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819153843594,
+          "err_uccsd_mha": 0.13908902251102973,
+          "phi_eff_deg": 60.00008472984278
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 62,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 60.485,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 1,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t8_001.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t8_001.json": "f7b23119a5f0cd88a1930adc4a6eabbe2d3f3a04caa89bace2b3fda265c53fed"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t8_001.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819159186875,
+          "err_uccsd_mha": 0.13908902224102349,
+          "phi_eff_deg": 59.99948459802011
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 63,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 66.314,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 2,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t8_002.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t8_002.json": "3d231e0f734dada803cfe8971af6e345551ce9a3fb05bafcc60452d723c7efd1"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t8_002.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819155676794,
+          "err_uccsd_mha": 0.13908902189996297,
+          "phi_eff_deg": 60.00040840684263
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 64,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 63.555,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 3,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t8_003.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t8_003.json": "cd700b95ceaab741b40c70959e823df9e9770d0b266b053162265e31c0108c51"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t8_003.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681923068879,
+          "err_uccsd_mha": 0.13908902308656934,
+          "phi_eff_deg": 60.00062972123781
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 65,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 62.571,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 4,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t8_004.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t8_004.json": "c5bfb6d23a19dd95084e108cd2308699505afd902b5fc39222d696d405a46f37"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t8_004.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819171337156,
+          "err_uccsd_mha": 0.1390890226886654,
+          "phi_eff_deg": 60.00013768542297
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 66,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 73.713,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 5,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t8_005.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t8_005.json": "9ffd3bb2c36233215a2126b0d0ade8312364d603732cf80a2bae15da2757f5e8"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t8_005.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.2568191541136,
+          "err_uccsd_mha": 0.13908902331394302,
+          "phi_eff_deg": 59.99928235030314
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 67,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 72.487,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 6,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t8_006.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t8_006.json": "394b4e5ff30a1919318c63b7f9df2be2f25d872d0bef6e05aa990e39dc088fc5"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t8_006.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681915179723,
+          "err_uccsd_mha": 0.13908902186443584,
+          "phi_eff_deg": 59.99963021288728
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 68,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 76.902,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 7,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t8_007.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t8_007.json": "7968db569a39a57263b03ae0981cd77df0b3021cf28b813152f66029ee33abd0"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t8_007.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.25681917223244,
+          "err_uccsd_mha": 0.13908902219839092,
+          "phi_eff_deg": 59.99957272107751
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 69,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 62.94,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 8,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t8_008.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t8_008.json": "c98fe9beba8724ca98f70cd2595a12b06eb24eff9bf0bf21385c6c6a47150b71"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t8_008.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819162718273,
+          "err_uccsd_mha": 0.13908902175785443,
+          "phi_eff_deg": 60.00052021876451
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 70,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 63.871,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "nh3",
+        "replicate": 9,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_nh3_t8_009.json"
+        ],
+        "data_hashes": {
+          "rep_nh3_t8_009.json": "cf817246fbeb26568a4b54ea3f090ea599cc8e5f5497567c41182f8e5cdd77bb"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_nh3_t8_009.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 29.256819155392577,
+          "err_uccsd_mha": 0.13908902179338156,
+          "phi_eff_deg": 59.99870380627342
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 71,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 178.431,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 0,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t1_000.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t1_000.json": "bfc8d4b10fab29ce7ce3485a048791f101ac04b0eafb685d194fd4631aaa098a"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t1_000.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 49.72156853332166,
+          "err_uccsd_mha": 0.1938777768728528,
+          "phi_eff_deg": 88.00904915934876
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 72,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 175.005,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 1,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t1_001.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t1_001.json": "33c7aea18e19b268fa97f0ac446171079b04f97cf28dca0e8421c49f992d3233"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t1_001.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 49.72156853333587,
+          "err_uccsd_mha": 0.19387777688706365,
+          "phi_eff_deg": 88.00904915934876
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 73,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 143.76,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 2,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t1_002.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t1_002.json": "9072eb94b66d47c2ebf77aff705724922a0bf068ebedf19fbb048949b9498fab"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t1_002.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 49.72156853330745,
+          "err_uccsd_mha": 0.19387777685864194,
+          "phi_eff_deg": 88.00904915934876
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 74,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 145.418,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 3,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t1_003.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t1_003.json": "94e2494c1eb556af43de5e412272fd763a6d3ec7f80a9ecee95c0c3c7ce30e08"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t1_003.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 49.72156853338561,
+          "err_uccsd_mha": 0.19387777693680164,
+          "phi_eff_deg": 88.00904915934876
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 75,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 134.9,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 4,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t1_004.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t1_004.json": "b8a0a9f4883ab27466dfbe7e94ffacd0aa122438410de3735c292d8977898618"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t1_004.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 49.721568533342975,
+          "err_uccsd_mha": 0.19387777689416907,
+          "phi_eff_deg": 88.00904915934876
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 76,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 129.004,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 5,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t1_005.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t1_005.json": "441daedee56b3d05a4a20adf23f023d36ffb6ac56712f0625d03c7f4acf0bfc8"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t1_005.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 49.72156853340692,
+          "err_uccsd_mha": 0.19387777695811792,
+          "phi_eff_deg": 88.00904915934876
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 77,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 128.206,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 6,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t1_006.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t1_006.json": "53f41df8ba1d4f6b27cd7784384cb6ce76807edb64b4ae467377c7d8eaf0b77d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t1_006.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 49.72156853340692,
+          "err_uccsd_mha": 0.19387777695811792,
+          "phi_eff_deg": 88.00904915934876
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 78,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 123.681,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 7,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t1_007.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t1_007.json": "e8d50045a9cc3fbdaa2501c65bbb3447cad5769118ee12477a5e6c4e9d6a71d7"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t1_007.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 49.72156853339271,
+          "err_uccsd_mha": 0.19387777694390707,
+          "phi_eff_deg": 88.00904915934876
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 79,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 124.161,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 8,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t1_008.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t1_008.json": "c0fee7c4608cde723973c0b1a10a12a9a1ade566f0f756768a782d11923d282f"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t1_008.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 49.721568533421134,
+          "err_uccsd_mha": 0.19387777697232877,
+          "phi_eff_deg": 88.00904915934876
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 80,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 117.19,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 9,
+        "basis": "sto-3g",
+        "blas_threads": 1,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t1_009.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t1_009.json": "9e62df5161cbcf706c790922b5f5dd722e6963680c27c6dac69c41f97239f615"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t1_009.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 49.72156853340692,
+          "err_uccsd_mha": 0.19387777695811792,
+          "phi_eff_deg": 88.00904915934876
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 81,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 149.238,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 0,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t2_000.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t2_000.json": "cc57bcf508afc61b72f4bc3454f7cd4fcce888667beee9936ccc7c22ca81aeb4"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t2_000.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 36.48717318690586,
+          "err_uccsd_mha": 0.1938748156575798,
+          "phi_eff_deg": 79.25893747383928
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 82,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 170.44,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 1,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t2_001.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t2_001.json": "84f761de42f139392c8d3a57f2aea51c384027924abd498308f40fb034b6dfd8"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t2_001.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 36.16303100483975,
+          "err_uccsd_mha": 0.19389721180118613,
+          "phi_eff_deg": 88.3154219171473
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 83,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 121.968,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 2,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t2_002.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t2_002.json": "26834ec448df82d82286706653f62f91535eb2d226598c4e154253d719949de8"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t2_002.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 39.640771308320666,
+          "err_uccsd_mha": 0.19382634028630719,
+          "phi_eff_deg": 88.98504289844078
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 84,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 129.894,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 3,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 219.9,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t2_003.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t2_003.json": "921b512375a3698d7d18c4de1e4ca150934a5d5e451e31dc2b39fa2c5eb596ce"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t2_003.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 15.921550178752852,
+          "err_uccsd_mha": 0.19395754430462375,
+          "phi_eff_deg": 86.69254975849991
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 85,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 114.073,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 4,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t2_004.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t2_004.json": "d2e1cebb14c92f22856e27a08a3cf004f7a60fedb76fc5a3ea8556995401925d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t2_004.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 43.92495081454939,
+          "err_uccsd_mha": 0.19385097181157107,
+          "phi_eff_deg": 79.26307863545922
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 86,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 147.923,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 5,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t2_005.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t2_005.json": "11ea4b90972d8402ab5e06d0d15437b00769bbf611f7e37f7a4a85c60a3926a9"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t2_005.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 33.7112542585416,
+          "err_uccsd_mha": 0.19383688236729313,
+          "phi_eff_deg": 81.32804616433391
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 87,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 140.9,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 6,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t2_006.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t2_006.json": "8b7cc32bae689acbefb26c70cb986aa3354ca7c2e6b7669a992fa95d5f41dbdb"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t2_006.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 42.024213930744736,
+          "err_uccsd_mha": 0.19380868340590496,
+          "phi_eff_deg": 60.694161858304554
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 88,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 136.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 7,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t2_007.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t2_007.json": "9289fa1e084c1ae7dce667d64dcff8decadff487bb16fe0d800e70ba6941f6a2"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t2_007.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 37.1543907911871,
+          "err_uccsd_mha": 0.19382707864679105,
+          "phi_eff_deg": 75.40313457266112
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 89,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 162.99,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 8,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t2_008.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t2_008.json": "3a122e8dd38688c6e29cf225b13e67e04ad62d34c4f856c9ede30eadc3ca539f"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t2_008.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 46.63697811063372,
+          "err_uccsd_mha": 0.19382313047344724,
+          "phi_eff_deg": 78.60922808333726
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 90,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 126.376,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 9,
+        "basis": "sto-3g",
+        "blas_threads": 2,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t2_009.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t2_009.json": "be39c191af4ef420d13b285d3128239f9e60e1b9e2d106e769f3eb9371abd79d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t2_009.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 18.508156232670103,
+          "err_uccsd_mha": 0.19393267956502314,
+          "phi_eff_deg": 82.49654803328956
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 91,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 198.145,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 0,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t4_000.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t4_000.json": "ede6e7fe5d1c68499db9d33f64fdeb46dd6b50dd227ad27209a2f77b277c16e1"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t4_000.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 22.919029476007324,
+          "err_uccsd_mha": 0.1939204613279344,
+          "phi_eff_deg": 84.31909114568188
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 92,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 183.881,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 1,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t4_001.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t4_001.json": "f07081059d70f0a0c0701dcf6618b89b7e7475b6fa64435a90b18aa74fdeb99f"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t4_001.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 43.10631408944943,
+          "err_uccsd_mha": 0.19384642949660247,
+          "phi_eff_deg": 83.71840876958872
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 93,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 167.484,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 2,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t4_002.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t4_002.json": "d67ce395fd93a1f0da004b566095ab5b57470f26f5ccf4d9fcc0219b8ee7ecdf"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t4_002.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 44.82920296868542,
+          "err_uccsd_mha": 0.1938158254617406,
+          "phi_eff_deg": 67.6262170849517
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 94,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 168.783,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 3,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t4_003.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t4_003.json": "d3282ea111bdbbd36850c85d67417d5cfe21fe4e498c16c85cc16f77bf3c6038"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t4_003.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 41.970175601846904,
+          "err_uccsd_mha": 0.19381485027025747,
+          "phi_eff_deg": 88.29712394258068
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 95,
+      "timestamp_start": "2026-08-12T00:00:10+00:00",
+      "timestamp_end": "2026-08-12T00:00:10+00:00",
+      "wallclock_seconds": 157.11,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 4,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t4_004.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t4_004.json": "28700e297ce27eb324833bd5de74642890f2b4e67b4bf0dcfd749c1a29fe1556"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t4_004.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 18.00136861302093,
+          "err_uccsd_mha": 0.1939641669679304,
+          "phi_eff_deg": 86.1117152596249
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 96,
+      "timestamp_start": "2026-08-12T00:00:11+00:00",
+      "timestamp_end": "2026-08-12T00:00:11+00:00",
+      "wallclock_seconds": 162.105,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 5,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t4_005.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t4_005.json": "3daeee9c7e38338332fd4ad7650e6565d1e0508eacf595692af600e36de8f5e1"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t4_005.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 40.21762712846311,
+          "err_uccsd_mha": 0.193851714030302,
+          "phi_eff_deg": 88.62585793124858
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 97,
+      "timestamp_start": "2026-08-12T00:00:11+00:00",
+      "timestamp_end": "2026-08-12T00:00:11+00:00",
+      "wallclock_seconds": 166.594,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 6,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t4_006.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t4_006.json": "9bb9f8bfa37173cda2bbf98febf419a292fcdb9b6760d73fdbd8d567513a0498"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t4_006.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 42.81621317443296,
+          "err_uccsd_mha": 0.19385339881949903,
+          "phi_eff_deg": 88.44492007103027
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 98,
+      "timestamp_start": "2026-08-12T00:00:11+00:00",
+      "timestamp_end": "2026-08-12T00:00:11+00:00",
+      "wallclock_seconds": 201.109,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 7,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t4_007.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t4_007.json": "25cc582bc748a587520e647c706dd005c3f2a1cb7434655605f6e82cf19448bd"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t4_007.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 42.189231645508585,
+          "err_uccsd_mha": 0.19386696460088615,
+          "phi_eff_deg": 70.79125766365387
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 99,
+      "timestamp_start": "2026-08-12T00:00:11+00:00",
+      "timestamp_end": "2026-08-12T00:00:11+00:00",
+      "wallclock_seconds": 177.292,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 8,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t4_008.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t4_008.json": "4550ef994f10e075a7d52f27b7e237941b6ea9057081bb2452ee5847964d148d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t4_008.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 35.31165250085877,
+          "err_uccsd_mha": 0.19379681074127575,
+          "phi_eff_deg": 72.65404603246454
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 100,
+      "timestamp_start": "2026-08-12T00:00:11+00:00",
+      "timestamp_end": "2026-08-12T00:00:11+00:00",
+      "wallclock_seconds": 181.711,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 9,
+        "basis": "sto-3g",
+        "blas_threads": 4,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t4_009.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t4_009.json": "dae3ed78e865748f9a6b35a04c8509c4cf3f3a018ecd9ad67c7fc57a37bed78f"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t4_009.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 41.34031504986524,
+          "err_uccsd_mha": 0.19380530542889574,
+          "phi_eff_deg": 50.11328856231404
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 101,
+      "timestamp_start": "2026-08-12T00:00:11+00:00",
+      "timestamp_end": "2026-08-12T00:00:11+00:00",
+      "wallclock_seconds": 1743.472,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 0,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t8_000.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t8_000.json": "224e1da67dc8863831d38a631f34b7acf93a2130da2d3890b82cfa260a78daa8"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t8_000.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 33.401791565822236,
+          "err_uccsd_mha": 0.19393523476196606,
+          "phi_eff_deg": 87.2834853050788
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 102,
+      "timestamp_start": "2026-08-12T00:00:11+00:00",
+      "timestamp_end": "2026-08-12T00:00:11+00:00",
+      "wallclock_seconds": 1325.889,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 1,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.1,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t8_001.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t8_001.json": "2fcd7de58ef099fe715d51ddc0877f38f421ff28dc555c5e1e68c70f0421dcb6"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t8_001.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 46.614304574120524,
+          "err_uccsd_mha": 0.193918792760428,
+          "phi_eff_deg": 75.40995220595876
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 103,
+      "timestamp_start": "2026-08-12T00:00:11+00:00",
+      "timestamp_end": "2026-08-12T00:00:11+00:00",
+      "wallclock_seconds": 1552.135,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 2,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.2,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t8_002.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t8_002.json": "6859f13b1fbcae7695f09bdd7ef4e23dce285d7f0de777eb78322089b949d149"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t8_002.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 32.42131727767372,
+          "err_uccsd_mha": 0.1939460428772577,
+          "phi_eff_deg": 79.4922875695261
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 104,
+      "timestamp_start": "2026-08-12T00:00:11+00:00",
+      "timestamp_end": "2026-08-12T00:00:11+00:00",
+      "wallclock_seconds": 1594.419,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 3,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.2,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t8_003.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t8_003.json": "5374558953d675b1f832fc14e226d4059a8c1970870d66106ea36ef39d2f4ce7"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t8_003.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 31.84117478794235,
+          "err_uccsd_mha": 0.19381104874582888,
+          "phi_eff_deg": 81.46579046856556
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 105,
+      "timestamp_start": "2026-08-12T00:00:11+00:00",
+      "timestamp_end": "2026-08-12T00:00:11+00:00",
+      "wallclock_seconds": 1702.534,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 4,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.2,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t8_004.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t8_004.json": "abbd47382ae2cd218fe541e7e89dff90ef4bef4e0bafac99444e076f6f5d49c9"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t8_004.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 37.454725833825364,
+          "err_uccsd_mha": 0.19384834771329906,
+          "phi_eff_deg": 84.0826601437488
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    },
+    {
+      "run_id": 106,
+      "timestamp_start": "2026-08-12T00:00:11+00:00",
+      "timestamp_end": "2026-08-12T00:00:11+00:00",
+      "wallclock_seconds": 1332.812,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "part": "replicate",
+        "molecule": "ch4",
+        "replicate": 5,
+        "basis": "sto-3g",
+        "blas_threads": 8,
+        "process": "independent OS process"
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 220.2,
+      "inputs": {
+        "data_files": [
+          "results/replicates/rep_ch4_t8_005.json"
+        ],
+        "data_hashes": {
+          "rep_ch4_t8_005.json": "2d46995afdf0bdc78c6a52cfb7f90ecec8a58e0a3c88dc02b27b70f89d7a4c39"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/replicates/rep_ch4_t8_005.json"
+        ],
+        "scalar_results": {
+          "err_sym_mha": 33.49428394931664,
+          "err_uccsd_mha": 0.19380934804758,
+          "phi_eff_deg": 68.9543308627401
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "nondeterminism comes from the SCF resolution of the degenerate shell, so replicates are separate processes rather than separate seeds"
+    }
+  ],
+  "summary": {
+    "n_runs_total": 106,
+    "n_runs_success": 106,
+    "n_runs_failure": 0,
+    "n_runs_aborted": 0,
+    "aggregate_metrics": {
+      "predictor_hits": 10,
+      "predictor_scored": 10,
+      "CH4_n_replicates": 36,
+      "CH4_err_sym_mha_min": 15.921550178752852,
+      "CH4_err_sym_mha_max": 49.721568533421134,
+      "CH4_err_sym_mha_mean": 39.869913427436494,
+      "CH4_err_sym_mha_std": 9.612091571846582,
+      "CH4_n_distinct_values": 27,
+      "CH4_err_uccsd_mha_spread": 0.0001673562266546469,
+      "CH4_by_blas_threads": {
+        "1": {
+          "n": 10,
+          "n_distinct": 1,
+          "min": 49.7216,
+          "max": 49.7216
+        },
+        "2": {
+          "n": 10,
+          "n_distinct": 10,
+          "min": 15.9216,
+          "max": 46.637
+        },
+        "4": {
+          "n": 10,
+          "n_distinct": 10,
+          "min": 18.0014,
+          "max": 44.8292
+        },
+        "8": {
+          "n": 6,
+          "n_distinct": 6,
+          "min": 31.8412,
+          "max": 46.6143
+        }
+      },
+      "NH3_n_replicates": 50,
+      "NH3_err_sym_mha_min": 29.256819149722446,
+      "NH3_err_sym_mha_max": 29.25681923068879,
+      "NH3_err_sym_mha_mean": 29.256819158629956,
+      "NH3_err_sym_mha_std": 1.550609334086949e-08,
+      "NH3_n_distinct_values": 1,
+      "NH3_err_uccsd_mha_spread": 2.0179413695586845e-09,
+      "NH3_by_blas_threads": {
+        "1": {
+          "n": 20,
+          "n_distinct": 1,
+          "min": 29.2568,
+          "max": 29.2568
+        },
+        "2": {
+          "n": 10,
+          "n_distinct": 1,
+          "min": 29.2568,
+          "max": 29.2568
+        },
+        "4": {
+          "n": 10,
+          "n_distinct": 1,
+          "min": 29.2568,
+          "max": 29.2568
+        },
+        "8": {
+          "n": 10,
+          "n_distinct": 1,
+          "min": 29.2568,
+          "max": 29.2568
+        }
+      },
+      "undersampled_arms": [
+        "CH4 at 8 BLAS threads: 6 of 10 requested"
+      ]
+    },
+    "key_findings": [
+      "the degenerate-shell count predicts the reported outcome in 10 of 10 scored molecules",
+      "CH4: over 36 independent processes the filtered error ranges from 15.92 to 49.72 mHa (mean 39.87, standard deviation 9.61), while the unfiltered error varies by 1.67e-04 mHa",
+      "NH3: over 50 independent processes the filtered error ranges from 29.26 to 29.26 mHa (mean 29.26, standard deviation 0.00), while the unfiltered error varies by 2.02e-09 mHa",
+      "one arm was stopped short of the requested count and is named in aggregate_metrics.undersampled_arms: CH4 at 8 BLAS threads: 6 of 10 requested"
+    ],
+    "matches_hypothesis": "supported",
+    "interpretation": "Rerunning the same code on the same molecule gives a different filtered error every time once the eigensolver is allowed more than one thread, while the unfiltered error stays put. A point-group property does not depend on the state of the diagonalisation routine, so the spread measures the pipeline and not the method."
+  }
+}

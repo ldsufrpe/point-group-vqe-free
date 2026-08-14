@@ -1,0 +1,43 @@
+{
+  "figures": [
+    {
+      "title": "Filtered error across independent processes",
+      "plot_type": "scatter",
+      "x_axis": "replicate",
+      "y_axis": "err_sym_mha",
+      "z_axis": null,
+      "series": "molecule",
+      "filters": {
+        "part": "replicate"
+      },
+      "log_scale_x": false,
+      "log_scale_y": true
+    },
+    {
+      "title": "Unfiltered error across the same processes (control)",
+      "plot_type": "scatter",
+      "x_axis": "replicate",
+      "y_axis": "err_uccsd_mha",
+      "z_axis": null,
+      "series": "molecule",
+      "filters": {
+        "part": "replicate"
+      },
+      "log_scale_x": false,
+      "log_scale_y": false
+    },
+    {
+      "title": "Degenerate shells against reported outcome",
+      "plot_type": "bar",
+      "x_axis": "molecule",
+      "y_axis": "n_degenerate_shells",
+      "z_axis": null,
+      "series": "basis",
+      "filters": {
+        "part": "predictor"
+      },
+      "log_scale_x": false,
+      "log_scale_y": false
+    }
+  ]
+}
