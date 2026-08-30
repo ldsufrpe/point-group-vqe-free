@@ -10,6 +10,9 @@ never promises a command that was not run.
 | Environment | fresh `python3 -m venv`, `pip install -r requirements.txt`, nothing else |
 | Python | 3.12.3 |
 
+Sections 1 to 3 are the record of 2026-08-13 and cover the six experiments exported on that
+date. Section 4 records what changed afterwards.
+
 ## 1. Environment installs from `requirements.txt` alone — PASS
 
 A clean virtual environment was created outside this repository and populated only from
@@ -43,6 +46,27 @@ figures were additionally compared against the PDFs compiled into the manuscript
 - 6 / 6 `results/aggregate.csv` identical
 - 6 / 6 `experiment_log.json` identical (287 runs in total)
 - 5 / 5 figures identical to the manuscript's
+
+## 4. Added on 2026-08-30 — E8, and the currency correction
+
+Two changes were made after the sections above were written, and neither re-ran the checks they
+record.
+
+**`2026-08-14_e8_qeb_cnot_cost` was exported.** It re-counts every pool of E1 in both counting
+currencies and prices them in controlled-NOT gates. Its `code/smoke_test.py` was run from the
+exported copy on 2026-08-30, under the project interpreter rather than the clean virtual
+environment of section 1: 42 checks, 0 failures, exit 0. Its 24 run entries bring the repository
+to 311 runs across seven experiments.
+
+**E1's `README.md`, `code/analysis.py` and figure were replaced by their corrected versions.**
+The correction is one of reading, not of measurement: `results/aggregate.csv` is unchanged and
+still byte-identical to the original run, and the correction is to stop crossing its two counting
+currencies. The replaced figure is byte-identical to the one the paper prints, which the version
+exported on 2026-08-13 no longer was.
+
+Artifact integrity was re-verified across all seven experiments after both changes: 7 / 7
+`results/aggregate.csv`, 7 / 7 `experiment_log.json` and 6 / 6 figure PDFs identical to the
+authors' working copy, 20 of 20.
 
 ## What was NOT run
 

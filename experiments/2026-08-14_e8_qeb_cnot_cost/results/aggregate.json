@@ -1,0 +1,498 @@
+[
+  {
+    "molecule": "NH3 / STO-3G",
+    "key": "nh3",
+    "full_group": "C3v",
+    "abelian_group": "Cs",
+    "topgroup": "C3v",
+    "group_order": 6,
+    "abelian_order": 2,
+    "n_dets": 3136,
+    "rep_error": 2.99482660892636e-13,
+    "nao": 8,
+    "nelec": 10,
+    "uccsd_currency_gap": 60,
+    "wallclock_s": 7.78,
+    "pools": {
+      "uccsd": {
+        "n_params": 135,
+        "decomp_residual": null,
+        "construction": "unfiltered",
+        "distinct": {
+          "n_gates": 315,
+          "n_singles": 30,
+          "n_doubles": 285,
+          "cnots": 3765
+        },
+        "incidence": {
+          "n_gates": 375,
+          "n_singles": 30,
+          "n_doubles": 345,
+          "cnots": 4545
+        }
+      },
+      "abelian_subset": {
+        "n_params": 75,
+        "decomp_residual": null,
+        "construction": "irrep subset of the UCCSD pool",
+        "distinct": {
+          "n_gates": 163,
+          "n_singles": 18,
+          "n_doubles": 145,
+          "cnots": 1921
+        },
+        "incidence": {
+          "n_gates": 191,
+          "n_singles": 18,
+          "n_doubles": 173,
+          "cnots": 2285
+        }
+      },
+      "abelian_projector": {
+        "n_params": 75,
+        "decomp_residual": 6.661338147750939e-16,
+        "construction": "symmetric projector",
+        "distinct": {
+          "n_gates": 309,
+          "n_singles": 30,
+          "n_doubles": 279,
+          "cnots": 3687
+        },
+        "incidence": {
+          "n_gates": 779,
+          "n_singles": 38,
+          "n_doubles": 741,
+          "cnots": 9709
+        }
+      },
+      "full": {
+        "n_params": 30,
+        "decomp_residual": 4.440892098500626e-16,
+        "construction": "symmetric projector",
+        "distinct": {
+          "n_gates": 117,
+          "n_singles": 10,
+          "n_doubles": 107,
+          "cnots": 1411
+        },
+        "incidence": {
+          "n_gates": 147,
+          "n_singles": 10,
+          "n_doubles": 137,
+          "cnots": 1801
+        }
+      },
+      "hiuccsd_nonadapted": {
+        "n_params": 93,
+        "decomp_residual": null,
+        "construction": "Hamiltonian term set, symmetry=False",
+        "distinct": {
+          "n_gates": 197,
+          "n_singles": 14,
+          "n_doubles": 183,
+          "cnots": 2407
+        },
+        "incidence": {
+          "n_gates": 223,
+          "n_singles": 14,
+          "n_doubles": 209,
+          "cnots": 2745
+        }
+      },
+      "hiuccsd_adapted": {
+        "n_params": 59,
+        "decomp_residual": null,
+        "construction": "Hamiltonian term set, symmetry=True",
+        "distinct": {
+          "n_gates": 117,
+          "n_singles": 10,
+          "n_doubles": 107,
+          "cnots": 1411
+        },
+        "incidence": {
+          "n_gates": 131,
+          "n_singles": 10,
+          "n_doubles": 121,
+          "cnots": 1593
+        }
+      }
+    },
+    "verification": [
+      {
+        "check": "e1_regression",
+        "pool": "uccsd",
+        "currency": "distinct",
+        "expected": [
+          135,
+          315
+        ],
+        "measured": [
+          135,
+          315
+        ],
+        "passed": true
+      },
+      {
+        "check": "e1_regression",
+        "pool": "abelian_subset",
+        "currency": "distinct",
+        "expected": [
+          75,
+          163
+        ],
+        "measured": [
+          75,
+          163
+        ],
+        "passed": true
+      },
+      {
+        "check": "e1_regression",
+        "pool": "abelian_projector",
+        "currency": "incidence",
+        "expected": [
+          75,
+          779
+        ],
+        "measured": [
+          75,
+          779
+        ],
+        "passed": true
+      },
+      {
+        "check": "e1_regression",
+        "pool": "full",
+        "currency": "incidence",
+        "expected": [
+          30,
+          147
+        ],
+        "measured": [
+          30,
+          147
+        ],
+        "passed": true
+      },
+      {
+        "check": "decomposition_residual",
+        "pool": "abelian_projector",
+        "expected": "< 1e-12",
+        "measured": 6.661338147750939e-16,
+        "passed": true
+      },
+      {
+        "check": "decomposition_residual",
+        "pool": "full",
+        "expected": "< 1e-12",
+        "measured": 4.440892098500626e-16,
+        "passed": true
+      },
+      {
+        "check": "published_figure_5",
+        "pool": "uccsd",
+        "currency": "distinct",
+        "expected": [
+          315,
+          3765
+        ],
+        "measured": [
+          315,
+          3765
+        ],
+        "also_incidence": [
+          375,
+          4545
+        ],
+        "passed": true,
+        "asserted": true
+      },
+      {
+        "check": "published_figure_5",
+        "pool": "abelian_subset",
+        "currency": "distinct",
+        "expected": [
+          163,
+          1921
+        ],
+        "measured": [
+          163,
+          1921
+        ],
+        "also_incidence": [
+          191,
+          2285
+        ],
+        "passed": true,
+        "asserted": true
+      },
+      {
+        "check": "published_figure_5",
+        "pool": "hiuccsd_nonadapted",
+        "currency": "distinct",
+        "expected": [
+          197,
+          2407
+        ],
+        "measured": [
+          197,
+          2407
+        ],
+        "also_incidence": [
+          223,
+          2745
+        ],
+        "passed": true,
+        "asserted": false
+      }
+    ]
+  },
+  {
+    "molecule": "CH4 / STO-3G",
+    "key": "ch4",
+    "full_group": "Td",
+    "abelian_group": "D2",
+    "topgroup": "Td",
+    "group_order": 24,
+    "abelian_order": 4,
+    "n_dets": 15876,
+    "rep_error": 0.0,
+    "nao": 9,
+    "nelec": 10,
+    "uccsd_currency_gap": 120,
+    "wallclock_s": 28.16,
+    "pools": {
+      "uccsd": {
+        "n_params": 230,
+        "decomp_residual": null,
+        "construction": "unfiltered",
+        "distinct": {
+          "n_gates": 560,
+          "n_singles": 40,
+          "n_doubles": 520,
+          "cnots": 6840
+        },
+        "incidence": {
+          "n_gates": 680,
+          "n_singles": 40,
+          "n_doubles": 640,
+          "cnots": 8400
+        }
+      },
+      "abelian_subset": {
+        "n_params": 65,
+        "decomp_residual": null,
+        "construction": "irrep subset of the UCCSD pool",
+        "distinct": {
+          "n_gates": 146,
+          "n_singles": 10,
+          "n_doubles": 136,
+          "cnots": 1788
+        },
+        "incidence": {
+          "n_gates": 182,
+          "n_singles": 10,
+          "n_doubles": 172,
+          "cnots": 2256
+        }
+      },
+      "abelian_projector": {
+        "n_params": 65,
+        "decomp_residual": 8.881784197001252e-16,
+        "construction": "symmetric projector",
+        "distinct": {
+          "n_gates": 146,
+          "n_singles": 10,
+          "n_doubles": 136,
+          "cnots": 1788
+        },
+        "incidence": {
+          "n_gates": 182,
+          "n_singles": 10,
+          "n_doubles": 172,
+          "cnots": 2256
+        }
+      },
+      "full": {
+        "n_params": 21,
+        "decomp_residual": 4.440892098500626e-16,
+        "construction": "symmetric projector",
+        "distinct": {
+          "n_gates": 128,
+          "n_singles": 10,
+          "n_doubles": 118,
+          "cnots": 1554
+        },
+        "incidence": {
+          "n_gates": 146,
+          "n_singles": 10,
+          "n_doubles": 136,
+          "cnots": 1788
+        }
+      },
+      "hiuccsd_nonadapted": {
+        "n_params": 188,
+        "decomp_residual": null,
+        "construction": "Hamiltonian term set, symmetry=False",
+        "distinct": {
+          "n_gates": 410,
+          "n_singles": 22,
+          "n_doubles": 388,
+          "cnots": 5088
+        },
+        "incidence": {
+          "n_gates": 464,
+          "n_singles": 22,
+          "n_doubles": 442,
+          "cnots": 5790
+        }
+      },
+      "hiuccsd_adapted": {
+        "n_params": 65,
+        "decomp_residual": null,
+        "construction": "Hamiltonian term set, symmetry=True",
+        "distinct": {
+          "n_gates": 128,
+          "n_singles": 10,
+          "n_doubles": 118,
+          "cnots": 1554
+        },
+        "incidence": {
+          "n_gates": 146,
+          "n_singles": 10,
+          "n_doubles": 136,
+          "cnots": 1788
+        }
+      }
+    },
+    "verification": [
+      {
+        "check": "e1_regression",
+        "pool": "uccsd",
+        "currency": "distinct",
+        "expected": [
+          230,
+          560
+        ],
+        "measured": [
+          230,
+          560
+        ],
+        "passed": true
+      },
+      {
+        "check": "e1_regression",
+        "pool": "abelian_subset",
+        "currency": "distinct",
+        "expected": [
+          65,
+          146
+        ],
+        "measured": [
+          65,
+          146
+        ],
+        "passed": true
+      },
+      {
+        "check": "e1_regression",
+        "pool": "abelian_projector",
+        "currency": "incidence",
+        "expected": [
+          65,
+          182
+        ],
+        "measured": [
+          65,
+          182
+        ],
+        "passed": true
+      },
+      {
+        "check": "e1_regression",
+        "pool": "full",
+        "currency": "incidence",
+        "expected": [
+          21,
+          146
+        ],
+        "measured": [
+          21,
+          146
+        ],
+        "passed": true
+      },
+      {
+        "check": "decomposition_residual",
+        "pool": "abelian_projector",
+        "expected": "< 1e-12",
+        "measured": 8.881784197001252e-16,
+        "passed": true
+      },
+      {
+        "check": "decomposition_residual",
+        "pool": "full",
+        "expected": "< 1e-12",
+        "measured": 4.440892098500626e-16,
+        "passed": true
+      },
+      {
+        "check": "published_figure_5",
+        "pool": "uccsd",
+        "currency": "distinct",
+        "expected": [
+          560,
+          6840
+        ],
+        "measured": [
+          560,
+          6840
+        ],
+        "also_incidence": [
+          680,
+          8400
+        ],
+        "passed": true,
+        "asserted": true
+      },
+      {
+        "check": "published_figure_5",
+        "pool": "abelian_subset",
+        "currency": "distinct",
+        "expected": [
+          146,
+          1788
+        ],
+        "measured": [
+          146,
+          1788
+        ],
+        "also_incidence": [
+          182,
+          2256
+        ],
+        "passed": true,
+        "asserted": true
+      },
+      {
+        "check": "published_figure_5",
+        "pool": "hiuccsd_nonadapted",
+        "currency": "distinct",
+        "expected": [
+          410,
+          5088
+        ],
+        "measured": [
+          410,
+          5088
+        ],
+        "also_incidence": [
+          464,
+          5790
+        ],
+        "passed": true,
+        "asserted": false
+      }
+    ]
+  }
+]

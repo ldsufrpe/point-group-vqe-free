@@ -6,13 +6,14 @@ as a tied Trotter product, in both the natural and the reversed gate order, and 
 exponentials of the same operators and against unfiltered unitary coupled cluster. The decomposition
 is a rewriting rather than an approximation: its largest residual over every molecule and every group
 is 8.9e-16. Tying and Trotterising shifts the energy error by at most 0.0075 mHa, which is two orders
-below chemical accuracy and comparable to the spread between the two gate orders. For ammonia the
-full group carries 30 parameters and 147 elementary gates against 135 and 315 unfiltered, and for
-methane 21 and 146 against 230 and 560. Measured instead against the Abelian filter as the literature
-builds it, the parameters fall by factors of 2.5 and 3.1 while the gate count falls only from 163 to
-147 for ammonia and not at all for methane. The compression is therefore a statement about parameters
-first and about circuit size second, and water and ethylene, whose groups are already Abelian, return
-exactly zero additional compression.
+below chemical accuracy and comparable to the spread between the two gate orders. Counted over the
+distinct elementary excitation operators a pool touches, ammonia under the full group carries 30
+parameters and 117 operators against 135 and 315 unfiltered, and methane 21 and 128 against 230 and
+560. Measured instead against the Abelian filter as the literature builds it, the parameters fall by
+factors of 2.5 and 3.1 and the operator count falls from 163 to 117 for ammonia and from 146 to 128
+for methane. The compression is therefore a statement about parameters first and about circuit size
+second, and water and ethylene, whose groups are already Abelian, return exactly zero additional
+compression.
 
 # Operational log
 
@@ -26,26 +27,54 @@ exactly zero additional compression.
 ## Numerical results
 
 Basis STO-3G, geometries of the audited work, L-BFGS-B with `ftol = 1e-16` and `gtol = 1e-11`.
-Errors are against the exact ground state of the same Hamiltonian, in mHa. "Gates" counts distinct
-elementary excitation operators, not two-qubit gates.
+Errors are against the exact ground state of the same Hamiltonian, in mHa. No count here is a
+two-qubit gate count.
 
-| molecule | ansatz | parameters | gates | exact exp. | Trotter, natural | Trotter, reversed |
-|---|---|---|---|---|---|---|
-| H2O / C2v | unfiltered UCCSD | 65 | 140 | 0.1203 | — | — |
-| H2O / C2v | Abelian, pool subset | 26 | 48 | 0.1203 | — | — |
-| H2O / C2v | Abelian, invariant op. | 26 | 54 | 0.1199 | 0.1199 | 0.1144 |
-| H2O / C2v | full group, invariant op. | 26 | 54 | 0.1199 | 0.1199 | 0.1144 |
-| C2H4 / D2h | unfiltered UCCSD | 1224 | — | — | — | — |
-| C2H4 / D2h | Abelian, invariant op. | 231 | — | — | — | — |
-| C2H4 / D2h | full group, invariant op. | 231 | — | — | — | — |
-| NH3 / C3v | unfiltered UCCSD | 135 | 315 | 0.1392 | — | — |
-| NH3 / C3v | Abelian, pool subset | 75 | 163 | 0.1392 | — | — |
-| NH3 / C3v | Abelian, invariant op. | 75 | 779 | 0.1388 | 0.1463 | 0.1434 |
-| NH3 / C3v | full group, invariant op. | 30 | 147 | 0.1406 | 0.1476 | 0.1415 |
-| CH4 / Td | unfiltered UCCSD | 230 | 560 | 0.1942 | — | — |
-| CH4 / Td | Abelian, pool subset | 65 | 146 | 0.1942 | — | — |
-| CH4 / Td | Abelian, invariant op. | 65 | 182 | 0.1939 | 0.1941 | 0.1937 |
-| CH4 / Td | full group, invariant op. | 21 | 146 | 0.1940 | 0.1952 | 0.1944 |
+**The operator column of this run is not in one currency, and the `currency` column says which one
+each row is in.** A pool admits two counts: the *distinct* elementary spin-orbital excitation
+operators it touches, and the *incidences* of those operators in the Trotterised product. They
+differ because each same-spin double appears in two singlet parameters with coefficients of opposite
+sign. This run took its `uccsd` and pool-subset rows from a counter that returns the first and its
+projector rows from one that returns the second. The single-currency numbers are in the block below
+this table and they are what the manuscript quotes.
+
+| molecule | ansatz | parameters | operators | currency | exact exp. | Trotter, natural | Trotter, reversed |
+|---|---|---|---|---|---|---|---|
+| H2O / C2v | unfiltered UCCSD | 65 | 140 | distinct | 0.1203 | — | — |
+| H2O / C2v | Abelian, pool subset | 26 | 48 | distinct | 0.1203 | — | — |
+| H2O / C2v | Abelian, invariant op. | 26 | 54 | incidence | 0.1199 | 0.1199 | 0.1144 |
+| H2O / C2v | full group, invariant op. | 26 | 54 | incidence | 0.1199 | 0.1199 | 0.1144 |
+| C2H4 / D2h | unfiltered UCCSD | 1224 | — | — | — | — | — |
+| C2H4 / D2h | Abelian, invariant op. | 231 | — | — | — | — | — |
+| C2H4 / D2h | full group, invariant op. | 231 | — | — | — | — | — |
+| NH3 / C3v | unfiltered UCCSD | 135 | 315 | distinct | 0.1392 | — | — |
+| NH3 / C3v | Abelian, pool subset | 75 | 163 | distinct | 0.1392 | — | — |
+| NH3 / C3v | Abelian, invariant op. | 75 | 779 | incidence | 0.1388 | 0.1463 | 0.1434 |
+| NH3 / C3v | full group, invariant op. | 30 | 147 | incidence | 0.1406 | 0.1476 | 0.1415 |
+| CH4 / Td | unfiltered UCCSD | 230 | 560 | distinct | 0.1942 | — | — |
+| CH4 / Td | Abelian, pool subset | 65 | 146 | distinct | 0.1942 | — | — |
+| CH4 / Td | Abelian, invariant op. | 65 | 182 | incidence | 0.1939 | 0.1941 | 0.1937 |
+| CH4 / Td | full group, invariant op. | 21 | 146 | incidence | 0.1940 | 0.1952 | 0.1944 |
+
+### The same pools counted in one currency
+
+Every pool of this experiment, over distinct elementary excitation operators. The ammonia and
+methane rows are E8's re-count of these pools
+(`experiments/2026-08-14_e8_qeb_cnot_cost/results/aggregate.csv`, rows with `currency=distinct`).
+E8 did not run water; its projector pool is a basis of the invariant subspace, and the union of the
+supports of any basis of a subspace is the support of the subspace, so its count is
+`|supp P_G| = 48`, which is the 48 the `abelian_subset` row of this experiment already reports.
+
+| molecule | unfiltered | Abelian, pool subset | Abelian, invariant op. | full group |
+|---|---|---|---|---|
+| H2O / C2v | 140 | 48 | 48 | 48 |
+| NH3 / C3v | 315 | 163 | 309 | 117 |
+| CH4 / Td | 560 | 146 | 146 | 128 |
+
+Against the Abelian filter as the literature builds it, the full group therefore removes 163 → 117
+operators for ammonia and 146 → 128 for methane, while the parameters fall 75 → 30 and 65 → 21. E8
+prices the same pools in controlled-NOT gates under the scheme of the audited work: 1921 → 1411 and
+1788 → 1554.
 
 Largest Trotterisation penalty over all rows: 0.0075 mHa, for ammonia under the Abelian filter.
 Largest residual of the decomposition of an invariant operator on the elementary basis: 8.9e-16.
@@ -58,16 +87,24 @@ The two Abelian controls return the full-group count equal to the Abelian count,
 ## Hypothesis check
 
 **Supported**, with one qualification the manuscript has to carry. The accuracy survives tying and
-Trotterisation with room to spare, and the parameter count falls by the expected factors. The gate
-count falls sharply against unfiltered unitary coupled cluster but only marginally against the
-Abelian filter implemented as a pool subset, and for methane not at all. A claim that the full group
-shortens the circuit relative to existing symmetry-adapted practice is not supported by these
-numbers; a claim about parameters is.
+Trotterisation with room to spare, and the parameter count falls by the expected factors. The
+operator count falls sharply against unfiltered unitary coupled cluster and by a smaller factor
+against the Abelian filter implemented as a pool subset, 28.2 per cent for ammonia and 12.3 per cent
+for methane. A claim that the full group shortens the circuit relative to existing symmetry-adapted
+practice is supported at that size and no larger, and the parameter claim is the stronger of the two.
+
+The first version of this section read the operator saving as marginal for ammonia and absent for
+methane. That reading came from the mixed currency and not from the pools: it compared a distinct
+count with an incidence count, and methane's apparent zero was the coincidence of the two numbers at
+146. Circuit depth is still not measured here.
 
 ## Figures
 
 - `figures/2026-08-11_e1_invariant_trotter_ansatz_compression_params_gates.pdf` — **For manuscript.**
-  Parameters and elementary gates for four ansaetze across four molecules. Element inventory in
+  Parameters and distinct elementary excitation operators for four ansaetze across four molecules.
+  Regenerated on 2026-08-14: the lower panel now draws the single-currency counts of the block
+  above, which `code/analysis.py` carries as a table with its provenance, because this experiment's
+  own `n_gates` column mixes the two currencies. The upper panel is unchanged. Element inventory in
   `figures/figure_manifest.json`.
 - `figures/2026-08-11_e1_invariant_trotter_ansatz_compression_params_gates.png` — raster preview,
   for inspection only.
@@ -91,15 +128,24 @@ generically dense: every invariant operator becomes a combination of hundreds of
 excitations. The first attempt at this measurement produced 18709 gates for ammonia against 315
 unfiltered, inverting the conclusion. The pivoted basis obtained by applying the projector to
 coordinate vectors and selecting independent columns by QR with column pivoting gives operators with
-at most the group order in terms each, and produces the 147 in the table.
+at most the group order in terms each, and produces the 147 incidences, 117 distinct operators, in
+the tables above.
 
 The row that surprised us is the Abelian filter built from invariant operators for ammonia: 779
-gates, more than twice the unfiltered 315. Building the same 75-parameter space as a subset of the
-pool instead gives 163. Both span the same space and reach the same energy to four decimal places,
-so the difference is entirely in how the operators are packaged. That row is kept in the table
-because it is the reason the comparison in the manuscript has to be made against the pool-subset
-construction and not against the projector construction of the Abelian filter, which would flatter
-the result.
+incidences, more than twice the unfiltered 315, and 309 distinct operators once the currency is
+fixed. Building the 75-parameter space as a subset of the pool instead gives 163 distinct operators.
+
+**That pair of numbers is an open item, and the corrected currency is what exposes it.** Only 163 of
+the 315 elementary excitations carry the trivial character of the labelled Abelian subgroup, so a
+pool invariant under *that* subgroup cannot touch 309 of them. The projector row therefore is not
+the same pool as the subset row, whatever the two energies suggest, and 0.1388 against 0.1392 says
+they are not the same space either. Two readings fit the arithmetic and this experiment does not
+separate them: the group matrices may implement a reflection plane other than the one PySCF's orbital
+labels use, which is the misalignment mechanism E7 measures elsewhere in this project, or the
+coefficient cut of 1e-12 may be admitting representation noise. Methane and water show no such gap,
+their projector and subset counts agreeing exactly, which is what a resolution has to explain as
+well. Until it is resolved the row stands as the reason the comparison in the manuscript is made
+against the pool-subset construction, which is what the literature implements.
 
 The reversed gate order lowers the water error by 0.005 mHa relative to the natural order while
 raising the ammonia error by a comparable amount. The two orders bound the ordering dependence and

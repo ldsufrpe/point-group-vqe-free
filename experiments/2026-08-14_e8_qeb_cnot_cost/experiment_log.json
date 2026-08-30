@@ -1,0 +1,1137 @@
+{
+  "experiment_id": "2026-08-14_e8_qeb_cnot_cost",
+  "paper_project": "2026-08_point-group-vqe-free",
+  "opportunity_reference": "opportunities.md #2",
+  "specification": "EXPERIMENT_gate_counts.md",
+  "calibrated_by": "experiments/2026-08-11_e1_invariant_trotter_ansatz",
+  "mode": "symbolic",
+  "subareas_active": [
+    "symbolic"
+  ],
+  "target_venue": "Journal of Mathematical Chemistry",
+  "ruler": "QEB: 2 CNOTs per spin-orbital single, 13 per spin-orbital double, over operator incidences",
+  "created_at": "2026-08-14T18:58:44+00:00",
+  "plan_md_hash": "d17ac8681fb2b2df89b7a84da36f0ef762f71715dcb0b95ff6a903d4b4d34250",
+  "code_commit": null,
+  "system_info_hash": null,
+  "runs": [
+    {
+      "run_id": 1,
+      "timestamp_start": "2026-08-14T18:58:44+00:00",
+      "timestamp_end": "2026-08-14T18:58:52+00:00",
+      "wallclock_seconds": 0.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "key": "nh3",
+        "full_group": "C3v",
+        "abelian_group": "Cs",
+        "pool": "uccsd",
+        "currency": "distinct",
+        "construction": "unfiltered",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 234.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "33d20881f7a2370aeb4f15c51fb74470cf2994a8a0eaee5a75339767420a262d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 135,
+          "n_gates": 315,
+          "n_singles": 30,
+          "n_doubles": 285,
+          "cnots": 3765,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unfiltered; priced in the distinct currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 2,
+      "timestamp_start": "2026-08-14T18:58:44+00:00",
+      "timestamp_end": "2026-08-14T18:58:52+00:00",
+      "wallclock_seconds": 0.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "key": "nh3",
+        "full_group": "C3v",
+        "abelian_group": "Cs",
+        "pool": "uccsd",
+        "currency": "incidence",
+        "construction": "unfiltered",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 234.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "33d20881f7a2370aeb4f15c51fb74470cf2994a8a0eaee5a75339767420a262d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 135,
+          "n_gates": 375,
+          "n_singles": 30,
+          "n_doubles": 345,
+          "cnots": 4545,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unfiltered; priced in the incidence currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 3,
+      "timestamp_start": "2026-08-14T18:58:44+00:00",
+      "timestamp_end": "2026-08-14T18:58:52+00:00",
+      "wallclock_seconds": 0.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "key": "nh3",
+        "full_group": "C3v",
+        "abelian_group": "Cs",
+        "pool": "abelian_subset",
+        "currency": "distinct",
+        "construction": "irrep subset of the UCCSD pool",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 234.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "33d20881f7a2370aeb4f15c51fb74470cf2994a8a0eaee5a75339767420a262d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 75,
+          "n_gates": 163,
+          "n_singles": 18,
+          "n_doubles": 145,
+          "cnots": 1921,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "irrep subset of the UCCSD pool; priced in the distinct currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 4,
+      "timestamp_start": "2026-08-14T18:58:44+00:00",
+      "timestamp_end": "2026-08-14T18:58:52+00:00",
+      "wallclock_seconds": 0.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "key": "nh3",
+        "full_group": "C3v",
+        "abelian_group": "Cs",
+        "pool": "abelian_subset",
+        "currency": "incidence",
+        "construction": "irrep subset of the UCCSD pool",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 234.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "33d20881f7a2370aeb4f15c51fb74470cf2994a8a0eaee5a75339767420a262d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 75,
+          "n_gates": 191,
+          "n_singles": 18,
+          "n_doubles": 173,
+          "cnots": 2285,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "irrep subset of the UCCSD pool; priced in the incidence currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 5,
+      "timestamp_start": "2026-08-14T18:58:44+00:00",
+      "timestamp_end": "2026-08-14T18:58:52+00:00",
+      "wallclock_seconds": 0.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "key": "nh3",
+        "full_group": "C3v",
+        "abelian_group": "Cs",
+        "pool": "abelian_projector",
+        "currency": "distinct",
+        "construction": "symmetric projector",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 234.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "33d20881f7a2370aeb4f15c51fb74470cf2994a8a0eaee5a75339767420a262d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 75,
+          "n_gates": 309,
+          "n_singles": 30,
+          "n_doubles": 279,
+          "cnots": 3687,
+          "decomp_residual": 6.661338147750939e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "symmetric projector; priced in the distinct currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 6,
+      "timestamp_start": "2026-08-14T18:58:44+00:00",
+      "timestamp_end": "2026-08-14T18:58:52+00:00",
+      "wallclock_seconds": 0.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "key": "nh3",
+        "full_group": "C3v",
+        "abelian_group": "Cs",
+        "pool": "abelian_projector",
+        "currency": "incidence",
+        "construction": "symmetric projector",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 234.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "33d20881f7a2370aeb4f15c51fb74470cf2994a8a0eaee5a75339767420a262d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 75,
+          "n_gates": 779,
+          "n_singles": 38,
+          "n_doubles": 741,
+          "cnots": 9709,
+          "decomp_residual": 6.661338147750939e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "symmetric projector; priced in the incidence currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 7,
+      "timestamp_start": "2026-08-14T18:58:44+00:00",
+      "timestamp_end": "2026-08-14T18:58:52+00:00",
+      "wallclock_seconds": 0.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "key": "nh3",
+        "full_group": "C3v",
+        "abelian_group": "Cs",
+        "pool": "full",
+        "currency": "distinct",
+        "construction": "symmetric projector",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 234.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "33d20881f7a2370aeb4f15c51fb74470cf2994a8a0eaee5a75339767420a262d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 30,
+          "n_gates": 117,
+          "n_singles": 10,
+          "n_doubles": 107,
+          "cnots": 1411,
+          "decomp_residual": 4.440892098500626e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "symmetric projector; priced in the distinct currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 8,
+      "timestamp_start": "2026-08-14T18:58:44+00:00",
+      "timestamp_end": "2026-08-14T18:58:52+00:00",
+      "wallclock_seconds": 0.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "key": "nh3",
+        "full_group": "C3v",
+        "abelian_group": "Cs",
+        "pool": "full",
+        "currency": "incidence",
+        "construction": "symmetric projector",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 234.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "33d20881f7a2370aeb4f15c51fb74470cf2994a8a0eaee5a75339767420a262d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 30,
+          "n_gates": 147,
+          "n_singles": 10,
+          "n_doubles": 137,
+          "cnots": 1801,
+          "decomp_residual": 4.440892098500626e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "symmetric projector; priced in the incidence currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 9,
+      "timestamp_start": "2026-08-14T18:58:44+00:00",
+      "timestamp_end": "2026-08-14T18:58:52+00:00",
+      "wallclock_seconds": 0.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "key": "nh3",
+        "full_group": "C3v",
+        "abelian_group": "Cs",
+        "pool": "hiuccsd_nonadapted",
+        "currency": "distinct",
+        "construction": "Hamiltonian term set, symmetry=False",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 234.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "33d20881f7a2370aeb4f15c51fb74470cf2994a8a0eaee5a75339767420a262d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 93,
+          "n_gates": 197,
+          "n_singles": 14,
+          "n_doubles": 183,
+          "cnots": 2407,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "Hamiltonian term set, symmetry=False; priced in the distinct currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 10,
+      "timestamp_start": "2026-08-14T18:58:44+00:00",
+      "timestamp_end": "2026-08-14T18:58:52+00:00",
+      "wallclock_seconds": 0.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "key": "nh3",
+        "full_group": "C3v",
+        "abelian_group": "Cs",
+        "pool": "hiuccsd_nonadapted",
+        "currency": "incidence",
+        "construction": "Hamiltonian term set, symmetry=False",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 234.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "33d20881f7a2370aeb4f15c51fb74470cf2994a8a0eaee5a75339767420a262d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 93,
+          "n_gates": 223,
+          "n_singles": 14,
+          "n_doubles": 209,
+          "cnots": 2745,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "Hamiltonian term set, symmetry=False; priced in the incidence currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 11,
+      "timestamp_start": "2026-08-14T18:58:44+00:00",
+      "timestamp_end": "2026-08-14T18:58:52+00:00",
+      "wallclock_seconds": 0.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "key": "nh3",
+        "full_group": "C3v",
+        "abelian_group": "Cs",
+        "pool": "hiuccsd_adapted",
+        "currency": "distinct",
+        "construction": "Hamiltonian term set, symmetry=True",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 234.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "33d20881f7a2370aeb4f15c51fb74470cf2994a8a0eaee5a75339767420a262d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 59,
+          "n_gates": 117,
+          "n_singles": 10,
+          "n_doubles": 107,
+          "cnots": 1411,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "Hamiltonian term set, symmetry=True; priced in the distinct currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 12,
+      "timestamp_start": "2026-08-14T18:58:44+00:00",
+      "timestamp_end": "2026-08-14T18:58:52+00:00",
+      "wallclock_seconds": 0.649,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "NH3 / STO-3G",
+        "key": "nh3",
+        "full_group": "C3v",
+        "abelian_group": "Cs",
+        "pool": "hiuccsd_adapted",
+        "currency": "incidence",
+        "construction": "Hamiltonian term set, symmetry=True",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 234.4,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "33d20881f7a2370aeb4f15c51fb74470cf2994a8a0eaee5a75339767420a262d"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 59,
+          "n_gates": 131,
+          "n_singles": 10,
+          "n_doubles": 121,
+          "cnots": 1593,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "Hamiltonian term set, symmetry=True; priced in the incidence currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 13,
+      "timestamp_start": "2026-08-14T18:58:52+00:00",
+      "timestamp_end": "2026-08-14T18:59:20+00:00",
+      "wallclock_seconds": 2.347,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "key": "ch4",
+        "full_group": "Td",
+        "abelian_group": "D2",
+        "pool": "uccsd",
+        "currency": "distinct",
+        "construction": "unfiltered",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 302.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "f0b2db5b0308c10f172703a72855d47e404fcff99e4eb6b6a21e7069002fb387"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 230,
+          "n_gates": 560,
+          "n_singles": 40,
+          "n_doubles": 520,
+          "cnots": 6840,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unfiltered; priced in the distinct currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 14,
+      "timestamp_start": "2026-08-14T18:58:52+00:00",
+      "timestamp_end": "2026-08-14T18:59:20+00:00",
+      "wallclock_seconds": 2.347,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "key": "ch4",
+        "full_group": "Td",
+        "abelian_group": "D2",
+        "pool": "uccsd",
+        "currency": "incidence",
+        "construction": "unfiltered",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 302.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "f0b2db5b0308c10f172703a72855d47e404fcff99e4eb6b6a21e7069002fb387"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 230,
+          "n_gates": 680,
+          "n_singles": 40,
+          "n_doubles": 640,
+          "cnots": 8400,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "unfiltered; priced in the incidence currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 15,
+      "timestamp_start": "2026-08-14T18:58:52+00:00",
+      "timestamp_end": "2026-08-14T18:59:20+00:00",
+      "wallclock_seconds": 2.347,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "key": "ch4",
+        "full_group": "Td",
+        "abelian_group": "D2",
+        "pool": "abelian_subset",
+        "currency": "distinct",
+        "construction": "irrep subset of the UCCSD pool",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 302.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "f0b2db5b0308c10f172703a72855d47e404fcff99e4eb6b6a21e7069002fb387"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 65,
+          "n_gates": 146,
+          "n_singles": 10,
+          "n_doubles": 136,
+          "cnots": 1788,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "irrep subset of the UCCSD pool; priced in the distinct currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 16,
+      "timestamp_start": "2026-08-14T18:58:52+00:00",
+      "timestamp_end": "2026-08-14T18:59:20+00:00",
+      "wallclock_seconds": 2.347,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "key": "ch4",
+        "full_group": "Td",
+        "abelian_group": "D2",
+        "pool": "abelian_subset",
+        "currency": "incidence",
+        "construction": "irrep subset of the UCCSD pool",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 302.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "f0b2db5b0308c10f172703a72855d47e404fcff99e4eb6b6a21e7069002fb387"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 65,
+          "n_gates": 182,
+          "n_singles": 10,
+          "n_doubles": 172,
+          "cnots": 2256,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "irrep subset of the UCCSD pool; priced in the incidence currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 17,
+      "timestamp_start": "2026-08-14T18:58:52+00:00",
+      "timestamp_end": "2026-08-14T18:59:20+00:00",
+      "wallclock_seconds": 2.347,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "key": "ch4",
+        "full_group": "Td",
+        "abelian_group": "D2",
+        "pool": "abelian_projector",
+        "currency": "distinct",
+        "construction": "symmetric projector",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 302.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "f0b2db5b0308c10f172703a72855d47e404fcff99e4eb6b6a21e7069002fb387"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 65,
+          "n_gates": 146,
+          "n_singles": 10,
+          "n_doubles": 136,
+          "cnots": 1788,
+          "decomp_residual": 8.881784197001252e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "symmetric projector; priced in the distinct currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 18,
+      "timestamp_start": "2026-08-14T18:58:52+00:00",
+      "timestamp_end": "2026-08-14T18:59:20+00:00",
+      "wallclock_seconds": 2.347,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "key": "ch4",
+        "full_group": "Td",
+        "abelian_group": "D2",
+        "pool": "abelian_projector",
+        "currency": "incidence",
+        "construction": "symmetric projector",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 302.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "f0b2db5b0308c10f172703a72855d47e404fcff99e4eb6b6a21e7069002fb387"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 65,
+          "n_gates": 182,
+          "n_singles": 10,
+          "n_doubles": 172,
+          "cnots": 2256,
+          "decomp_residual": 8.881784197001252e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "symmetric projector; priced in the incidence currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 19,
+      "timestamp_start": "2026-08-14T18:58:52+00:00",
+      "timestamp_end": "2026-08-14T18:59:20+00:00",
+      "wallclock_seconds": 2.347,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "key": "ch4",
+        "full_group": "Td",
+        "abelian_group": "D2",
+        "pool": "full",
+        "currency": "distinct",
+        "construction": "symmetric projector",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 302.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "f0b2db5b0308c10f172703a72855d47e404fcff99e4eb6b6a21e7069002fb387"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 21,
+          "n_gates": 128,
+          "n_singles": 10,
+          "n_doubles": 118,
+          "cnots": 1554,
+          "decomp_residual": 4.440892098500626e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "symmetric projector; priced in the distinct currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 20,
+      "timestamp_start": "2026-08-14T18:58:52+00:00",
+      "timestamp_end": "2026-08-14T18:59:20+00:00",
+      "wallclock_seconds": 2.347,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "key": "ch4",
+        "full_group": "Td",
+        "abelian_group": "D2",
+        "pool": "full",
+        "currency": "incidence",
+        "construction": "symmetric projector",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 302.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "f0b2db5b0308c10f172703a72855d47e404fcff99e4eb6b6a21e7069002fb387"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 21,
+          "n_gates": 146,
+          "n_singles": 10,
+          "n_doubles": 136,
+          "cnots": 1788,
+          "decomp_residual": 4.440892098500626e-16
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "symmetric projector; priced in the incidence currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 21,
+      "timestamp_start": "2026-08-14T18:58:52+00:00",
+      "timestamp_end": "2026-08-14T18:59:20+00:00",
+      "wallclock_seconds": 2.347,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "key": "ch4",
+        "full_group": "Td",
+        "abelian_group": "D2",
+        "pool": "hiuccsd_nonadapted",
+        "currency": "distinct",
+        "construction": "Hamiltonian term set, symmetry=False",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 302.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "f0b2db5b0308c10f172703a72855d47e404fcff99e4eb6b6a21e7069002fb387"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 188,
+          "n_gates": 410,
+          "n_singles": 22,
+          "n_doubles": 388,
+          "cnots": 5088,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "Hamiltonian term set, symmetry=False; priced in the distinct currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 22,
+      "timestamp_start": "2026-08-14T18:58:52+00:00",
+      "timestamp_end": "2026-08-14T18:59:20+00:00",
+      "wallclock_seconds": 2.347,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "key": "ch4",
+        "full_group": "Td",
+        "abelian_group": "D2",
+        "pool": "hiuccsd_nonadapted",
+        "currency": "incidence",
+        "construction": "Hamiltonian term set, symmetry=False",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 302.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "f0b2db5b0308c10f172703a72855d47e404fcff99e4eb6b6a21e7069002fb387"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 188,
+          "n_gates": 464,
+          "n_singles": 22,
+          "n_doubles": 442,
+          "cnots": 5790,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "Hamiltonian term set, symmetry=False; priced in the incidence currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 23,
+      "timestamp_start": "2026-08-14T18:58:52+00:00",
+      "timestamp_end": "2026-08-14T18:59:20+00:00",
+      "wallclock_seconds": 2.347,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "key": "ch4",
+        "full_group": "Td",
+        "abelian_group": "D2",
+        "pool": "hiuccsd_adapted",
+        "currency": "distinct",
+        "construction": "Hamiltonian term set, symmetry=True",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 302.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "f0b2db5b0308c10f172703a72855d47e404fcff99e4eb6b6a21e7069002fb387"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 65,
+          "n_gates": 128,
+          "n_singles": 10,
+          "n_doubles": 118,
+          "cnots": 1554,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "Hamiltonian term set, symmetry=True; priced in the distinct currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    },
+    {
+      "run_id": 24,
+      "timestamp_start": "2026-08-14T18:58:52+00:00",
+      "timestamp_end": "2026-08-14T18:59:20+00:00",
+      "wallclock_seconds": 2.347,
+      "status": "success",
+      "seed": null,
+      "parameters": {
+        "molecule": "CH4 / STO-3G",
+        "key": "ch4",
+        "full_group": "Td",
+        "abelian_group": "D2",
+        "pool": "hiuccsd_adapted",
+        "currency": "incidence",
+        "construction": "Hamiltonian term set, symmetry=True",
+        "basis": "sto-3g",
+        "ruler_single": 2,
+        "ruler_double": 13
+      },
+      "exit_code": 0,
+      "peak_memory_mb": 302.0,
+      "inputs": {
+        "data_files": [],
+        "data_hashes": {
+          "geometry": "f0b2db5b0308c10f172703a72855d47e404fcff99e4eb6b6a21e7069002fb387"
+        }
+      },
+      "outputs": {
+        "result_files": [
+          "results/aggregate.csv"
+        ],
+        "scalar_results": {
+          "n_params": 65,
+          "n_gates": 146,
+          "n_singles": 10,
+          "n_doubles": 136,
+          "cnots": 1788,
+          "decomp_residual": null
+        }
+      },
+      "stdout_path": null,
+      "stderr_path": null,
+      "notes": "Hamiltonian term set, symmetry=True; priced in the incidence currency; counts are integer enumerations, no optimisation and no energy is computed in this experiment"
+    }
+  ],
+  "summary": {
+    "n_runs_total": 24,
+    "n_runs_success": 24,
+    "n_runs_failure": 0,
+    "n_runs_aborted": 0,
+    "aggregate_metrics": {
+      "nh3": {
+        "param_reduction": "75 -> 30",
+        "param_saving_pct": 60.0,
+        "distinct": {
+          "gate_reduction": "163 -> 117",
+          "gate_saving_pct": 28.22,
+          "cnot_reduction": "1921 -> 1411",
+          "cnot_saving_pct": 26.55,
+          "removed_singles": 8,
+          "removed_doubles": 38,
+          "projector_abelian_cnots": 3687
+        },
+        "incidence": {
+          "gate_reduction": "191 -> 147",
+          "gate_saving_pct": 23.04,
+          "cnot_reduction": "2285 -> 1801",
+          "cnot_saving_pct": 21.18,
+          "removed_singles": 8,
+          "removed_doubles": 36,
+          "projector_abelian_cnots": 9709
+        }
+      },
+      "ch4": {
+        "param_reduction": "65 -> 21",
+        "param_saving_pct": 67.69,
+        "distinct": {
+          "gate_reduction": "146 -> 128",
+          "gate_saving_pct": 12.33,
+          "cnot_reduction": "1788 -> 1554",
+          "cnot_saving_pct": 13.09,
+          "removed_singles": 0,
+          "removed_doubles": 18,
+          "projector_abelian_cnots": 1788
+        },
+        "incidence": {
+          "gate_reduction": "182 -> 146",
+          "gate_saving_pct": 19.78,
+          "cnot_reduction": "2256 -> 1788",
+          "cnot_saving_pct": 20.74,
+          "removed_singles": 0,
+          "removed_doubles": 36,
+          "projector_abelian_cnots": 2256
+        }
+      }
+    },
+    "key_findings": [
+      "the QEB ruler reproduces 6 of the 6 published Figure 5 bars exactly in the distinct-operator currency, with no fitted quantity; the incidence currency reproduces none of them, which is what fixes the currency",
+      "nh3: against the Abelian filter the full point group cuts parameters by 60.0% and CNOTs by 26.55% (1921 -> 1411), removing 8 singles and 38 doubles",
+      "ch4: against the Abelian filter the full point group cuts parameters by 67.69% and CNOTs by 13.09% (1788 -> 1554), removing 0 singles and 18 doubles",
+      "the CNOT saving tracks the flat operator saving rather than exceeding it (nh3 26.55% against 28.22%; ch4 13.09% against 12.33%), so the filter shows no useful preference for the expensive operator class",
+      "E1 priced its subset pools in the distinct currency and its projector pools by incidence, so its headline 163 -> 147 for NH3 and 146 -> 146 for CH4 compare one currency against the other; in the distinct currency they are nh3 163 -> 117; ch4 146 -> 128",
+      "the projector-built Abelian pool costs nh3 3687 CNOTs, ch4 1788 CNOTs, against the irrep-subset pool the literature actually implements; the headline comparison uses the subset, which is the smaller and less favourable baseline"
+    ],
+    "matches_hypothesis": "refuted",
+    "interpretation": "The parameter compression transfers to circuit size only in part. The full-group filter does cut CNOTs, by a quarter for NH3 and an eighth for CH4, but the saving tracks the flat operator count instead of beating it: the filter removes no disproportionate share of the expensive doubles. The compression is therefore mostly a statement about optimiser dimension, and the honest circuit claim is the measured percentage rather than the parameter ratio."
+  }
+}

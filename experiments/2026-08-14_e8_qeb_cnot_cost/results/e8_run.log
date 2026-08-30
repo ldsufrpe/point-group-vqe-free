@@ -1,0 +1,54 @@
+
+==============================================================================
+NH3 / STO-3G   full group C3v
+  representation error |U^T S U - S| = 2.99e-13   determinants 3136   UCCSD currency gap 60
+
+  --- distinct currency  [headline: this is the one Figure 5 is written in] ---
+  pool                    params   gates   sing   doub   CNOTs   vs UCCSD   vs Abel  published
+  uccsd                      135     315     30    285    3765     1.0000    1.9599  3765 exact
+  abelian_subset              75     163     18    145    1921     0.5102    1.0000  1921 exact
+  abelian_projector           75     309     30    279    3687     0.9793    1.9193  
+  full                        30     117     10    107    1411     0.3748    0.7345  
+  hiuccsd_nonadapted          93     197     14    183    2407     0.6393    1.2530  2407 exact
+  hiuccsd_adapted             59     117     10    107    1411     0.3748    0.7345  
+
+  --- incidence currency  [what a tied-parameter Trotter circuit executes] ---
+  pool                    params   gates   sing   doub   CNOTs   vs UCCSD   vs Abel  published
+  uccsd                      135     375     30    345    4545     1.0000    1.9891  
+  abelian_subset              75     191     18    173    2285     0.5028    1.0000  
+  abelian_projector           75     779     38    741    9709     2.1362    4.2490  
+  full                        30     147     10    137    1801     0.3963    0.7882  
+  hiuccsd_nonadapted          93     223     14    209    2745     0.6040    1.2013  
+  hiuccsd_adapted             59     131     10    121    1593     0.3505    0.6972  
+  [8s]
+
+==============================================================================
+CH4 / STO-3G   full group Td
+  representation error |U^T S U - S| = 0.00e+00   determinants 15876   UCCSD currency gap 120
+
+  --- distinct currency  [headline: this is the one Figure 5 is written in] ---
+  pool                    params   gates   sing   doub   CNOTs   vs UCCSD   vs Abel  published
+  uccsd                      230     560     40    520    6840     1.0000    3.8255  6840 exact
+  abelian_subset              65     146     10    136    1788     0.2614    1.0000  1788 exact
+  abelian_projector           65     146     10    136    1788     0.2614    1.0000  
+  full                        21     128     10    118    1554     0.2272    0.8691  
+  hiuccsd_nonadapted         188     410     22    388    5088     0.7439    2.8456  5088 exact
+  hiuccsd_adapted             65     128     10    118    1554     0.2272    0.8691  
+
+  --- incidence currency  [what a tied-parameter Trotter circuit executes] ---
+  pool                    params   gates   sing   doub   CNOTs   vs UCCSD   vs Abel  published
+  uccsd                      230     680     40    640    8400     1.0000    3.7234  
+  abelian_subset              65     182     10    172    2256     0.2686    1.0000  
+  abelian_projector           65     182     10    172    2256     0.2686    1.0000  
+  full                        21     146     10    136    1788     0.2129    0.7926  
+  hiuccsd_nonadapted         188     464     22    442    5790     0.6893    2.5665  
+  hiuccsd_adapted             65     146     10    136    1788     0.2129    0.7926  
+  [28s]
+
+=== E8 summary: full group against the Abelian filter ===
+  nh3: params 75 -> 30 (60.0%)
+      distinct  gates 163 -> 117   ( 28.2%)   CNOTs 1921 -> 1411   ( 26.6%)   removed 8s 38d
+      incidence gates 191 -> 147   ( 23.0%)   CNOTs 2285 -> 1801   ( 21.2%)   removed 8s 36d
+  ch4: params 65 -> 21 (67.69%)
+      distinct  gates 146 -> 128   ( 12.3%)   CNOTs 1788 -> 1554   ( 13.1%)   removed 0s 18d
+      incidence gates 182 -> 146   ( 19.8%)   CNOTs 2256 -> 1788   ( 20.7%)   removed 0s 36d

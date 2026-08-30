@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software or its results, please cite the paper."
 title: "Point-group filtering in unitary coupled-cluster ansätze: reproducibility repository"
 abstract: >-
-  Code, aggregated results, environment snapshots and figures for six canonical
-  experiments (287 runs) on the variational cost of molecular point-group
+  Code, aggregated results, environment snapshots and figures for seven canonical
+  experiments (311 runs) on the variational cost of molecular point-group
   filtering in unitary coupled-cluster ansätze.
 type: software
 authors:

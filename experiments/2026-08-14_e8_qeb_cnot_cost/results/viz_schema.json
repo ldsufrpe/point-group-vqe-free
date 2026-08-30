@@ -1,0 +1,69 @@
+{
+  "figures": [
+    {
+      "title": "CNOT cost by pool, distinct-operator currency",
+      "plot_type": "bar",
+      "x_axis": "pool",
+      "y_axis": "cnots",
+      "z_axis": null,
+      "series": "molecule",
+      "filters": {
+        "currency": "distinct"
+      },
+      "log_scale_x": false,
+      "log_scale_y": true
+    },
+    {
+      "title": "CNOT cost by pool, incidence currency",
+      "plot_type": "bar",
+      "x_axis": "pool",
+      "y_axis": "cnots",
+      "z_axis": null,
+      "series": "molecule",
+      "filters": {
+        "currency": "incidence"
+      },
+      "log_scale_x": false,
+      "log_scale_y": true
+    },
+    {
+      "title": "Variational parameters by pool",
+      "plot_type": "bar",
+      "x_axis": "pool",
+      "y_axis": "n_params",
+      "z_axis": null,
+      "series": "molecule",
+      "filters": {
+        "currency": "distinct"
+      },
+      "log_scale_x": false,
+      "log_scale_y": true
+    },
+    {
+      "title": "CNOT cost relative to the Abelian filter",
+      "plot_type": "bar",
+      "x_axis": "pool",
+      "y_axis": "cnot_ratio_vs_abelian_subset",
+      "z_axis": null,
+      "series": "molecule",
+      "filters": {
+        "currency": "distinct"
+      },
+      "log_scale_x": false,
+      "log_scale_y": false
+    },
+    {
+      "title": "Doubles against singles, the two classes the ruler prices differently",
+      "plot_type": "scatter",
+      "x_axis": "n_singles",
+      "y_axis": "n_doubles",
+      "z_axis": null,
+      "series": "pool",
+      "filters": {
+        "currency": "distinct"
+      },
+      "log_scale_x": false,
+      "log_scale_y": false
+    }
+  ]
+}

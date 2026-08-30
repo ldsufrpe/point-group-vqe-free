@@ -1,0 +1,90 @@
+{
+  "cnot_cost": {
+    "panels": [
+      "upper (no letter drawn): CNOT cost of each of the six pools under the QEB ruler, log y axis, one bar pair per pool. Absolute counts, not ratios",
+      "lower (no letter drawn): the percentage of each quantity that the full point group removes relative to the Abelian filter. Its x axis is the two molecules and is NOT shared with the upper panel, whose x axis is the pool"
+    ],
+    "elements": [
+      {
+        "artist": "left bar of every pair, both panels",
+        "encodes": "NH3 in C3v",
+        "visual": "blue #0072B2, 0.4 pt black edge, no hatch",
+        "panel": "all"
+      },
+      {
+        "artist": "right bar of every pair, upper panel",
+        "encodes": "CH4 in Td",
+        "visual": "vermillion #D55E00 with a /// hatch, which separates it from the blue in grayscale",
+        "panel": "upper"
+      },
+      {
+        "artist": "black x marker on a bar top, upper panel",
+        "encodes": "the value He et al. report in Figure 5 for that same pool, drawn on the bar rather than beside it because it is the same quantity measured twice, not a second quantity",
+        "visual": "black x, 4.5 pt, drawn above the bars",
+        "panel": "upper"
+      },
+      {
+        "artist": "bars with no x marker, upper panel",
+        "encodes": "the three pools Figure 5 does not report: the projector-built Abelian pool, the full-group pool, and HiUCCSD in the adapted basis. The full-group bar is the quantity this experiment adds",
+        "visual": "absence of the marker",
+        "panel": "upper"
+      },
+      {
+        "artist": "numeric label above every bar, upper panel",
+        "encodes": "the exact CNOT count",
+        "visual": "black text, 7 pt, rotated 90 degrees, cleared to 1.6x the bar height so it does not run through the published-value marker",
+        "panel": "upper"
+      },
+      {
+        "artist": "bar group 1 of 3 at each tick, lower panel",
+        "encodes": "percentage of variational parameters removed",
+        "visual": "orange #E69F00, no hatch",
+        "panel": "lower"
+      },
+      {
+        "artist": "bar group 2 of 3 at each tick, lower panel",
+        "encodes": "percentage of distinct elementary excitation operators removed",
+        "visual": "sky blue #56B4E9, no hatch",
+        "panel": "lower"
+      },
+      {
+        "artist": "bar group 3 of 3 at each tick, lower panel",
+        "encodes": "percentage of CNOTs removed. Its near-equality with group 2 and its distance from group 1 is the finding of the experiment",
+        "visual": "bluish green #009E73 with a /// hatch",
+        "panel": "lower"
+      },
+      {
+        "artist": "numeric label above every bar, lower panel",
+        "encodes": "the percentage, rounded to the unit",
+        "visual": "black text, 7 pt, horizontal",
+        "panel": "lower"
+      },
+      {
+        "artist": "legend, upper panel",
+        "encodes": "the two molecules and the published-value marker",
+        "visual": "above the axes, three columns, no frame, 7 pt",
+        "panel": "upper"
+      },
+      {
+        "artist": "legend, lower panel",
+        "encodes": "the three quantities",
+        "visual": "upper right inside the axes, three columns, no frame, 7 pt",
+        "panel": "lower"
+      }
+    ],
+    "axes": {
+      "x": "upper: the pool; lower: the molecule and its full point group. The two x axes are different and are deliberately not shared",
+      "y": "upper: CNOT count under the QEB ruler; lower: percentage removed",
+      "xscale": "linear in both",
+      "yscale": "upper log, lower linear"
+    },
+    "params": {
+      "basis_set": "STO-3G",
+      "geometry": "He et al.'s, so that their published bars are reproducible; the counts do not depend on the angle",
+      "ruler": "QEB, 2 CNOTs per spin-orbital single and 13 per double",
+      "currency": "distinct elementary spin-orbital excitation operators, which is the currency Figure 5 is written in. The incidence currency is in aggregate.csv and is NOT plotted",
+      "no_transpilation": "no device gate set, no connectivity, no depth: this is circuit SIZE in the QEB scheme only"
+    },
+    "normalization": "upper panel none, absolute counts; lower panel percentage of the Abelian-subset value"
+  }
+}

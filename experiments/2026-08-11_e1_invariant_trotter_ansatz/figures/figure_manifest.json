@@ -2,7 +2,7 @@
   "compression_params_gates": {
     "panels": [
       "upper (no letter drawn): number of variational parameters of each ansatz",
-      "lower (no letter drawn): number of distinct elementary excitation operators of the same ansaetze; shared x axis with (a). NOT a two-qubit gate count: Tab:unitary disclaims that reading explicitly"
+      "lower (no letter drawn): number of DISTINCT elementary excitation operators the same ansaetze touch, not the number of incidences of those operators in the Trotter product; shared x axis with (a). NOT a two-qubit gate count: Tab:unitary disclaims that reading explicitly"
     ],
     "elements": [
       {
@@ -70,7 +70,8 @@
       "basis_set": "STO-3G",
       "optimiser": "L-BFGS-B, ftol 1e-16, gtol 1e-11",
       "h2o_and_c2h4_role": "Abelian controls: their full group is already Abelian, so groups 3 and 4 must be equal",
-      "gate_definition": "distinct elementary excitation operators, not two-qubit gates; no device decomposition was done"
+      "gate_definition": "distinct elementary excitation operators, not two-qubit gates and not operator incidences in the product; no device decomposition was done",
+      "operator_count_source": "lower panel only: E8 aggregate.csv rows with currency=distinct for NH3 and CH4; the H2O projector pools take the 48 of this experiment's abelian_subset row. E1's own n_gates column mixes the two currencies and is not plotted"
     },
     "normalization": "none; absolute counts"
   }

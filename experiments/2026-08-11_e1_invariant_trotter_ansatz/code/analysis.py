@@ -20,6 +20,35 @@ import numpy as np  # noqa: E402
 ROOT = HERE.parent
 EID = ROOT.name
 
+# The lower panel counts operators in ONE currency, and `n_gates` of this
+# experiment's aggregate.csv is not in one. A pool admits two counts: the
+# distinct elementary spin-orbital excitation operators it touches, and the
+# incidences of those operators in the Trotter product, which differ because a
+# same-spin double enters two singlet parameters with opposite sign. E1 recorded
+# its unfiltered and pool-subset rows in the distinct currency and its projector
+# rows by incidence, so plotting n_gates straight from that file crosses one
+# with the other. The values below are the distinct count throughout:
+#
+#   NH3, CH4  experiments/2026-08-14_e8_qeb_cnot_cost/results/aggregate.csv,
+#             the rows with currency=distinct, which re-count the pools of this
+#             experiment. That currency is the one all six published bars of
+#             Figure 5 of he2026 reproduce in, and no bar reproduces in the other.
+#   H2O       the Abelian control, which E8 did not run. Its projector pool is a
+#             basis of P_G, and the union of the supports of any basis of a
+#             subspace is the support of the subspace, so the count is
+#             |supp P_G| = 48, which is the 48 the abelian_subset row of this
+#             experiment already reports.
+DISTINCT_OPERATORS = {
+    "H2O / STO-3G": {"uccsd": 140, "abelian_subset": 48, "abelian": 48, "full": 48},
+    "NH3 / STO-3G": {"uccsd": 315, "abelian_subset": 163, "abelian": 309, "full": 117},
+    "CH4 / STO-3G": {"uccsd": 560, "abelian_subset": 146, "abelian": 146, "full": 128},
+}
+
+# The two constructions whose E1 count is already distinct are asserted against
+# this experiment's own file, so a rerun of E1 cannot diverge from the panel in
+# silence.
+AGREE_IN_BOTH_CURRENCIES = ("uccsd", "abelian_subset")
+
 
 def main():
     with open(ROOT / "results" / "aggregate.csv") as fh:
@@ -42,6 +71,14 @@ def main():
                 return r[key]
         return ""
 
+    for m, counts in DISTINCT_OPERATORS.items():
+        for bkey in AGREE_IN_BOTH_CURRENCIES:
+            own = get(m, bkey, "n_gates")
+            if own not in ("", None) and int(own) != counts[bkey]:
+                raise SystemExit(
+                    f"{m}/{bkey}: aggregate.csv says {own} operators and the "
+                    f"distinct-currency table says {counts[bkey]}")
+
     fig, (ax, bx) = plt.subplots(2, 1, figsize=X.FIGSIZE_WIDE, sharex=True,
                                  gridspec_kw=dict(height_ratios=[1, 1], hspace=0.10))
     w = 0.2
@@ -51,7 +88,10 @@ def main():
         for axis, field in ((ax, "n_params"), (bx, "n_gates")):
             vals, px = [], []
             for i, m in enumerate(mols):
-                v = get(m, bkey, field)
+                if field == "n_gates":
+                    v = DISTINCT_OPERATORS.get(m, {}).get(bkey, "")
+                else:
+                    v = get(m, bkey, field)
                 if v not in ("", None):
                     vals.append(int(v))
                     px.append(pos[i])
@@ -106,8 +146,9 @@ def main():
     manifest = {
         "compression_params_gates": {
             "panels": ["upper (no letter drawn): number of variational parameters of each ansatz",
-                       "lower (no letter drawn): number of distinct elementary excitation operators of the "
-                       "same ansaetze; shared x axis with (a). NOT a two-qubit gate count: "
+                       "lower (no letter drawn): number of DISTINCT elementary excitation operators the "
+                       "same ansaetze touch, not the number of incidences of those operators in the "
+                       "Trotter product; shared x axis with (a). NOT a two-qubit gate count: "
                        "Tab:unitary disclaims that reading explicitly"],
             "elements": [
                 {"artist": "bar group 1 (leftmost of each tick)", "encodes":
@@ -148,7 +189,14 @@ def main():
                        "h2o_and_c2h4_role": "Abelian controls: their full group is already "
                                             "Abelian, so groups 3 and 4 must be equal",
                        "gate_definition": "distinct elementary excitation operators, not "
-                                          "two-qubit gates; no device decomposition was done"},
+                                          "two-qubit gates and not operator incidences in the "
+                                          "product; no device decomposition was done",
+                       "operator_count_source": "lower panel only: E8 aggregate.csv rows with "
+                                                "currency=distinct for NH3 and CH4; the H2O "
+                                                "projector pools take the 48 of this "
+                                                "experiment's abelian_subset row. E1's own "
+                                                "n_gates column mixes the two currencies and is "
+                                                "not plotted"},
             "normalization": "none; absolute counts",
         }
     }
