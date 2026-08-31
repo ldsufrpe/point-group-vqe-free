@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software or its results, please cite the paper."
 title: "Point-group filtering in unitary coupled-cluster ansätze: reproducibility repository"
 abstract: >-
-  Code, aggregated results, environment snapshots and figures for seven canonical
-  experiments (311 runs) on the variational cost of molecular point-group
+  Code, aggregated results, environment snapshots and figures for the canonical
+  experiments behind the paper, on the variational cost of molecular point-group
   filtering in unitary coupled-cluster ansätze.
 type: software
 authors:
@@ -15,6 +15,10 @@ authors:
   - family-names: "Santos"
     given-names: "Marcelo P."
     affiliation: "Departamento de Matemática, Universidade Federal Rural de Pernambuco, Recife, PE, Brazil"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Zubair"
+    given-names: "Md."
+    affiliation: "Department of Computer Science and Engineering, Green University of Bangladesh, Dhaka, Bangladesh"
     # orcid: "https://orcid.org/0000-0000-0000-0000"
 license: MIT
 repository-code: "https://github.com/ldsufrpe/point-group-vqe-free"
@@ -35,6 +39,8 @@ preferred-citation:
       given-names: "Leon D."
     - family-names: "Santos"
       given-names: "Marcelo P."
+    - family-names: "Zubair"
+      given-names: "Md."
   year: 2026
   notes: "Version 3 of arXiv:2603.21009. Under review."
   url: "https://arxiv.org/abs/2603.21009"
